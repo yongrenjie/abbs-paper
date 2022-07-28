@@ -1,0 +1,779 @@
+- _tags: []
+  _timeAdded: 2022-07-25T11:51:00.251492Z
+  _timeOpened: 2022-07-25T11:51:00.251492Z
+  _work:
+    contents:
+      _articleAuthors:
+      - _family: Kupče
+        _given: Ēriks
+        _suffix: null
+      - _family: Claridge
+        _given: Tim D. W.
+        _suffix: null
+      _articleDoi: 10.1002/anie.201705506
+      _articleIssue: '39'
+      _articleJournalLong: Angewandte Chemie International Edition
+      _articleJournalShort: Angew. Chem., Int. Ed.
+      _articlePages:
+        contents: 11779-11783
+        tag: PageRange
+      _articleTitle: 'NOAH: NMR Supersequences for Small Molecule Analysis and Structure
+        Elucidation'
+      _articleVolume: '56'
+      _articleYear: 2017
+    tag: ArticleWork
+- _tags: []
+  _timeAdded: 2022-07-25T11:51:01.82522Z
+  _timeOpened: 2022-07-25T11:51:01.82522Z
+  _work:
+    contents:
+      _articleAuthors:
+      - _family: Kupče
+        _given: Ēriks
+        _suffix: null
+      - _family: Claridge
+        _given: Tim D. W.
+        _suffix: null
+      _articleDoi: 10.1039/c8cc03296c
+      _articleIssue: '52'
+      _articleJournalLong: Chemical Communications
+      _articleJournalShort: Chem. Commun.
+      _articlePages:
+        contents: 7139-7142
+        tag: PageRange
+      _articleTitle: Molecular structure from a single NMR supersequence
+      _articleVolume: '54'
+      _articleYear: 2018
+    tag: ArticleWork
+- _tags: []
+  _timeAdded: 2022-07-25T11:51:02.953734Z
+  _timeOpened: 2022-07-25T11:51:02.953734Z
+  _work:
+    contents:
+      _articleAuthors:
+      - _family: Claridge
+        _given: Tim D. W.
+        _suffix: null
+      - _family: Mayzel
+        _given: Maksim
+        _suffix: null
+      - _family: Kupče
+        _given: Ēriks
+        _suffix: null
+      _articleDoi: 10.1002/mrc.4887
+      _articleIssue: '11'
+      _articleJournalLong: Magnetic Resonance in Chemistry
+      _articleJournalShort: Magn. Reson. Chem.
+      _articlePages:
+        contents: 946-952
+        tag: PageRange
+      _articleTitle: Triplet NOAH supersequences optimised for small molecule structure
+        characterisation
+      _articleVolume: '57'
+      _articleYear: 2019
+    tag: ArticleWork
+- _tags: []
+  _timeAdded: 2022-07-25T11:51:03.732011Z
+  _timeOpened: 2022-07-25T11:51:03.732011Z
+  _work:
+    contents:
+      _articleAuthors:
+      - _family: Kupče
+        _given: Ēriks
+        _suffix: null
+      - _family: Claridge
+        _given: Tim D. W.
+        _suffix: null
+      _articleDoi: 10.1016/j.jmr.2019.106568
+      _articleIssue: ''
+      _articleJournalLong: Journal of Magnetic Resonance
+      _articleJournalShort: J. Magn. Reson.
+      _articlePages:
+        contents: '106568'
+        tag: PageRange
+      _articleTitle: New NOAH modules for structure elucidation at natural isotopic
+        abundance
+      _articleVolume: '307'
+      _articleYear: 2019
+    tag: ArticleWork
+- _tags: []
+  _timeAdded: 2022-07-25T11:51:04.35629Z
+  _timeOpened: 2022-07-25T11:51:04.35629Z
+  _work:
+    contents:
+      _articleAuthors:
+      - _family: Kupče
+        _given: Ēriks
+        _suffix: null
+      - _family: Mote
+        _given: Kaustubh R.
+        _suffix: null
+      - _family: Webb
+        _given: Andrew
+        _suffix: null
+      - _family: Madhu
+        _given: Perunthiruthy K.
+        _suffix: null
+      - _family: Claridge
+        _given: Tim D. W.
+        _suffix: null
+      _articleDoi: 10.1016/j.pnmrs.2021.03.001
+      _articleIssue: ''
+      _articleJournalLong: Progress in Nuclear Magnetic Resonance Spectroscopy
+      _articleJournalShort: Prog. Nucl. Magn. Reson. Spectrosc.
+      _articlePages:
+        contents: 1-56
+        tag: PageRange
+      _articleTitle: Multiplexing experiments in NMR and multi-nuclear MRI
+      _articleVolume: 124-125
+      _articleYear: 2021
+    tag: ArticleWork
+- _tags: []
+  _timeAdded: 2022-07-25T11:51:05.172076Z
+  _timeOpened: 2022-07-25T11:51:05.172076Z
+  _work:
+    contents:
+      _articleAuthors:
+      - _family: Kupče
+        _given: Ēriks
+        _suffix: null
+      - _family: Frydman
+        _given: Lucio
+        _suffix: null
+      - _family: Webb
+        _given: Andrew G.
+        _suffix: null
+      - _family: Yong
+        _given: Jonathan R. J.
+        _suffix: null
+      - _family: Claridge
+        _given: Tim D. W.
+        _suffix: null
+      _articleDoi: 10.1038/s43586-021-00024-3
+      _articleIssue: '1'
+      _articleJournalLong: Nature Reviews Methods Primers
+      _articleJournalShort: Nat. Rev. Methods Primers
+      _articlePages:
+        contents: '27'
+        tag: ArticleNumber
+      _articleTitle: Parallel nuclear magnetic resonance spectroscopy
+      _articleVolume: '1'
+      _articleYear: 2021
+    tag: ArticleWork
+- _tags: []
+  _timeAdded: 2022-07-25T11:51:05.827946Z
+  _timeOpened: 2022-07-25T17:22:20.269727Z
+  _work:
+    contents:
+      _articleAuthors:
+      - _family: Hansen
+        _given: Alexandar L.
+        _suffix: null
+      - _family: Kupče
+        _given: E̅riks
+        _suffix: null
+      - _family: Li
+        _given: Da-Wei
+        _suffix: null
+      - _family: Bruschweiler-Li
+        _given: Lei
+        _suffix: null
+      - _family: Wang
+        _given: Cheng
+        _suffix: null
+      - _family: Brüschweiler
+        _given: Rafael
+        _suffix: null
+      _articleDoi: 10.1021/acs.analchem.0c05205
+      _articleIssue: '15'
+      _articleJournalLong: Analytical Chemistry
+      _articleJournalShort: Anal. Chem.
+      _articlePages:
+        contents: 6112-6119
+        tag: PageRange
+      _articleTitle: 2D NMR-Based Metabolomics with HSQC/TOCSY NOAH Supersequences
+      _articleVolume: '93'
+      _articleYear: 2021
+    tag: ArticleWork
+- _tags: []
+  _timeAdded: 2022-07-25T11:51:06.367218Z
+  _timeOpened: 2022-07-25T11:51:06.367218Z
+  _work:
+    contents:
+      _articleAuthors:
+      - _family: Yong
+        _given: Jonathan R. J.
+        _suffix: null
+      - _family: Hansen
+        _given: Alexandar L.
+        _suffix: null
+      - _family: Kupče
+        _given: Ēriks
+        _suffix: null
+      - _family: Claridge
+        _given: Tim D. W.
+        _suffix: null
+      _articleDoi: 10.1016/j.jmr.2021.107027
+      _articleIssue: ''
+      _articleJournalLong: Journal of Magnetic Resonance
+      _articleJournalShort: J. Magn. Reson.
+      _articlePages:
+        contents: '107027'
+        tag: PageRange
+      _articleTitle: Increasing sensitivity and versatility in NMR supersequences
+        with new HSQC-based modules
+      _articleVolume: '329'
+      _articleYear: 2021
+    tag: ArticleWork
+- _tags: []
+  _timeAdded: 2022-07-25T11:51:07.03035Z
+  _timeOpened: 2022-07-25T11:51:07.03035Z
+  _work:
+    contents:
+      _articleAuthors:
+      - _family: Rao Kakita
+        _given: Veera Mohana
+        _suffix: null
+      - _family: Hosur
+        _given: Ramakrishna V.
+        _suffix: null
+      _articleDoi: 10.1039/d0ra03417g
+      _articleIssue: '36'
+      _articleJournalLong: RSC Advances
+      _articleJournalShort: RSC Adv.
+      _articlePages:
+        contents: 21174-21179
+        tag: PageRange
+      _articleTitle: 'All-in-one NMR spectroscopy of small organic molecules: complete
+        chemical shift assignment from a single NMR experiment'
+      _articleVolume: '10'
+      _articleYear: 2020
+    tag: ArticleWork
+- _tags: []
+  _timeAdded: 2022-07-25T11:51:07.549654Z
+  _timeOpened: 2022-07-25T11:51:07.549654Z
+  _work:
+    contents:
+      _articleAuthors:
+      - _family: Kupče
+        _given: Ēriks
+        _suffix: null
+      - _family: Yong
+        _given: Jonathan R. J.
+        _suffix: null
+      - _family: Widmalm
+        _given: Göran
+        _suffix: null
+      - _family: Claridge
+        _given: Tim D. W.
+        _suffix: null
+      _articleDoi: 10.1021/jacsau.1c00423
+      _articleIssue: '11'
+      _articleJournalLong: JACS Au
+      _articleJournalShort: JACS Au
+      _articlePages:
+        contents: 1892-1897
+        tag: PageRange
+      _articleTitle: 'Parallel NMR Supersequences: Ten Spectra in a Single Measurement'
+      _articleVolume: '1'
+      _articleYear: 2021
+    tag: ArticleWork
+- _tags: []
+  _timeAdded: 2022-07-25T11:51:08.319242Z
+  _timeOpened: 2022-07-25T11:51:08.319242Z
+  _work:
+    contents:
+      _articleAuthors:
+      - _family: Yong
+        _given: Jonathan R. J.
+        _suffix: null
+      - _family: Kupče
+        _given: E̅riks
+        _suffix: null
+      - _family: Claridge
+        _given: Tim D. W.
+        _suffix: null
+      _articleDoi: 10.1021/acs.analchem.1c04964
+      _articleIssue: '4'
+      _articleJournalLong: Analytical Chemistry
+      _articleJournalShort: Anal. Chem.
+      _articlePages:
+        contents: 2271-2278
+        tag: PageRange
+      _articleTitle: Modular Pulse Program Generation for NMR Supersequences
+      _articleVolume: '94'
+      _articleYear: 2022
+    tag: ArticleWork
+- _tags: []
+  _timeAdded: 2022-07-25T11:51:09.168156Z
+  _timeOpened: 2022-07-25T11:51:09.168156Z
+  _work:
+    contents:
+      _articleAuthors:
+      - _family: White
+        _given: Kimberly N.
+        _suffix: null
+      - _family: Amagata
+        _given: Taro
+        _suffix: null
+      - _family: Oliver
+        _given: Allen G.
+        _suffix: null
+      - _family: Tenney
+        _given: Karen
+        _suffix: null
+      - _family: Wenzel
+        _given: Philip J.
+        _suffix: null
+      - _family: Crews
+        _given: Phillip
+        _suffix: null
+      _articleDoi: 10.1021/jo800960w
+      _articleIssue: '22'
+      _articleJournalLong: The Journal of Organic Chemistry
+      _articleJournalShort: J. Org. Chem.
+      _articlePages:
+        contents: 8719-8722
+        tag: PageRange
+      _articleTitle: Structure Revision of Spiroleucettadine, a Sponge Alkaloid with
+        a Bicyclic Core Meager in H-Atoms
+      _articleVolume: '73'
+      _articleYear: 2008
+    tag: ArticleWork
+- _tags: []
+  _timeAdded: 2022-07-25T11:51:10.739463Z
+  _timeOpened: 2022-07-25T11:51:10.739463Z
+  _work:
+    contents:
+      _articleAuthors:
+      - _family: Senior
+        _given: Mary M.
+        _suffix: null
+      - _family: Williamson
+        _given: R. Thomas
+        _suffix: null
+      - _family: Martin
+        _given: Gary E.
+        _suffix: null
+      _articleDoi: 10.1021/np400562u
+      _articleIssue: '11'
+      _articleJournalLong: Journal of Natural Products
+      _articleJournalShort: J. Nat. Prod.
+      _articlePages:
+        contents: 2088-2093
+        tag: PageRange
+      _articleTitle: 'Using HMBC and ADEQUATE NMR Data To Define and Differentiate
+        Long-Range Coupling Pathways: Is the Crews Rule Obsolete?'
+      _articleVolume: '76'
+      _articleYear: 2013
+    tag: ArticleWork
+- _tags: []
+  _timeAdded: 2022-07-25T11:51:11.273278Z
+  _timeOpened: 2022-07-25T11:51:11.273278Z
+  _work:
+    contents:
+      _articleAuthors:
+      - _family: Buevich
+        _given: Alexei V.
+        _suffix: null
+      - _family: Williamson
+        _given: R. Thomas
+        _suffix: null
+      - _family: Martin
+        _given: Gary E.
+        _suffix: null
+      _articleDoi: 10.1021/np500445s
+      _articleIssue: '8'
+      _articleJournalLong: Journal of Natural Products
+      _articleJournalShort: J. Nat. Prod.
+      _articlePages:
+        contents: 1942-1947
+        tag: PageRange
+      _articleTitle: 'NMR Structure Elucidation of Small Organic Molecules and Natural
+        Products: Choosing ADEQUATE vs HMBC'
+      _articleVolume: '77'
+      _articleYear: 2014
+    tag: ArticleWork
+- _tags: []
+  _timeAdded: 2022-07-25T11:51:11.90543Z
+  _timeOpened: 2022-07-25T11:51:11.90543Z
+  _work:
+    contents:
+      _articleAuthors:
+      - _family: Crouch
+        _given: Ronald C.
+        _suffix: null
+      - _family: Llanos
+        _given: William
+        _suffix: null
+      - _family: Mehr
+        _given: Knut G.
+        _suffix: null
+      - _family: Hadden
+        _given: Chad E.
+        _suffix: null
+      - _family: Russell
+        _given: David J.
+        _suffix: null
+      - _family: Martin
+        _given: Gary E.
+        _suffix: null
+      _articleDoi: 10.1002/mrc.886
+      _articleIssue: '9'
+      _articleJournalLong: Magnetic Resonance in Chemistry
+      _articleJournalShort: Magn. Reson. Chem.
+      _articlePages:
+        contents: 555-558
+        tag: PageRange
+      _articleTitle: Applications of cryogenic NMR probe technology to long-range1H-15N
+        2D NMR studies at natural abundance
+      _articleVolume: '39'
+      _articleYear: 2001
+    tag: ArticleWork
+- _tags: []
+  _timeAdded: 2022-07-25T11:51:13.225362Z
+  _timeOpened: 2022-07-25T11:51:13.225362Z
+  _work:
+    contents:
+      _articleAuthors:
+      - _family: Wagner
+        _given: Ronald
+        _suffix: null
+      - _family: Berger
+        _given: Stefan
+        _suffix: null
+      _articleDoi: 10.1002/(sici)1097-458x(199806)36:13<s44::aid-omr281>3.0.co;2-q
+      _articleIssue: S1
+      _articleJournalLong: Magnetic Resonance in Chemistry
+      _articleJournalShort: Magn. Reson. Chem.
+      _articlePages:
+        contents: S44-S46
+        tag: PageRange
+      _articleTitle: 'ACCORD-HMBC: a superior technique for structural elucidation'
+      _articleVolume: '36'
+      _articleYear: 1998
+    tag: ArticleWork
+- _tags: []
+  _timeAdded: 2022-07-25T11:51:13.750076Z
+  _timeOpened: 2022-07-25T11:51:13.750076Z
+  _work:
+    contents:
+      _articleAuthors:
+      - _family: Martin
+        _given: Gary E.
+        _suffix: null
+      - _family: Hadden
+        _given: Chad E.
+        _suffix: null
+      - _family: Crouch
+        _given: Ronald C.
+        _suffix: null
+      - _family: Krishnamurthy
+        _given: V. V.
+        _suffix: null
+      _articleDoi: 10.1002/(sici)1097-458x(199908)37:8<517::aid-mrc501>3.0.co;2-w
+      _articleIssue: '8'
+      _articleJournalLong: Magnetic Resonance in Chemistry
+      _articleJournalShort: Magn. Reson. Chem.
+      _articlePages:
+        contents: 517-528
+        tag: PageRange
+      _articleTitle: 'ACCORD-HMBC: advantages and disadvantages of static versus accordion
+        excitation'
+      _articleVolume: '37'
+      _articleYear: 1999
+    tag: ArticleWork
+- _tags: []
+  _timeAdded: 2022-07-25T11:51:14.274519Z
+  _timeOpened: 2022-07-25T11:51:14.274519Z
+  _work:
+    contents:
+      _articleAuthors:
+      - _family: Hadden
+        _given: Chad E.
+        _suffix: null
+      - _family: Martin
+        _given: Gary E.
+        _suffix: null
+      - _family: Krishnamurthy
+        _given: V. V.
+        _suffix: null
+      _articleDoi: 10.1006/jmre.1999.1840
+      _articleIssue: '1'
+      _articleJournalLong: Journal of Magnetic Resonance
+      _articleJournalShort: J. Magn. Reson.
+      _articlePages:
+        contents: 274-280
+        tag: PageRange
+      _articleTitle: Improved Performance Accordion Heteronuclear Multiple-Bond Correlation
+        Spectroscopy—IMPEACH-MBC
+      _articleVolume: '140'
+      _articleYear: 1999
+    tag: ArticleWork
+- _tags: []
+  _timeAdded: 2022-07-25T11:51:14.799125Z
+  _timeOpened: 2022-07-25T11:51:14.799125Z
+  _work:
+    contents:
+      _articleAuthors:
+      - _family: Martin
+        _given: Gary E.
+        _suffix: null
+      - _family: Hadden
+        _given: Chad E.
+        _suffix: null
+      _articleDoi: 10.1002/(sici)1097-458x(200004)38:4<251::aid-mrc625>3.0.co;2-j
+      _articleIssue: '4'
+      _articleJournalLong: Magnetic Resonance in Chemistry
+      _articleJournalShort: Magn. Reson. Chem.
+      _articlePages:
+        contents: 251-256
+        tag: PageRange
+      _articleTitle: Application of accordion excitation in1H-15N long-range heteronuclear
+        shift correlation experiments at natural abundance
+      _articleVolume: '38'
+      _articleYear: 2000
+    tag: ArticleWork
+- _tags: []
+  _timeAdded: 2022-07-25T11:51:15.323028Z
+  _timeOpened: 2022-07-25T11:51:15.323028Z
+  _work:
+    contents:
+      _articleAuthors:
+      - _family: Hadden
+        _given: Chad E.
+        _suffix: null
+      - _family: Martin
+        _given: Gary E.
+        _suffix: null
+      - _family: Krishnamurthy
+        _given: V. V.
+        _suffix: null
+      _articleDoi: 10.1002/(sici)1097-458x(200002)38:2<143::aid-mrc624>3.0.co;2-s
+      _articleIssue: '2'
+      _articleJournalLong: Magnetic Resonance in Chemistry
+      _articleJournalShort: Magn. Reson. Chem.
+      _articlePages:
+        contents: 143-147
+        tag: PageRange
+      _articleTitle: 'Constant time inverse-detection gradient accordion rescaled
+        heteronuclear multiple bond correlation spectroscopy: CIGAR-HMBC'
+      _articleVolume: '38'
+      _articleYear: 2000
+    tag: ArticleWork
+- _tags: []
+  _timeAdded: 2022-07-25T11:51:15.849252Z
+  _timeOpened: 2022-07-25T11:51:15.849252Z
+  _work:
+    contents:
+      _articleAuthors:
+      - _family: Bax
+        _given: Ad
+        _suffix: null
+      - _family: Freeman
+        _given: Ray
+        _suffix: null
+      - _family: Frenkiel
+        _given: Thomas A.
+        _suffix: null
+      _articleDoi: 10.1021/ja00398a044
+      _articleIssue: '8'
+      _articleJournalLong: Journal of the American Chemical Society
+      _articleJournalShort: J. Am. Chem. Soc.
+      _articlePages:
+        contents: 2102-2104
+        tag: PageRange
+      _articleTitle: An NMR technique for tracing out the carbon skeleton of an organic
+        molecule
+      _articleVolume: '103'
+      _articleYear: 1981
+    tag: ArticleWork
+- _tags: []
+  _timeAdded: 2022-07-25T11:51:16.371427Z
+  _timeOpened: 2022-07-25T18:21:08.833629Z
+  _work:
+    contents:
+      _articleAuthors:
+      - _family: Reif
+        _given: Bernd
+        _suffix: null
+      - _family: Köck
+        _given: Matthias
+        _suffix: null
+      - _family: Kerssebaum
+        _given: Rainer
+        _suffix: null
+      - _family: Kang
+        _given: Heonjoong
+        _suffix: null
+      - _family: Fenical
+        _given: William
+        _suffix: null
+      - _family: Griesinger
+        _given: Christian
+        _suffix: null
+      _articleDoi: 10.1006/jmra.1996.0038
+      _articleIssue: '2'
+      _articleJournalLong: Journal of Magnetic Resonance, Series A
+      _articleJournalShort: J. Magn. Reson., Ser. A
+      _articlePages:
+        contents: 282-285
+        tag: PageRange
+      _articleTitle: ADEQUATE, a New Set of Experiments to Determine the Constitution
+        of Small Molecules at Natural Abundance
+      _articleVolume: '118'
+      _articleYear: 1996
+    tag: ArticleWork
+- _tags: []
+  _timeAdded: 2022-07-25T11:58:18.027995Z
+  _timeOpened: 2022-07-25T11:58:18.027995Z
+  _work:
+    contents:
+      _articleAuthors:
+      - _family: Kupče
+        _given: E̅riks
+        _suffix: null
+      - _family: Freeman
+        _given: Ray
+        _suffix: null
+      _articleDoi: 10.1021/ja8036492
+      _articleIssue: '32'
+      _articleJournalLong: Journal of the American Chemical Society
+      _articleJournalShort: J. Am. Chem. Soc.
+      _articlePages:
+        contents: 10788-10792
+        tag: PageRange
+      _articleTitle: Molecular Structure from a Single NMR Experiment
+      _articleVolume: '130'
+      _articleYear: 2008
+    tag: ArticleWork
+- _tags: []
+  _timeAdded: 2022-07-25T11:58:32.122573Z
+  _timeOpened: 2022-07-25T11:58:32.122573Z
+  _work:
+    contents:
+      _articleAuthors:
+      - _family: Kupče
+        _given: Ēriks
+        _suffix: null
+      - _family: Freeman
+        _given: Ray
+        _suffix: null
+      _articleDoi: 10.1016/j.jmr.2010.06.018
+      _articleIssue: '1'
+      _articleJournalLong: Journal of Magnetic Resonance
+      _articleJournalShort: J. Magn. Reson.
+      _articlePages:
+        contents: 147-153
+        tag: PageRange
+      _articleTitle: Molecular structure from a single NMR sequence (fast-PANACEA)
+      _articleVolume: '206'
+      _articleYear: 2010
+    tag: ArticleWork
+- _tags: []
+  _timeAdded: 2022-07-25T17:20:41.811711Z
+  _timeOpened: 2022-07-25T17:20:41.811711Z
+  _work:
+    contents:
+      _articleAuthors:
+      - _family: Orts
+        _given: Julien
+        _suffix: null
+      - _family: Gossert
+        _given: Alvar D.
+        _suffix: null
+      _articleDoi: 10.1016/j.ymeth.2018.01.019
+      _articleIssue: ''
+      _articleJournalLong: Methods
+      _articleJournalShort: Methods
+      _articlePages:
+        contents: 3-25
+        tag: PageRange
+      _articleTitle: Structure determination of protein-ligand complexes by NMR in
+        solution
+      _articleVolume: 138-139
+      _articleYear: 2018
+    tag: ArticleWork
+- _tags: []
+  _timeAdded: 2022-07-25T18:15:52.602201Z
+  _timeOpened: 2022-07-25T18:15:52.602201Z
+  _work:
+    contents:
+      _articleAuthors:
+      - _family: Nagy
+        _given: Tamás Milán
+        _suffix: null
+      - _family: Kövér
+        _given: Katalin E.
+        _suffix: null
+      - _family: Sørensen
+        _given: Ole W.
+        _suffix: null
+      _articleDoi: 10.1002/anie.202102487
+      _articleIssue: '24'
+      _articleJournalLong: Angewandte Chemie International Edition
+      _articleJournalShort: Angew. Chem., Int. Ed.
+      _articlePages:
+        contents: 13587-13590
+        tag: PageRange
+      _articleTitle: 'NORD: NO Relaxation Delay NMR Spectroscopy'
+      _articleVolume: '60'
+      _articleYear: 2021
+    tag: ArticleWork
+- _tags: []
+  _timeAdded: 2022-07-27T15:17:14.9658Z
+  _timeOpened: 2022-07-27T15:17:14.9658Z
+  _work:
+    contents:
+      _articleAuthors:
+      - _family: Shaka
+        _given: A. J
+        _suffix: null
+      - _family: Lee
+        _given: C. J
+        _suffix: null
+      - _family: Pines
+        _given: A
+        _suffix: null
+      _articleDoi: 10.1016/0022-2364(88)90178-3
+      _articleIssue: '2'
+      _articleJournalLong: Journal of Magnetic Resonance (1969)
+      _articleJournalShort: J. Magn. Reson.
+      _articlePages:
+        contents: 274-293
+        tag: PageRange
+      _articleTitle: Iterative schemes for bilinear operators; application to spin
+        decoupling
+      _articleVolume: '77'
+      _articleYear: 1988
+    tag: ArticleWork
+- _tags: []
+  _timeAdded: 2022-07-27T15:19:08.50872Z
+  _timeOpened: 2022-07-27T15:19:08.50872Z
+  _work:
+    contents:
+      _articleAuthors:
+      - _family: Nagy
+        _given: Tamás Milán
+        _suffix: null
+      - _family: Gyöngyösi
+        _given: Tamás
+        _suffix: null
+      - _family: Kövér
+        _given: Katalin E.
+        _suffix: null
+      - _family: Sørensen
+        _given: Ole W.
+        _suffix: null
+      _articleDoi: 10.1039/c9cc06253j
+      _articleIssue: '81'
+      _articleJournalLong: Chemical Communications
+      _articleJournalShort: Chem. Commun.
+      _articlePages:
+        contents: 12208-12211
+        tag: PageRange
+      _articleTitle: 'BANGO SEA XLOC/HMBC–H2OBC: complete heteronuclear correlation
+        within minutes from one NMR pulse sequence'
+      _articleVolume: '55'
+      _articleYear: 2019
+    tag: ArticleWork
