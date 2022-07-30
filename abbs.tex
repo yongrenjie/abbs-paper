@@ -160,10 +160,10 @@
 \section*{Abstract}
 
 NOAH supersequences represent a time-efficient way of collecting multiple 2D NMR experiments. 
-We show here that experiments with intrinsic sensitivities from 1,1-ADEQUATE to HSQC may be efficiently combined through interleaved supersequences, which effectively assign different numbers of transients to each module.
-Such sequences fully generalise the recent concept of `parallel' supersequences, abolishing all remaining restrictions on the number of spectra acquired in a single experiment.
+We show here that experiments with very different sensitivity requirements, including 1,1-ADEQUATE and HSQC, may be efficiently combined through interleaved supersequences which effectively assign each module a different number of transients.
+Such sequences fully generalise the concept of `parallel' supersequences, abolishing all remaining restrictions on the number of spectra acquired in a single experiment.
 
-\todo{(63 words; the template suggests 50 words...)}
+\todo{(66 words; the template suggests 50 words...)}
 
 \section{Introduction}
 
@@ -357,10 +357,15 @@ For example, when processed in this way, the \nitrogen{} HMBC and \carbon{} HSQC
 Furthermore, the \carbon{} HSQC and ADEQUATE experiments can be used to create \carbon{}--\carbon{} one-bond correlation spectra.\autociteset{hsqc-adequate}
 It should be further emphasised that all of the `base' spectra used as the inputs here are obtained \textit{in a single measurement} using either the NOAH-4 or NOAH-5 supersequences discussed above.
 
-\section{Conclusion}
+\section{Conclusion(ish)}
 
-We have demonstrated here how low-sensitivity experiments, such as 1,1-ADEQUATE and \nitrogen{} HMBC, may be combined in NMR supersequences using the principles of sequential and interleaved acquisition, leading to substantial reductions in experiment time.
-Further high-sensitivity modules may be added almost at will through a generalisation of our previous concept of `parallel' supersequences, where multiple `threads' are executed and divided between several interleaved modules.
+While the generalised supersequences presented here enable modules to be assembled in almost any imaginable way, their increasing complexity mean that pulse programme construction is more difficult.
+At present, the GENESIS tool for automatic pulse sequence generation\autocite{Yong2022AC} only provides limited options for parallel supersequences; in particular it is restricted to only \textit{two} different `threads' (as demonstrated in previous work\autocite{Kupce2021JACSA}); we hope to expand this in the near future.
+Different AU programmes are also required to process the data correctly.
+For now, the pulse sequences and processing scripts used in this work are provided \todo{[WHEREVER---maybe with raw data / I can separately host it on the GENESIS website]}, as well as the Bruker User Library, accessible at \url{https://www.bruker.com/en/services/bruker-user-library.html}.
+
+In conclusion, we have demonstrated here how low-sensitivity experiments, such as 1,1-ADEQUATE and \nitrogen{} HMBC, may be combined in NMR supersequences, leading to substantial reductions in experiment time.
+Using the principles of sequential and interleaved acquisition, further high-sensitivity modules may be added almost at will through a generalisation of our previous concept of `parallel' supersequences, where multiple `threads' are executed and divided between several interleaved modules.
 The spectra thus obtained provide the chemist with far more powerful tools for the characterisation of complex molecules, especially in cases where existing NOAH supersequences do not provide sufficient information for unambiguous assignment.
 
 \section*{Acknowledgements}
@@ -428,7 +433,7 @@ J.R.J.Y.\ thanks the Clarendon Fund (University of Oxford) and the EPSRC Centre 
 
 \section{Pulse programme setup}
 
-It's very complicated. GENESIS\autocite{Yong2022AC} can't do the pulse sequences. For ABBS / ABBSS:
+For ABBS:
 
 \begin{itemize}
     \item Decide on number of $t_1$ increments for each module (we call this $N_1$). This is determined by desired resolution in indirect dimension. Say 256.
@@ -438,6 +443,16 @@ It's very complicated. GENESIS\autocite{Yong2022AC} can't do the pulse sequences
     \item Set \texttt{NBL} = 2 since there are only really two `horizontally' combined modules.
     \item Set TopSpin \texttt{TD1} parameter to be $N_1$ $\times$ \texttt{NBL} $\times$ \texttt{cnst51}. In this case, $256 \times 2 \times 8 = 4096$.
 \end{itemize}
+
+\todo{
+    Should note here that previous parallel supersequences\autocite{Kupce2021JACSA} essentially follow the same idea but with two threads.
+    The sequences don't explicitly use the \texttt{cnst} parameters as shown above, but in practice they behave exactly as if \texttt{cnst51} = 2 and \texttt{cnst52} = \texttt{cnst53} = 1.
+
+    This observation, in principle, should open up a `path' to generalising the GENESIS algorithm---but I need time to do it.
+    Providing a GUI is also problematic.
+    (I have \textit{some} ideas about the desired UI, but actually implementing it\ldots{} Look, I should be being paid money to do this\ldots)
+}
+
 
 \section{Spectra that didn't make it into the main text}
 
@@ -464,6 +479,8 @@ Whichever ones go here.
 \end{figure}
 
 The average signal enhancement across all peaks is 88\%.
+
+Similar to results seen previously\autocite{Yong2021JMR}
 
 
 % Fakesection SI bibliography
