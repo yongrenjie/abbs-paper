@@ -24,11 +24,16 @@ dss[3].stage(ax=axs[3], levels=2.5e5, f1_bounds=n15_bounds2, f2_bounds=h1_bounds
 dss[4].stage(ax=axs[4], levels=2.5e5, f1_bounds=c13_bounds2, f2_bounds=h1_bounds1)
 
 titles = [
-    f'1,1-ADEQUATE (NS = {dss[0]["ns"]:.0f})',
-    f'$^{{15}}$N HMBC ({dss[1]["cnst23"]:.0f} Hz, NS = {dss[1]["ns"]:.0f})',
-    f'$^{{13}}$C HMBC ({dss[2]["cnst13"]:.0f} Hz, NS = {dss[2]["ns"]:.0f})',
-    f'$^{{15}}$N seHSQC (NS = {dss[3]["ns"]:.0f})',
-    f'$^{{13}}$C HSQC (NS = {dss[4]["ns"]:.0f})',
+    f'1,1-ADEQUATE',
+    f'$^{{15}}$N HMBC',
+    f'$^{{13}}$C HMBC',
+    f'$^{{15}}$N seHSQC',
+    f'$^{{13}}$C HSQC',
+    # f'1,1-ADEQUATE (NS = {dss[0]["ns"]:.0f})',
+    # f'$^{{15}}$N HMBC ({dss[1]["cnst23"]:.0f} Hz, NS = {dss[1]["ns"]:.0f})',
+    # f'$^{{13}}$C HMBC ({dss[2]["cnst13"]:.0f} Hz, NS = {dss[2]["ns"]:.0f})',
+    # f'$^{{15}}$N seHSQC (NS = {dss[3]["ns"]:.0f})',
+    # f'$^{{13}}$C HSQC (NS = {dss[4]["ns"]:.0f})',
 ]
 
 pg.mkplots(axs, titles=titles)
