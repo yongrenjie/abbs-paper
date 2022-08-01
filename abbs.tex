@@ -120,6 +120,7 @@
 \newcommand*{\noahA}{A}
 \newcommand*{\noahB}{B}
 \newcommand*{\noahBn}{B${}_{\ch{N}}$}
+\newcommand*{\noahN}{N}
 \newcommand*{\noahS}{S}
 \newcommand*{\noahSp}{S${}^+$}
 \newcommand*{\noahSpn}{S${}^+_{\ch{N}}$}
@@ -153,9 +154,9 @@
     \url{https://www.rsc.org/journals-books-databases/author-and-reviewer-hub/authors-information/prepare-and-format/}
 }
 
-\todo{\textbf{TODO:} TOC graphic and TOC text (15--25 words).}
+\todo{\textbf{TODO:} TOC graphic and TOC text (15--25 words)}
 
-\todo{In terms of length, the main text (without figures or references) forms approximately two and a quarter pages when transferred to the RSC template.}
+\todo{In terms of length, the main text (without figures or references) forms approximately 2.5 pages when transferred to the RSC template.}
 
 \section*{Abstract}
 
@@ -249,7 +250,7 @@ Here, we adopt the simpler approach of recording two separate HMBC experiments o
 This cannot be performed \textit{sequentially} as the two HMBC experiments would draw on the same \magnnot{\ch{C}} magnetisation, causing the second to suffer from severely decreased sensitivity.
 However, they can easily be done in an \textit{interleaved} manner where, after the ADEQUATE module, the two HMBC experiments are alternately acquired (\cref{fig:sequences_abb}).\autocite{Kupce2021JACSA}
 As the \nitrogen{} dimension is typically sparse and a high resolution is not required, we choose to run both \nitrogen{} HMBC spectra with half the usual number of $t_1$ increments compared to the ADEQUATE.
-The spectra thus obtained are shown in \cref{fig:abb}; the two HMBC spectra reveal different correlations.
+As can be seen in \cref{fig:abb}, the two HMBC spectra reveal different sets of correlations.
 
 \begin{figure}[ht]
     \centering
@@ -263,7 +264,7 @@ The spectra thus obtained are shown in \cref{fig:abb}; the two HMBC spectra reve
         \textbf{(\subref{fig:abb_n_hmbc1})} \nitrogen{} HMBC optimised for $\njnh = \SI{4}{Hz}$ (128 $t_1$ increments).
         \textbf{(\subref{fig:abb_n_hmbc2})} \nitrogen{} HMBC optimised for $\njnh = \SI{8}{Hz}$ (128 $t_1$ increments).
         \cyclo{}
-        \todo{(Note the `wing' artefacts in the HMBC spectra! I don't think these are coming from the ADEQUATE, I think it's more likely to be due to imperfect refocusing by the \proton{} \ang{180} pulse. This can be fixed by increasing the CTP gradient duration (see \cref{fig:abbss_n_hmbc} where I did this), but that comes with a price---sensitivity drops quite a bit.)}
+        \todo{(Note the `wing' artefacts in the HMBC spectra! I don't think these are coming from the ADEQUATE, I think it's more likely to be due to imperfect refocusing by the \proton{} \ang{180} pulse. This can be fixed by increasing the CTP gradient duration (compare with \cref{fig:abbss_n_hmbc} where I did this), but that comes with a price---sensitivity drops quite a bit.)}
     }
     \label{fig:abb}
 \end{figure}
@@ -298,10 +299,19 @@ This particular ratio yielded the spectra shown in \cref{fig:abbs}; the user may
 
 Like the \nitrogen{} HMBC, the \carbon{} HMBC module simply use up all the \magnnot{\ch{C}} magnetisation preserved by the ADEQUATE.
 However, the \carbon{} HSQC draws on the same \magn{\ch{C}} magnetisation pool.
-In order to increase the sensitivity of the HSQC experiment, we add a period of isotropic DIPSI-2 mixing\autocite{Shaka1988JMR} immediately before the HSQC module to effect \magnnot{\ch{C}} $\to$ \magn{\ch{C}} magnetisation transfer, as has previously been done in ASAP\autociteset{asaphsqc} and NOAH\autocite{Yong2021JMR} experiments.
-On its own, this results in on average an almost twofold increase in the HSQC sensitivity (\cref{fig:dipsi}); if it needs to be further boosted, the sensitivity-enhanced HSQC experiment\autociteset{sehsqc} may also be used in its place.
+In order to increase the sensitivity of the HSQC experiment, we add a period of isotropic DIPSI-2 mixing\autocite{Shaka1988JMR} immediately before the HSQC module to effect \magnnot{\ch{C}} $\to$ \magn{\ch{C}} magnetisation transfer, as has previously been done in ASAP\autociteset{asaphsqc} and NOAH\autocite{Yong2021JMR} experiments (\cref{fig:dipsi}).
 
-\todo{(insert SNR and time saving comparison here)}
+The acquisition of the NOAH-4 \noahfour{A}{Bn}{B}{S} spectra in \cref{fig:abbs} took 124 minutes; in contrast, normal acquisition of all four experiments (with the appropriate number of transients) required a total of 223 minutes.
+As the ADEQUATE is placed first in the supersequence, its sensitivity is almost identical to that of a standalone ADEQUATE; the inclusion of the ZIP element does not have an appreciable impact on this. \todo{\textit{[Not sure why; we clearly saw at least 10\% loss in seHSQC.]}}
+The two HMBC spectra experience small losses \todo{(16--36\%)} in sensitivity, due to imperfect magnetisation retention by the ADEQUATE module.
+This is, however, outweighed by the almost twofold time savings provided by concatenation of the modules: if the NOAH supersequence were acquired for as long as the standalone experiments would, the \nitrogen{} and \carbon{} HMBC spectra would in fact have \todo{$-14$\%} and \todo{12\%} increases in SNR respectively.
+\todo{\textit{
+[The numbers are placeholders for now, reason being that the ABBS expt was acquired with 2.5 ms gradients in \nitrogen{} HMBC---this leads to a 36\% loss compared to the standalone \nitrogen{} HMBC which was acquired with 1 ms gradients.
+The \carbon{} HMBC loses 16\% which is about right.
+I don't think the longer gradients are} really \textit{necessary, so I'd prefer to redo the experiment to get nicer numbers.]
+}}
+Due to the reuse of \magn{\ch{C}} magnetisation, the HSQC module only retains 32\% of its original sensitivity.
+However, as the HSQC is still two orders of magnitude more sensitive than the ADEQUATE, this decrease is readily tolerated; if necessary, the sensitivity-enhanced HSQC module\autocite{Palmer1991JMR,Kay1992JACS,Hansen2021AC,Yong2021JMR} may also be used in its place.
 
 \section{NOAH-5 AB\texorpdfstring{$_{\ch{N}}$}{n}BS\texorpdfstring{$^+_{\ch{N}}$}{+n}S}
 
@@ -347,7 +357,7 @@ This is similar in spirit to the PANACEA experiment\autociteset{panacea}, but yi
         \textbf{(\subref{fig:covariance_brucine_nc})} \carbon{}--\nitrogen{} correlation spectrum (containing both one- and multiple-bond correlations) obtained by processing the brucine \nitrogen{} HMBC and \carbon{} HSQC spectra (in \cref{fig:abbs_n_hmbc,fig:abbs_c_hsqc}) using unsymmetric indirect covariance.
         \textbf{(\subref{fig:covariance_cyclo_caco}--\subref{fig:covariance_cyclo_sidechain})} Insets of \carbon{}--\carbon{} one-bond correlation spectrum, obtained by processing the cyclosporin ADEQUATE and \carbon{} HSQC spectra (in \cref{fig:abbss_adeq,fig:abbss_c_hsqc}) using generalised indirect covariance ($\lambda = 0.5$).
         The \ch{C}$\alpha$--\ch{CO} correlations are shown in (\subref{fig:covariance_cyclo_caco}), and sidechain \ch{C-C} correlations in (\subref{fig:covariance_cyclo_sidechain}).
-        \todo{(\textit{Some} of the peaks in (a) and (c) are artefacts. (b) is lovely though---11 peaks for 11 residues. I assigned all of these except for the top-right corner of (c)... we \textit{could} crop (c) to show only C$\alpha$--C$\beta$ correlations, which I did completely assign.)}
+        \todo{(\textit{Some} of the peaks in (a) and (c) are artefacts. (b) is very satisfying though---11 peaks for 11 residues. I assigned every peak except for those in the top-right corner of (c)... we \textit{could} crop (c) to show only C$\alpha$--C$\beta$ correlations, which I did completely assign.)}
     }
     \label{fig:covariance}
 \end{figure}
@@ -360,9 +370,10 @@ It should be further emphasised that all of the `base' spectra used as the input
 \section{Conclusion(ish)}
 
 While the generalised supersequences presented here enable modules to be assembled in almost any imaginable way, their increasing complexity mean that pulse programme construction is more difficult.
-At present, the GENESIS tool for automatic pulse sequence generation\autocite{Yong2022AC} only provides limited options for parallel supersequences; in particular it is restricted to only \textit{two} different `threads' (as demonstrated in previous work\autocite{Kupce2021JACSA}); we hope to expand this in the near future.
+At present, the GENESIS tool for automatic pulse sequence generation\autocite{Yong2022AC} only provides limited options for parallel supersequences.
+In particular, it is restricted to only \textit{two} different `threads' (as demonstrated in previous work\autocite{Kupce2021JACSA}); we hope to expand this in the near future.
 Different AU programmes are also required to process the data correctly.
-For now, the pulse sequences and processing scripts used in this work are provided \todo{[WHEREVER---maybe with raw data / I can separately host it on the GENESIS website]}, as well as the Bruker User Library, accessible at \url{https://www.bruker.com/en/services/bruker-user-library.html}.
+The pulse sequences and processing scripts used in this work are provided in the Bruker User Library, accessible at \url{https://www.bruker.com/en/services/bruker-user-library.html}.
 
 In conclusion, we have demonstrated here how low-sensitivity experiments, such as 1,1-ADEQUATE and \nitrogen{} HMBC, may be combined in NMR supersequences, leading to substantial reductions in experiment time.
 Using the principles of sequential and interleaved acquisition, further high-sensitivity modules may be added almost at will through a generalisation of our previous concept of `parallel' supersequences, where multiple `threads' are executed and divided between several interleaved modules.
@@ -433,7 +444,7 @@ J.R.J.Y.\ thanks the Clarendon Fund (University of Oxford) and the EPSRC Centre 
 
 \section{Pulse programme setup}
 
-For ABBS:
+For ABBS, the thought process is generally as follows:
 
 \begin{itemize}
     \item Decide on number of $t_1$ increments for each module (we call this $N_1$). This is determined by desired resolution in indirect dimension. Say 256.
@@ -450,15 +461,38 @@ For ABBS:
 
     This observation, in principle, should open up a `path' to generalising the GENESIS algorithm---but I need time to do it.
     Providing a GUI is also problematic.
-    (I have \textit{some} ideas about the desired UI, but actually implementing it\ldots{} Look, I should be being paid money to do this\ldots)
+    (I have some \textit{ideas} about the desired UI, but actually \textit{implementing} it is another matter\ldots{})
 }
+
 
 
 \section{Spectra that didn't make it into the main text}
 
-Whichever ones go here.
+\todo{(We should move some figures from the main text to here---the only question is which ones?}
 
-\clearpage
+Since the \proton{}--\proton{} NOESY uses the same \magnnot{\ch{C}} magnetisation as \carbon{} HMBC so can be directly substituted in its place, leading to a NOAH-4 \noahfour{A}{Bn}{N}{S} supersequence (\cref{fig:abns}).
+This not only provides a wealth of through-bond correlations which aid in eludicating molecular constitution, but also furnishes through-space correlations for the determination of configuration or conformation.
+
+\todo{One \textit{actual} problem here is the receiver gain. For ABBS I had $\texttt{RG} = 2050$, but for this I had to set $\texttt{RG} = 29$(!!).}
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.7\textwidth]{abns.png}
+    {\phantomsubcaption\label{fig:abns_adeq}}
+    {\phantomsubcaption\label{fig:abns_n_hmbc}}
+    {\phantomsubcaption\label{fig:abns_c_hmbc}}
+    {\phantomsubcaption\label{fig:abns_c_hsqc}}
+    \caption{
+        Spectra obtained from the NOAH-4 \noahfour{A}{Bn}{N}{S} supersequence.
+        \textbf{(\subref{fig:abns_adeq})} 1,1-ADEQUATE (16 transients).
+        \textbf{(\subref{fig:abns_n_hmbc})} \nitrogen{} HMBC (12 transients).
+        \textbf{(\subref{fig:abns_c_hmbc})} NOESY (2 transients, \SI{800}{\ms} mixing time).
+        \textbf{(\subref{fig:abns_c_hsqc})} \carbon{} HSQC (2 transients).
+        \brucine{}
+    }
+    \label{fig:abns}
+\end{figure}
+
 
 \section{ABBS comparison with and without DIPSI}
 
@@ -478,7 +512,7 @@ Whichever ones go here.
     \label{fig:dipsi}
 \end{figure}
 
-The average signal enhancement across all peaks is 88\%.
+The average signal enhancement across all peaks is 88\% (\cref{fig:dipsi}).
 
 Similar to results seen previously\autocite{Yong2021JMR}
 
