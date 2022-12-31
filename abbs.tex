@@ -178,6 +178,7 @@ However, even these may fall short in proton-sparse molecules\autociteset{proton
 In such cases, recourse must be made to other experiments which typically detect either long-range X--\proton{} couplings (as in the HMBC experiment\autociteset{n15_hmbc}, X = \carbon{} or \nitrogen{}), or \carbon{}--\carbon{} correlations (as in the INADEQUATE\autocite{Bax1981JACS}---or more practically, ADEQUATE\autociteset{adequate}---experiments).
 Although these rely on heteronuclei (or pairs thereof) with low natural abundances, they allow chemists to directly trace out carbon- and nitrogen-containing backbones with much greater certainty.
 Furthermore, with the introduction of cryogenically cooled probes and concomitant advances in achievable signal-to-noise ratios (SNRs), such experiments can nowadays be feasibly run even on dilute samples.
+\todo{(More explanation about why ADEQUATE is useful --- point out that you can get extra omdules for free)}
 
 To date, insensitive experiments such as \nitrogen{} HMBC and ADEQUATE have not been the main focus of NOAH supersequences.\autocite{RaoKakita2020RSCA}
 This is because in a traditional `linear' supersequence, each constituent module is recorded with the same number of transients.
@@ -262,9 +263,8 @@ As can be seen in \cref{fig:abb}, the two HMBC spectra reveal different sets of 
         Spectra obtained from the NOAH-3 \noahthree{A}{Bn}{Bn} supersequence.
         \textbf{(\subref{fig:abb_adeq})} 1,1-ADEQUATE (256 $t_1$ increments).
         \textbf{(\subref{fig:abb_n_hmbc1})} \nitrogen{} HMBC optimised for $\njnh = \SI{4}{Hz}$ (128 $t_1$ increments).
-        \textbf{(\subref{fig:abb_n_hmbc2})} \nitrogen{} HMBC optimised for $\njnh = \SI{8}{Hz}$ (128 $t_1$ increments).
+        \textbf{(\subref{fig:abb_n_hmbc2})} \nitrogen{} HMBC optimised for $\njnh = \SI{10}{Hz}$ (128 $t_1$ increments).
         \cyclo{}
-        \todo{(Note the `wing' artefacts in the HMBC spectra! I don't think these are coming from the ADEQUATE, I think it's more likely to be due to imperfect refocusing by the \proton{} \ang{180} pulse. This can be fixed by increasing the CTP gradient duration (compare with \cref{fig:abbss_n_hmbc} where I did this), but that comes with a price---sensitivity drops quite a bit.)}
     }
     \label{fig:abb}
 \end{figure}
@@ -441,6 +441,10 @@ J.R.J.Y.\ thanks the Clarendon Fund (University of Oxford) and the EPSRC Centre 
 \vfill
 \hspace{0pt}
 \newpage
+
+\section{Pulse programme description}
+
+With a more detailed diagram \& explanation
 
 \section{Pulse programme setup}
 
