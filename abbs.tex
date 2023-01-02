@@ -83,6 +83,7 @@
 \DeclareSIUnit{\ppm}{ppm}
 % }}}1
 % Newcommands {{{1 
+\DeclareMathOperator*{\sgn}{sgn}
 \newcommand{\articletitle}{\todo{Uniting Low- and High-Sensitivity Experiments through Generalised NMR Supersequences}}
 \newcommand{\crl}{Chemistry Research Laboratory, Department of Chemistry, University of Oxford, Mansfield Road, Oxford, OX1 3TA, United Kingdom}
 \newcommand{\brukeruk}{Bruker UK Ltd, R\&D, Coventry CV4 9GH, United Kingdom}
@@ -99,6 +100,7 @@
 \newcommand{\magn}[1]{\ch{^1H}$^{#1}$}
 \newcommand{\magnnot}[1]{\ch{^1H}$^{!#1}$}
 \newcommand{\todo}[1]{{\color{OrangeRed}#1}}
+\newcommand{\changed}[1]{{\color{DodgerBlue}#1}}
 \newcommand{\autociteset}[1]{\autocite{\usebibentry{#1}{entryset}}}
 \newcommand{\onejch}{{}^1\!J_{\ch{CH}}}
 \newcommand{\onejcc}{{}^1\!J_{\ch{CC}}}
@@ -107,23 +109,52 @@
 \newcommand{\njch}{{}^n\!J_{\ch{CH}}}
 \newcommand{\njcc}{{}^n\!J_{\ch{CC}}}
 \newcommand{\njnh}{{}^n\!J_{\ch{NH}}}
+\newcommand{\njxh}{{}^n\!J_{\ch{XH}}}
 \newcommand{\theurl}{\url{https://nmr-genesis.co.uk}}
 \newcommand*{\brucine}{Spectra were obtained on a \SI{700}{\MHz} Bruker AV III equipped with a TCI H/C/N cryoprobe; the sample used was \SI{50}{\milli\molar} brucine in \ch{CDCl3}.}
 \newcommand*{\cyclo}{Spectra were obtained on a \SI{700}{\MHz} Bruker AV III equipped with a TCI H/C/N cryoprobe; the sample used was \SI{50}{\milli\molar} cyclosporin A in \ch{C6D6}.}
 \newcommand*{\zolmi}{Spectra were obtained on a \SI{700}{\MHz} Bruker AV III equipped with a TCI H/C/N cryoprobe; the sample used was \SI{50}{\milli\molar} zolmitriptan in DMSO-\(d_6\).}
+\newcommand{\angang}[2]{#1\rlap{\unit{\degree}}\ensuremath{_{#2}}}
 % }}}1
-% NOAH newcommands {{{1
-\newcommand*{\noahtwo}[2]{\csname noah#1\endcsname\csname noah#2\endcsname}
-\newcommand*{\noahthree}[3]{\csname noah#1\endcsname\csname noah#2\endcsname\csname noah#3\endcsname}
-\newcommand*{\noahfour}[4]{\csname noah#1\endcsname\csname noah#2\endcsname\csname noah#3\endcsname\csname noah#4\endcsname}
-\newcommand*{\noahfive}[5]{\csname noah#1\endcsname\csname noah#2\endcsname\csname noah#3\endcsname\csname noah#4\endcsname\csname noah#5\endcsname}
-\newcommand*{\noahA}{A}
-\newcommand*{\noahB}{B}
-\newcommand*{\noahBn}{B${}_{\ch{N}}$}
-\newcommand*{\noahN}{N}
-\newcommand*{\noahS}{S}
-\newcommand*{\noahSp}{S${}^+$}
-\newcommand*{\noahSpn}{S${}^+_{\ch{N}}$}
+% NOAH command, copied from thesis {{{1
+\ExplSyntaxOn
+\msg_new:nnn{noah}{module-not-found}{Module~code~`#1'~not~recognised.~If~it~was~not~a~typo,~you~may~need~to~define~this~in~\c_backslash_str noahmodule.}
+\NewDocumentCommand{\noahmodule}{m}{
+    \str_case:nnTF{#1}{
+        {A}{A}
+        {Bn}{B${}\sb{\ch{N}}$}
+        {B}{B}
+        {Cc}{C$\sp{\text{c}}$}
+        {Cqf}{C$\sp{\text{qf}}$}
+        {C}{C}
+        {D}{C}
+        {Jqf}{J$\sp{\text{qf}}$}
+        {J}{J}
+        {Mn}{M$\sb{\ch{N}}$}
+        {M}{M}
+        {N}{N}
+        {O}{O}
+        {Pt}{P$\sp{\text{T}}$}
+        {P}{P}
+        {R}{R}
+        {Sc}{S$\sp{\text{C}}$}
+        {Sn}{S$\sb{\ch{N}}$}
+        {Spa}{S$\sp+\sb1$}
+        {Spb}{S$\sp+\sb2$}
+        {Spn}{S$\sp{+}\sb{\ch{N}}$}
+        {Sp}{S$\sp+$}
+        {St}{S$\sp{\text{T}}$}
+        {S}{S}
+        {T}{T}
+        {X}{X}
+        }{}{\textbf{?}
+        \msg_error:nnn{noah}{module-not-found}{#1}}
+}
+\NewDocumentCommand{\noah}{s m}{
+    \IfBooleanTF{#1}{}{NOAH-\clist_count:n{#2}~}
+    {\clist_map_inline:nn{#2}{\noahmodule{##1}}}
+}
+\ExplSyntaxOff
 % }}}1
 
 \begin{document}
@@ -156,15 +187,12 @@
 
 \todo{\textbf{TODO:} TOC graphic and TOC text (15--25 words)}
 
-\todo{In terms of length, the main text (without figures or references) forms approximately 2.5 pages when transferred to the RSC template.}
-
 \section*{Abstract}
 
 NOAH supersequences represent a time-efficient way of collecting multiple 2D NMR experiments. 
-We show here that experiments with very different sensitivity requirements, including 1,1-ADEQUATE and HSQC, may be efficiently combined through interleaved supersequences which effectively assign each module a different number of transients.
-Such sequences fully generalise the concept of `parallel' supersequences, abolishing all remaining restrictions on the number of spectra acquired in a single experiment.
+We show here that experiments with very different sensitivity requirements, including 1,1-ADEQUATE and HSQC, may be efficiently combined through interleaved supersequences, which assign each module a different number of transients and fully generalise the concept of parallel supersequences.
 
-\todo{(66 words; the template suggests 50 words...)}
+\textit{(50 words)}
 
 \section{Introduction}
 
@@ -173,22 +201,22 @@ However, these experiments are often time-consuming as they require the incremen
 One particularly flexible method for accelerating 2D data acquisition is the NOAH (NMR by Ordered Acquisition using \proton{} detection) technique\autocite{Kupce2017ACIE,Kupce2021NRMP}, in which multiple 2D experiments (`modules') are combined into a single experiment using only a single recovery delay.
 These nested `supersequences', which rely on the tailored excitation of magnetisation from different sources, provide an array of 2D spectra (up to 10 so far) in greatly reduced experiment times.
 
-Virtually all common 2D experiments, such as HMBC, HSQC, COSY, TOCSY, and NOESY, have been implemented in NOAH supersequences, allowing for the (computer-assisted) structural elucidation of a wide range of molecules.\autocite{Kupce2018CC,Kupce2019JMR,Kupce2021JACSA}
-However, even these may fall short in proton-sparse molecules\autociteset{proton_sparse} which do not yield sufficient correlations.
-In such cases, recourse must be made to other experiments which typically detect either long-range X--\proton{} couplings (as in the HMBC experiment\autociteset{n15_hmbc}, X = \carbon{} or \nitrogen{}), or \carbon{}--\carbon{} correlations (as in the INADEQUATE\autocite{Bax1981JACS}---or more practically, ADEQUATE\autociteset{adequate}---experiments).
-Although these rely on heteronuclei (or pairs thereof) with low natural abundances, they allow chemists to directly trace out carbon- and nitrogen-containing backbones with much greater certainty.
-Furthermore, with the introduction of cryogenically cooled probes and concomitant advances in achievable signal-to-noise ratios (SNRs), such experiments can nowadays be feasibly run even on dilute samples.
-\todo{(More explanation about why ADEQUATE is useful --- point out that you can get extra omdules for free)}
+Virtually all common 2D experiments, such as HSQC, HMQC, COSY, TOCSY, and NOESY, have been implemented in NOAH supersequences, allowing for the (manual or computer-assisted) structural elucidation of a wide range of molecules.\autocite{Kupce2018CC,Kupce2019JMR,Kupce2021JACSA}
+However, such experiments tend to fall short in proton-sparse molecules\autociteset{proton_sparse} as they do not yield sufficient correlations.
+In such cases, additional information may be obtained through the HMBC\autociteset{all_hmbc} and HSQMBC\autociteset{hsqmbc} experiments which detect long-range X--\proton{} couplings ($\njxh{}$, X = \carbon{} or \nitrogen{}).
+Although these tend to yield vastly more correlations, there often remains ambiguity in interpreting the resulting data as these techniques do not reveal the exact number of bonds over which a coupling is mediated.
+In contrast, one-bond \carbon{}--\carbon{} correlations ($\onejcc$), obtained through the INADEQUATE\autocite{Bax1981JACS}---or more practically, ADEQUATE\autociteset{adequate}---experiments, allow chemists to directly trace out carbon- and nitrogen-containing backbones with much greater certainty.
+The main limitation of such experiments is their low sensitivity, as they rely on pairs of heteronuclei with low natural abundances; nonetheless, with the introduction of cryogenically cooled probes and concomitant advances in achievable signal-to-noise ratios (SNRs), such experiments can nowadays be feasibly run even on dilute samples.
 
 To date, insensitive experiments such as \nitrogen{} HMBC and ADEQUATE have not been the main focus of NOAH supersequences.\autocite{RaoKakita2020RSCA}
 This is because in a traditional `linear' supersequence, each constituent module is recorded with the same number of transients.
-The total experiment duration is therefore dictated by the module with the lowest sensitivity, and higher-sensitivity modules (e.g. HSQC or COSY) would be recorded with far more transients than would be necessary.
-Although the more sensitive modules would still be obtained `for free', the \textit{effective} time savings thus realised would be far smaller than for a supersequence with balanced sensitivities.
+The total experiment duration is therefore dictated by the module with the lowest sensitivity, and higher-sensitivity modules (e.g.\ HSQC or COSY) would be recorded with far more transients than would be necessary.
+Although the more sensitive modules would still be obtained `for free', the \textit{effective} time savings thus realised would be far smaller than for a supersequence constructed from modules with balanced sensitivities.
 
-For this reason, the low-sensitivity ADEQUATE and \nitrogen{} HMBC modules form a `natural' pairing in a NOAH-2 \noahtwo{A}{Bn} supersequence (\cref{fig:sequences_ab}).
-However, we also go beyond this to add more sensitive modules: not using `horizontal' concatenation as in a traditional supersequence, but instead through `vertical' interleaving, in a similar fashion to the `parallel' supersequences recently described.\autocite{Kupce2021JACSA}
-This approach, which effectively amounts to tailoring the number of transients for each module, provides a powerful and flexible way to balance modules with different sensitivities.
-We show that up to four modules (\nitrogen{} HMBC, \carbon{} HMBC, \nitrogen{} sensitivity-enhaced HSQC (seHSQC), and \carbon{} HSQC) may be interleaved in this fashion (\cref{fig:sequences_abbs,fig:sequences_abbss}), thereby fully generalising our previous work on parallel supersequences, which only switched between two modules at a time.
+For this reason, the low-sensitivity ADEQUATE and \nitrogen{} HMBC modules form a `natural' pairing in the \noah{A,Bn} supersequence introduced here (\cref{fig:sequences_ab}).
+However, in this work, we also go beyond the traditional `linear' or `horizontal' model of a supersequence in adding more modules through `vertical' interleaving, in a similar fashion to the parallel supersequences recently described.\autocite{Kupce2021JACSA}
+We show that, following an initial ADEQUATE module, up to four modules (\nitrogen{} HMBC, \carbon{} HMBC, \nitrogen{} sensitivity-enhanced HSQC (seHSQC), and \carbon{} HSQC) may be interleaved in this `vertical' fashion (\cref{fig:sequences_abbs,fig:sequences_abbss}), yielding five modules with balanced intensities and high-quality data.
+By tailoring the number of times each module is acquired, this technique provides a powerful and flexible way to balance modules with different sensitivities, and fully generalises our previous work on parallel supersequences, where only two modules were interleaved at a time.
 
 \begin{figure}[ht]
     \centering
@@ -200,16 +228,16 @@ We show that up to four modules (\nitrogen{} HMBC, \carbon{} HMBC, \nitrogen{} s
     {\phantomsubcaption\label{fig:sequences_abbss}}
     \caption{
         Pulse sequences described in this work.
-        \textbf{(\subref{fig:sequences_adequate})} ZIP-1,1-ADEQUATE module.
+        \textbf{(\subref*{fig:sequences_adequate})} ZIP-1,1-ADEQUATE module.
         Filled and empty bars refer to \ang{90} and \ang{180} pulses respectively; the grey filled bar is a \ang{120} pulse for \carbon{} double-quantum to single-quantum coherence transfer\autocite{Mareci1982JMR}.
         Pulse and receiver phases are: $\phi_1 = x, -x$; $\phi_2 = 2\,(x), 2\,(-x)$; $\phi_3 = 2\,(y), 2\,(-y)$; $\phi_4 = 4\,(x), 4\,(-x)$; $\phi_\text{rec} = x, -x, -x, x, -x, x, x, -x$.
         Delays are set as follows: $\Delta = 1 / (4 \cdot \onejch)$, $\Delta' = 1 / (8 \cdot \onejch)$, and $\tau = 1 / (4 \cdot \onejcc)$. $\varepsilon$ is the minimum time required for a pulsed field gradient and the following recovery delay.
-        Gradient amplitudes as a percentage of the maximum amplitude (\SI{53}{G/cm}) are: $g_1 = 78.5\%$, $g_2 = 77.6\%$, and $g_3 = -59\%$.
+        Gradient amplitudes as a percentage of the maximum amplitude are: $g_1 = 78.5\%$, $g_2 = 77.6\%$, and $g_3 = -59\%$.
         Echo--antiecho selection is achieved by inverting the sign of $g_3$ as well as the pulse phase $\phi_3$.
-        \textbf{(\subref{fig:sequences_ab})} NOAH-2 \noahtwo{A}{Bn} supersequence.
-        \textbf{(\subref{fig:sequences_abb})} NOAH-3 \noahthree{A}{Bn}{Bn}, where the two \nitrogen{} HMBC experiments are optimised for two different values of $\njnh{}$.
-        \textbf{(\subref{fig:sequences_abbs})} NOAH-4 \noahfour{A}{Bn}{B}{S}.
-        \textbf{(\subref{fig:sequences_abbss})} NOAH-5 \noahfive{A}{Bn}{B}{Spn}{S}.
+        \textbf{(\subref*{fig:sequences_ab})} \noah{A,Bn} supersequence.
+        \textbf{(\subref*{fig:sequences_abb})} \noah{A,Bn,Bn}, where the two \nitrogen{} HMBC experiments are optimised for two different values of $\njnh{}$.
+        \textbf{(\subref*{fig:sequences_abbs})} \noah{A,Bn,B,S}.
+        \textbf{(\subref*{fig:sequences_abbss})} \noah{A,Bn,B,Spn,S}.
     }
     \label{fig:sequences}
 \end{figure}
@@ -217,14 +245,14 @@ We show that up to four modules (\nitrogen{} HMBC, \carbon{} HMBC, \nitrogen{} s
 \section{NOAH-2 AB\texorpdfstring{$_{\ch{N}}$}{n}}
 
 When designing NMR supersequences, it is generally a good rule of thumb to place the module with the lowest sensitivity first: this is because any incomplete preservation of magnetisation by earlier modules will lead to decreased sensitivity in later modules.
-The 1,1-ADEQUATE module, which relies on neighbouring pairs of \carbon{} isotopes---occurring only in roughly 1 out of 8130 molecules---therefore forms the beginning of all the supersequences described here.
+The 1,1-ADEQUATE module, which relies on neighbouring pairs of \carbon{} nuclei---occurring only in roughly 1 out of 8130 molecules---therefore forms the beginning of all the supersequences described here.
 
 The ADEQUATE module (\cref{fig:sequences_adequate}) is designed to only use the magnetisation of protons directly bonded to \carbon{}, which we denote here as \magn{\ch{C}}.\autocite{Orts2018M,Yong2021JMR}
 In order to maintain the sensitivity of later modules, it must return the magnetisation of all other protons (denoted as \magnnot{\ch{C}}) to the equilibrium $+z$ state.
-This is accomplished by replacing the initial \ang{90} excitation pulse by the $zz$-isotope selective pulse element (ZIP)\autocite{Hansen2021AC,Yong2021JMR}, which effects $90^\circ_{-x}$ and $90^\circ_{-y}$ rotations on \magn{\ch{C}} and \magnnot{\ch{C}} magnetisation respectively.
+This is accomplished by replacing the initial \ang{90} excitation pulse by the $zz$-isotope selective pulse element (ZIP)\autocite{Hansen2021AC,Yong2021JMR}, which effects \angang{90}{-x} and \angang{90}{-y} rotations on \magn{\ch{C}} and \magnnot{\ch{C}} magnetisation respectively.
 (Other isotope-specific elements such as BANGO\autocite{Sorensen1994BMR,Nagy2019CC,Nagy2021ACIE} may also be used here, with similar results generally being obtained.\autocite{Yong2021JMR})
 The \nitrogen{} HMBC module of choice is a simple magnitude-mode version, with an optional first-order low-pass J-filter.
-In the NOAH-2 \noahtwo{A}{Bn} supersequence (ADEQUATE + \nitrogen{} HMBC, \cref{fig:sequences_ab}), this module simply consumes the remaining \magnnot{\ch{C}} magnetisation which was preserved by the ZIP-ADEQUATE.
+In the \noah{A,Bn} supersequence (ADEQUATE + \nitrogen{} HMBC, \cref{fig:sequences_ab}), this module simply consumes the remaining \magnnot{\ch{C}} magnetisation which was preserved by the ZIP-ADEQUATE.
 
 \begin{figure}[ht]
     \centering
@@ -232,9 +260,9 @@ In the NOAH-2 \noahtwo{A}{Bn} supersequence (ADEQUATE + \nitrogen{} HMBC, \cref{
     {\phantomsubcaption\label{fig:ab_adeq}}
     {\phantomsubcaption\label{fig:ab_n_hmbc}}
     \caption{
-        Spectra obtained from the NOAH-2 \noahtwo{A}{Bn} supersequence.
-        \textbf{(\subref{fig:ab_adeq})} 1,1-ADEQUATE.
-        \textbf{(\subref{fig:ab_n_hmbc})} \nitrogen{} HMBC.
+        Spectra obtained from the \noah{A,Bn} supersequence.
+        \textbf{(\subref*{fig:ab_adeq})} 1,1-ADEQUATE.
+        \textbf{(\subref*{fig:ab_n_hmbc})} \nitrogen{} HMBC.
         \brucine{}
     }
     \label{fig:ab}
@@ -243,14 +271,16 @@ In the NOAH-2 \noahtwo{A}{Bn} supersequence (ADEQUATE + \nitrogen{} HMBC, \cref{
 
 \section{NOAH-3 AB\texorpdfstring{$_{\ch{N}}$}{n}B\texorpdfstring{$_{\ch{N}}$}{n}}
 
-Although this sequence on its own performs well (\cref{fig:ab}), it suffers from the drawback that the \nitrogen{} HMBC is optimised for one specific value of $\njnh$.
+Although this \noah*{A,Bn} sequence performs well on its own (\cref{fig:ab}), it suffers from the drawback that the \nitrogen{} HMBC is optimised for one specific value of $\njnh$.
 In practice, $\njnh{}$ values range from \qtyrange{2}{16}{Hz}; in a single HMBC experiment, some correlations may therefore be lost due to J-coupling mismatch.
 
 To circumvent this issue, a variety of accordion-type experiments\autociteset{accordion_hmbc} have been designed which decrement the J-evolution period in step with $t_1$, allowing a wider range of couplings to be sampled.
 Here, we adopt the simpler approach of recording two separate HMBC experiments optimised for different $\njnh$ values.
-This cannot be performed \textit{sequentially} as the two HMBC experiments would draw on the same \magnnot{\ch{C}} magnetisation, causing the second to suffer from severely decreased sensitivity.
-However, they can easily be done in an \textit{interleaved} manner where, after the ADEQUATE module, the two HMBC experiments are alternately acquired (\cref{fig:sequences_abb}).\autocite{Kupce2021JACSA}
-As the \nitrogen{} dimension is typically sparse and a high resolution is not required, we choose to run both \nitrogen{} HMBC spectra with half the usual number of $t_1$ increments compared to the ADEQUATE.
+These two HMBC modules cannot be performed \textit{sequentially}, as they both draw on the same \magnnot{\ch{C}} magnetisation; if concatenated `horizontally' within a supersequence, the second HMBC would suffer from severely decreased sensitivity.
+However, they can easily be executed in an \textit{interleaved} manner where, after the ADEQUATE module, the two HMBC experiments are alternately acquired.\autocite{Kupce2021JACSA}
+In \cref{fig:sequences_abb}, this is illustrated by a `vertical' stacking of the two modules.
+Thus, after each odd-numbered increment of the ADEQUATE, the first HMBC is acquired; and after each even-numbered increment, the second HMBC is acquired.
+This means that both HMBC spectra have half the usual number of $t_1$ increments compared to the ADEQUATE, which is acceptable since the \nitrogen{} dimension is typically sparse and a high resolution is not required.
 As can be seen in \cref{fig:abb}, the two HMBC spectra reveal different sets of correlations.
 
 \begin{figure}[ht]
@@ -260,10 +290,10 @@ As can be seen in \cref{fig:abb}, the two HMBC spectra reveal different sets of 
     {\phantomsubcaption\label{fig:abb_n_hmbc1}}
     {\phantomsubcaption\label{fig:abb_n_hmbc2}}
     \caption{
-        Spectra obtained from the NOAH-3 \noahthree{A}{Bn}{Bn} supersequence.
-        \textbf{(\subref{fig:abb_adeq})} 1,1-ADEQUATE (256 $t_1$ increments).
-        \textbf{(\subref{fig:abb_n_hmbc1})} \nitrogen{} HMBC optimised for $\njnh = \SI{4}{Hz}$ (128 $t_1$ increments).
-        \textbf{(\subref{fig:abb_n_hmbc2})} \nitrogen{} HMBC optimised for $\njnh = \SI{10}{Hz}$ (128 $t_1$ increments).
+        Spectra obtained from the \noah{A,Bn,Bn} supersequence.
+        \textbf{(\subref*{fig:abb_adeq})} 1,1-ADEQUATE (256 $t_1$ increments).
+        \textbf{(\subref*{fig:abb_n_hmbc1})} \nitrogen{} HMBC optimised for $\njnh = \SI{4}{Hz}$ (128 $t_1$ increments).
+        \textbf{(\subref*{fig:abb_n_hmbc2})} \nitrogen{} HMBC optimised for $\njnh = \SI{10}{Hz}$ (128 $t_1$ increments).
         \cyclo{}
     }
     \label{fig:abb}
@@ -271,13 +301,21 @@ As can be seen in \cref{fig:abb}, the two HMBC spectra reveal different sets of 
 
 \section{NOAH-4 AB\texorpdfstring{$_{\ch{N}}$}{n}BS}
 
-In the above spectra and in previous work,\autocite{Kupce2021JACSA} we have shown how two alternating modules can be used to construct parallel supersequences.
-Naturally, this concept can be further generalised to use $N \geq 2$ alternating `threads'.
-This is demonstrated using the NOAH-4 \noahfour{A}{Bn}{B}{S} supersequence (\cref{fig:sequences_abbs}), in which the ADEQUATE module is followed by either a \nitrogen{} HMBC, \carbon{} HMBC, or \carbon{} HSQC.
-Because these three latter modules do not have the same intrinsic sensitivity, we balance this by allocating a different number of threads to each module.
-For example, with $N = 8$, we can acquire the \nitrogen{} HMBC six times and the \carbon{} HMBC and HSQC once each.
-After summation of the data, this effectively amounts to acquiring the ADEQUATE experiment with $8n$ transients, the \nitrogen{} HMBC with $6n$ transients, and the \carbon{} HMBC and HSQC with $n$ transients each (where $n$ is some positive integer).
-This particular ratio yielded the spectra shown in \cref{fig:abbs}; the user may also customise these numbers themselves using the pulse programmes provided in the \SInf{}.
+\changed{
+In the above \noah*{A,Bn,Bn} experiment and in previous work,\autocite{Kupce2021JACSA} we have shown how two alternating modules can be used to construct parallel supersequences.
+This concept can naturally be further generalised in order to allow $N \geq 2$ different experiments to be acquired alternately as the second module in the supersequence.
+These interleaved experiments can be arranged such that they each have lower resolution compared to the first module (as was done in the \noah*{A,Bn,Bn} experiment), or such that they each have a fewer number of transients.
+In principle, a similar interleaving may be performed for \textit{all} modules in a supersequence.
+However, it is important to remember that earlier modules affect the amount of magnetisation passed on to the later modules; thus, it is typically more robust to interleave later modules in a sequence, which avoids discrepancies in data intensity or spectral quality.
+}
+
+\changed{
+In the \noah{A,Bn,B,S} supersequence (\cref{fig:sequences_abbs}), the ADEQUATE module is followed by one of three choices: a \nitrogen{} HMBC, a \carbon{} HMBC, or a \carbon{} HSQC.
+Because these three latter modules do not have the same intrinsic sensitivity, we balance this by allocating a different number of transients to each module.
+In this specific example, each $t_1$ increment of the ADEQUATE is recorded a total of $8n$ times (where $n$ is some positive integer); the \nitrogen{} HMBC $6n$ times; and the \carbon{} HMBC and HSQC $n$ times each.
+This particular ratio (with $n = 2$) yielded the spectra shown in \cref{fig:abbs}.
+The pulse programmes provided in the \SInf{} encode these ratios as user-defined constants which may be customised as desired.
+}
 
 \begin{figure}[ht]
     \centering
@@ -287,39 +325,40 @@ This particular ratio yielded the spectra shown in \cref{fig:abbs}; the user may
     {\phantomsubcaption\label{fig:abbs_c_hmbc}}
     {\phantomsubcaption\label{fig:abbs_c_hsqc}}
     \caption{
-        Spectra obtained from the NOAH-4 \noahfour{A}{Bn}{B}{S} supersequence.
-        \textbf{(\subref{fig:abbs_adeq})} 1,1-ADEQUATE (16 transients).
-        \textbf{(\subref{fig:abbs_n_hmbc})} \nitrogen{} HMBC (12 transients).
-        \textbf{(\subref{fig:abbs_c_hmbc})} \carbon{} HMBC (2 transients).
-        \textbf{(\subref{fig:abbs_c_hsqc})} \carbon{} HSQC (2 transients).
+        Spectra obtained from the \noah{A,Bn,B,S} supersequence.
+        \textbf{(\subref*{fig:abbs_adeq})} 1,1-ADEQUATE (16 transients).
+        \textbf{(\subref*{fig:abbs_n_hmbc})} \nitrogen{} HMBC (12 transients).
+        \textbf{(\subref*{fig:abbs_c_hmbc})} \carbon{} HMBC (2 transients).
+        \textbf{(\subref*{fig:abbs_c_hsqc})} \carbon{} HSQC (2 transients).
         \brucine{}
     }
     \label{fig:abbs}
 \end{figure}
 
-Like the \nitrogen{} HMBC, the \carbon{} HMBC module simply use up all the \magnnot{\ch{C}} magnetisation preserved by the ADEQUATE.
-However, the \carbon{} HSQC draws on the same \magn{\ch{C}} magnetisation pool.
-In order to increase the sensitivity of the HSQC experiment, we add a period of isotropic DIPSI-2 mixing\autocite{Shaka1988JMR} immediately before the HSQC module to effect \magnnot{\ch{C}} $\to$ \magn{\ch{C}} magnetisation transfer, as has previously been done in ASAP\autociteset{asaphsqc} and NOAH\autocite{Yong2021JMR} experiments (\cref{fig:dipsi}).
+\changed{
+One additional feature of the supersequence above concerns the fact that the \carbon{} HSQC module is placed immediately after the ADEQUATE.
+Both of these modules draw on the same \magn{\ch{C}} magnetisation pool, and this generally causes the latter module (here HSQC) to suffer from sensitivity losses.
+Since the HSQC has a much greater intrinsic sensitivity compared to the ADEQUATE, this loss would in fact be tolerable.
+However, in this experiment, we chose to add a period of isotropic DIPSI-2 mixing\autocite{Shaka1988JMR} immediately before the HSQC module to effect \magnnot{\ch{C}} $\to$ \magn{\ch{C}} magnetisation transfer, as has previously been done in ASAP\autociteset{asaphsqc} and NOAH\autocite{Yong2021JMR} experiments: this replenishes some of the lost \magn{\ch{C}} magnetisation and leads to greater intensities for the HSQC (\cref{fig:dipsi}).
+This mixing period does not need to be inserted prior to either of the \nitrogen{} or \carbon{} HMBC modules, as they do not use \magn{\ch{C}} magnetisation.
+}
 
-The acquisition of the NOAH-4 \noahfour{A}{Bn}{B}{S} spectra in \cref{fig:abbs} took 124 minutes; in contrast, normal acquisition of all four experiments (with the appropriate number of transients) required a total of 223 minutes.
-As the ADEQUATE is placed first in the supersequence, its sensitivity is almost identical to that of a standalone ADEQUATE; the inclusion of the ZIP element does not have an appreciable impact on this. \todo{\textit{[Not sure why; we clearly saw at least 10\% loss in seHSQC.]}}
-The two HMBC spectra experience small losses \todo{(16--36\%)} in sensitivity, due to imperfect magnetisation retention by the ADEQUATE module.
-This is, however, outweighed by the almost twofold time savings provided by concatenation of the modules: if the NOAH supersequence were acquired for as long as the standalone experiments would, the \nitrogen{} and \carbon{} HMBC spectra would in fact have \todo{$-14$\%} and \todo{12\%} increases in SNR respectively.
-\todo{\textit{
-[The numbers are placeholders for now, reason being that the ABBS expt was acquired with 2.5 ms gradients in \nitrogen{} HMBC---this leads to a 36\% loss compared to the standalone \nitrogen{} HMBC which was acquired with 1 ms gradients.
-The \carbon{} HMBC loses 16\% which is about right.
-I don't think the longer gradients are} really \textit{necessary, so I'd prefer to redo the experiment to get nicer numbers.]
-}}
-Due to the reuse of \magn{\ch{C}} magnetisation, the HSQC module only retains 32\% of its original sensitivity.
+\changed{
+The acquisition of the \noah{A,Bn,B,S} spectra in \cref{fig:abbs} took 124 minutes; in contrast, normal acquisition of all four experiments (with the appropriate number of transients) required a total of 223 minutes.
+As the ADEQUATE is placed first in the supersequence, its sensitivity is almost identical to that of a standalone ADEQUATE; the inclusion of the ZIP element causes only an approximate 5\% loss.
+The \nitrogen{} and \carbon{} HMBC spectra experience small losses (16--29\%) in sensitivity, due to imperfect magnetisation retention by the ADEQUATE module.
+This is, however, outweighed by the almost twofold time savings provided by concatenation of the modules: if the NOAH supersequence were acquired for as long as the standalone experiments were, the \nitrogen{} HMBC spectra would have almost the same SNR, and the \carbon{} HMBC from the NOAH would in fact have a 12\% improvement in SNR.
+Due to the reuse of \magn{\ch{C}} magnetisation, the HSQC module only retains 29\% of its original sensitivity.
 However, as the HSQC is still two orders of magnitude more sensitive than the ADEQUATE, this decrease is readily tolerated; if necessary, the sensitivity-enhanced HSQC module\autocite{Palmer1991JMR,Kay1992JACS,Hansen2021AC,Yong2021JMR} may also be used in its place.
+}
 
 \section{NOAH-5 AB\texorpdfstring{$_{\ch{N}}$}{n}BS\texorpdfstring{$^+_{\ch{N}}$}{+n}S}
 
 As a final example, we add a further \nitrogen{} seHSQC module to the above sequence.
-This is most easily accomplished by simply diverting one `thread' away from the \nitrogen{} HMBC, meaning that the second slot in the supersequence now alternates between four different experiment (\cref{fig:sequences_abbss}).
-In principle, the \nitrogen{} seHSQC uses only \magn{\ch{N}} magnetisation (i.e.\ protons directly bonded to \nitrogen{}), and can simply be added as a third module in every `thread` of the supersequence: such an arrangement would maximise its sensitivity as a larger number of transients are collected.
-However, this would compromise the performance of the \textit{other} modules, as they must then be modified to preserve this magnetisation: for example, the HMBC modules would need to include the $zz$-filter\autocite{Kupce2018CC,Kupce2019JMR}, which generally causes 10--20\% sensitivity losses.
-As the \nitrogen{} seHSQC is not a particularly demanding experiment in terms of sensitivity, it makes more sense to implement it in this interleaved manner.
+This is most easily accomplished by simply reducing the number of transients for the \nitrogen{} HMBC by $n$ and diverting these instead towards a \nitrogen{} seHSQC, and means that the second slot in the supersequence now alternates between four different experiments (\cref{fig:sequences_abbss}).
+In principle, the \nitrogen{} seHSQC uses only \magn{\ch{N}} magnetisation (i.e.\ protons directly bonded to \nitrogen{}), and can simply be added \textit{linearly} as a third module to the supersequence: such an arrangement would maximise its sensitivity as a larger number of transients are collected.
+However, this would compromise the performance of the other modules, as they must then be modified to preserve the requisite \magn{\ch{N}} magnetisation: for example, the HMBC modules would need to be modified to include the $zz$-filter\autocite{Kupce2018CC,Kupce2019JMR}, which generally causes 10--20\% sensitivity losses.
+As the \nitrogen{} seHSQC is a relatively undemanding experiment in terms of sensitivity, it makes more sense to implement it in a `vertical', interleaved manner.
 This example especially illustrates how the use of interleaved \textit{and} sequential acquisition leads to much greater flexibility in supersequence design, especially when considering the relative sensitivities of different modules.
 
 \begin{figure}[ht]
@@ -331,20 +370,21 @@ This example especially illustrates how the use of interleaved \textit{and} sequ
     {\phantomsubcaption\label{fig:abbss_n_sehsqc}}
     {\phantomsubcaption\label{fig:abbss_c_hsqc}}
     \caption{
-        Spectra obtained from the NOAH-5 \noahfive{A}{Bn}{B}{Spn}{S} supersequence.
-        \textbf{(\subref{fig:abbss_adeq})} 1,1-ADEQUATE (16 transients).
-        \textbf{(\subref{fig:abbss_n_hmbc})} \nitrogen{} HMBC (10 transients).
-        \textbf{(\subref{fig:abbss_c_hmbc})} \carbon{} HMBC (2 transients).
-        \textbf{(\subref{fig:abbss_n_sehsqc})} \nitrogen{} sensitivity-enhanced HSQC (2 transients).
-        \textbf{(\subref{fig:abbss_c_hsqc})} \carbon{} HSQC (2 transients).
+        Spectra obtained from the \noah{A,Bn,B,Spn,S} supersequence.
+        \textbf{(\subref*{fig:abbss_adeq})} 1,1-ADEQUATE (16 transients).
+        \textbf{(\subref*{fig:abbss_n_hmbc})} \nitrogen{} HMBC (10 transients).
+        \textbf{(\subref*{fig:abbss_c_hmbc})} \carbon{} HMBC (2 transients).
+        \textbf{(\subref*{fig:abbss_n_sehsqc})} \nitrogen{} sensitivity-enhanced HSQC (2 transients).
+        \textbf{(\subref*{fig:abbss_c_hsqc})} \carbon{} HSQC (2 transients).
         \cyclo{}
     }
     \label{fig:abbss}
 \end{figure}
 
-The five spectra thus obtained are shown in \cref{fig:abbss}.
+The five spectra obtained from this sequence are shown in \cref{fig:abbss}.
 Collectively, this supersequence provides virtually all heteronuclear correlation data required for structural elucidation or assignment.
 This is similar in spirit to the PANACEA experiment\autociteset{panacea}, but yields greater sensitivity as it uses equilibrium \proton{} magnetisation rather than the low-magnetogyric ratio \carbon{} and \nitrogen{} nuclei, and does not require multiple-receiver hardware.\autocite{Kupce2021PNMRS,Kupce2021NRMP}
+Of course, the ADEQUATE experiment may not be necessary for every novel compound encountered; however, in cases where it \textit{is} needed, the supersequences described here demonstrate that other valuable heteronuclear spectra can also be acquired in a time-efficient manner along with the ADEQUATE.
 
 \begin{figure}[ht]
     \centering
@@ -354,30 +394,35 @@ This is similar in spirit to the PANACEA experiment\autociteset{panacea}, but yi
     {\phantomsubcaption\label{fig:covariance_cyclo_sidechain}}
     \caption{
         Spectra obtained through indirect covariance processing.
-        \textbf{(\subref{fig:covariance_brucine_nc})} \carbon{}--\nitrogen{} correlation spectrum (containing both one- and multiple-bond correlations) obtained by processing the brucine \nitrogen{} HMBC and \carbon{} HSQC spectra (in \cref{fig:abbs_n_hmbc,fig:abbs_c_hsqc}) using unsymmetric indirect covariance.
-        \textbf{(\subref{fig:covariance_cyclo_caco}--\subref{fig:covariance_cyclo_sidechain})} Insets of \carbon{}--\carbon{} one-bond correlation spectrum, obtained by processing the cyclosporin ADEQUATE and \carbon{} HSQC spectra (in \cref{fig:abbss_adeq,fig:abbss_c_hsqc}) using generalised indirect covariance ($\lambda = 0.5$).
-        The \ch{C}$\alpha$--\ch{CO} correlations are shown in (\subref{fig:covariance_cyclo_caco}), and sidechain \ch{C-C} correlations in (\subref{fig:covariance_cyclo_sidechain}).
-        \todo{(\textit{Some} of the peaks in (a) and (c) are artefacts. (b) is very satisfying though---11 peaks for 11 residues. I assigned every peak except for those in the top-right corner of (c)... we \textit{could} crop (c) to show only C$\alpha$--C$\beta$ correlations, which I did completely assign.)}
+        In all cases the peak sign indicates carbon multiplicity; this information is contained in the multiplicity-edited \carbon{} HSQC spectrum and arises naturally during covariance processing.
+        \textbf{(\subref*{fig:covariance_brucine_nc})} \carbon{}--\nitrogen{} correlation spectrum (containing both one- and multiple-bond correlations) obtained by processing the brucine \nitrogen{} HMBC and \carbon{} HSQC spectra (in \cref{fig:abbs_n_hmbc,fig:abbs_c_hsqc}) using unsymmetric indirect covariance.
+        Some artefacts (arising from peak overlap in the \proton{} dimension) are marked with asterisks.
+        \textbf{(\subref*{fig:covariance_cyclo_caco}--\subref*{fig:covariance_cyclo_sidechain})} Insets of \carbon{}--\carbon{} one-bond correlation spectrum, obtained by processing the cyclosporin ADEQUATE and \carbon{} HSQC spectra (in \cref{fig:abbss_adeq,fig:abbss_c_hsqc}) using generalised indirect covariance ($\lambda = 0.5$).
+        The \ch{C}$\upalpha$--\ch{CO} correlations, numbered by residue (see \cref{fig:samples_cyclosporin}), are shown in (\subref*{fig:covariance_cyclo_caco}).
+        Sidechain \ch{C-C} correlations are shown in (\subref*{fig:covariance_cyclo_sidechain}); only peaks corresponding to \ch{C}$\upalpha$--\ch{C}$\upbeta$ correlations are labelled.
+        The inset in (\subref*{fig:covariance_cyclo_sidechain}) has been further subjected to a sign-preserving symmetrisation procedure, described further in \cref{sec:si_symmetrisation}.
     }
     \label{fig:covariance}
 \end{figure}
 
-It is possible to further combine these spectra using indirect covariance processing\autociteset{indirect-covariance} to generate other forms of correlation spectra.
-For example, when processed in this way, the \nitrogen{} HMBC and \carbon{} HSQC yield \carbon{}--\nitrogen{} correlation spectra.\autociteset{cn-covariance}
+Furthermore, the heteronuclear spectra collected this way can be processed using indirect covariance processing\autociteset{indirect-covariance} to yield other forms of correlation spectra.
+For example, the \nitrogen{} HMBC and \carbon{} HSQC can be used to generate \carbon{}--\nitrogen{} correlation spectra.\autociteset{cn-covariance}
 Furthermore, the \carbon{} HSQC and ADEQUATE experiments can be used to create \carbon{}--\carbon{} one-bond correlation spectra.\autociteset{hsqc-adequate}
 It should be further emphasised that all of the `base' spectra used as the inputs here are obtained \textit{in a single measurement} using either the NOAH-4 or NOAH-5 supersequences discussed above.
+A notable benefit of this is that $t_1$ for all modules are incremented simultaneously: this minimises the effects of temporal variations such as temperature drift or chemical reactions, which can lead to inaccurate peaks in covariance spectra.
 
 \section{Conclusion(ish)}
 
+In conclusion, we have demonstrated here how low-sensitivity experiments, such as 1,1-ADEQUATE and \nitrogen{} HMBC, may be optimally combined in NMR supersequences, leading to substantial reductions in experiment time.
+Through a generalisation of our previous concept of parallel supersequences, further high-sensitivity  modules may be added to the supersequence both `horizontally' and `vertically', corresponding respectively to sequential and interleaved acquisition.
+The spectra thus obtained provide the chemist with far more powerful tools for the characterisation of complex molecules, especially in cases where existing NOAH supersequences do not provide sufficient information for unambiguous assignment.
+
 While the generalised supersequences presented here enable modules to be assembled in almost any imaginable way, their increasing complexity mean that pulse programme construction is more difficult.
-At present, the GENESIS tool for automatic pulse sequence generation\autocite{Yong2022AC} only provides limited options for parallel supersequences.
-In particular, it is restricted to only \textit{two} different `threads' (as demonstrated in previous work\autocite{Kupce2021JACSA}); we hope to expand this in the near future.
+At present, the GENESIS tool for automatic pulse sequence generation\autocite{Yong2022AC} provides only limited options for parallel supersequences.
+In particular, it is restricted to only \textit{two} different interleaved modules (as demonstrated in previous work\autocite{Kupce2021JACSA}).
 Different AU programmes are also required to process the data correctly.
 The pulse sequences and processing scripts used in this work are provided in the Bruker User Library, accessible at \url{https://www.bruker.com/en/services/bruker-user-library.html}.
 
-In conclusion, we have demonstrated here how low-sensitivity experiments, such as 1,1-ADEQUATE and \nitrogen{} HMBC, may be combined in NMR supersequences, leading to substantial reductions in experiment time.
-Using the principles of sequential and interleaved acquisition, further high-sensitivity modules may be added almost at will through a generalisation of our previous concept of `parallel' supersequences, where multiple `threads' are executed and divided between several interleaved modules.
-The spectra thus obtained provide the chemist with far more powerful tools for the characterisation of complex molecules, especially in cases where existing NOAH supersequences do not provide sufficient information for unambiguous assignment.
 
 \section*{Acknowledgements}
 
@@ -474,7 +519,7 @@ For ABBS, the thought process is generally as follows:
 
 \todo{(We should move some figures from the main text to here---the only question is which ones?}
 
-Since the \proton{}--\proton{} NOESY uses the same \magnnot{\ch{C}} magnetisation as \carbon{} HMBC so can be directly substituted in its place, leading to a NOAH-4 \noahfour{A}{Bn}{N}{S} supersequence (\cref{fig:abns}).
+Since the \proton{}--\proton{} NOESY uses the same \magnnot{\ch{C}} magnetisation as \carbon{} HMBC so can be directly substituted in its place, leading to a \noah{A,Bn,N,S} supersequence (\cref{fig:abns}).
 This not only provides a wealth of through-bond correlations which aid in eludicating molecular constitution, but also furnishes through-space correlations for the determination of configuration or conformation.
 
 \todo{One \textit{actual} problem here is the receiver gain. For ABBS I had $\texttt{RG} = 2050$, but for this I had to set $\texttt{RG} = 29$(!!).}
@@ -487,17 +532,18 @@ This not only provides a wealth of through-bond correlations which aid in eludic
     {\phantomsubcaption\label{fig:abns_c_hmbc}}
     {\phantomsubcaption\label{fig:abns_c_hsqc}}
     \caption{
-        Spectra obtained from the NOAH-4 \noahfour{A}{Bn}{N}{S} supersequence.
-        \textbf{(\subref{fig:abns_adeq})} 1,1-ADEQUATE (16 transients).
-        \textbf{(\subref{fig:abns_n_hmbc})} \nitrogen{} HMBC (12 transients).
-        \textbf{(\subref{fig:abns_c_hmbc})} NOESY (2 transients, \SI{800}{\ms} mixing time).
-        \textbf{(\subref{fig:abns_c_hsqc})} \carbon{} HSQC (2 transients).
+        Spectra obtained from the \noah{A,Bn,N,S} supersequence.
+        \textbf{(\subref*{fig:abns_adeq})} 1,1-ADEQUATE (16 transients).
+        \textbf{(\subref*{fig:abns_n_hmbc})} \nitrogen{} HMBC (12 transients).
+        \textbf{(\subref*{fig:abns_c_hmbc})} NOESY (2 transients, \SI{800}{\ms} mixing time).
+        \textbf{(\subref*{fig:abns_c_hsqc})} \carbon{} HSQC (2 transients).
         \brucine{}
     }
     \label{fig:abns}
 \end{figure}
 
 
+\clearpage
 \section{ABBS comparison with and without DIPSI}
 
 \begin{figure}[ht]
@@ -507,10 +553,10 @@ This not only provides a wealth of through-bond correlations which aid in eludic
     {\phantomsubcaption\label{fig:dipsi_hsqc_dipsi}}
     {\phantomsubcaption\label{fig:dipsi_projections}}
     \caption{
-        \carbon{} HSQC spectra obtained from the NOAH-4 \noahfour{A}{Bn}{B}{S} experiment (\cref{fig:sequences_abbs}).
-        \textbf{(\subref{fig:dipsi_hsqc_nodipsi})} Without DIPSI mixing between the ADEQUATE and \carbon{} HSQC modules.
-        \textbf{(\subref{fig:dipsi_hsqc_dipsi})} With \SI{35}{\ms} DIPSI mixing between the ADEQUATE and \carbon{} HSQC modules (this spectrum is the same as in \cref{fig:abbs_c_hsqc}).
-        \textbf{(\subref{fig:dipsi_projections})} Projections of the spectra in (\subref{fig:dipsi_hsqc_nodipsi}) and (\subref{fig:dipsi_hsqc_dipsi}) onto the $f_2$ axis.
+        \carbon{} HSQC spectra obtained from the \noah{A,Bn,B,S} experiment (\cref{fig:sequences_abbs}).
+        \textbf{(\subref*{fig:dipsi_hsqc_nodipsi})} Without DIPSI mixing between the ADEQUATE and \carbon{} HSQC modules.
+        \textbf{(\subref*{fig:dipsi_hsqc_dipsi})} With \SI{35}{\ms} DIPSI mixing between the ADEQUATE and \carbon{} HSQC modules (this spectrum is the same as in \cref{fig:abbs_c_hsqc}).
+        \textbf{(\subref*{fig:dipsi_projections})} Projections of the spectra in (\subref*{fig:dipsi_hsqc_nodipsi}) and (\subref*{fig:dipsi_hsqc_dipsi}) onto the $f_2$ axis.
         \brucine{}
     }
     \label{fig:dipsi}
@@ -520,6 +566,39 @@ The average signal enhancement across all peaks is 88\% (\cref{fig:dipsi}).
 
 Similar to results seen previously\autocite{Yong2021JMR}
 
+
+\clearpage
+
+\section{Cyclosporin structure}
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[draft=false,scale=1.2]{figures/cyclosporin.pdf}%
+    \caption[Structure of cyclosporin]{
+        Structure of cyclosporin with residues numbered.
+    }
+    \label{fig:samples_cyclosporin}
+\end{figure}
+
+\section{Symmetrisation procedure}
+\label{sec:si_symmetrisation}
+
+In \cref{fig:covariance_cyclo_sidechain}, the \carbon{}--\carbon{} one-bond covariance spectrum has been subjected to a sign-preserving symmetrisation procedure.
+This is defined by replacing the intensity at each point $p(\Omega_1, \Omega_2)$ by
+\begin{equation}
+    \label{eq:covariance_symmetrisation}
+    p(\Omega_1, \Omega_2) \to \sgn[p(\Omega_1, \Omega_2)] \cdot \min\left\{|p(\Omega_1, \Omega_2)|, |p(\Omega_2, \Omega_1)|\right\}.
+\end{equation}
+Here, $\sgn{p}$ refers to the sign of $p$, or equivalently $p / |p|$ (for $p \neq 0$).
+The $\sgn{p}$ term ensures that the \textit{sign} of each peak (and hence multiplicity information) is preserved, but the (absolute) intensities are symmetrised about the main diagonal, which suppresses artefactual responses arising from coincidental peak overlap.
+
+It should be noted that such a procedure can only be safely carried out where peaks on both sides of the diagonals are expected to be seen.
+For a \textit{true} \carbon{}--\carbon{} correlation spectrum, this would be the case for all pairs of \carbon{} nuclei.
+However, the covariance spectrum shown in \cref{fig:covariance_cyclo_caco,fig:covariance_cyclo_sidechain}does not satisfy this: peaks at $(\Omega_1, \Omega_2)$ are only observed if the carbon at $\Omega_2$ is bonded to at least one proton.
+Thus, if the symmetrisation procedure is applied across the entire spectrum, correlations between quaternary and non-quaternary carbons (such as those in \cref{fig:covariance_cyclo_caco}) will be lost.
+However, in the case of \cref{fig:covariance_cyclo_sidechain}, the alkyl region of cyclosporin does not contain any quaternary carbons, allowing the symmetrisation can be safely carried out.
+
+\clearpage
 
 % Fakesection SI bibliography
 \AtNextBibliography{\small}
