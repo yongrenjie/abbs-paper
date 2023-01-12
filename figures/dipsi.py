@@ -13,7 +13,7 @@ no_dipsi_ints = Brucine.hsqc.integrate(hsqc_without_dipsi, edited=True)
 print(np.mean(dipsi_ints/no_dipsi_ints))
 
 
-fig, axs = pg.subplots2d(1, 3)
+fig, axs = pg.subplots2d(1, 3, figsize=(9, 3.2))
 
 baselev = 1e6
 hbounds = (1.1, 8)
@@ -50,12 +50,13 @@ hsqc_without_dipsi.f2projp().stage(axs[2], bounds=hbounds2,
                                    color=pg.color_palette("deep")[0])
 hsqc_without_dipsi.f2projn().stage(axs[2], bounds=hbounds2,
                                    color=pg.color_palette("deep")[3])
-pg.mkplot(axs[2], title="$f_2$ projections")
+pg.mkplot(axs[2], title="$F_2$ projections")
 legend_colors = [(pg.color_palette('pastel')[0], pg.color_palette('pastel')[3]),
                  (pg.color_palette('deep')[0], pg.color_palette('deep')[3])]
 legend_labels = ['DIPSI', 'no DIPSI']
-axs[2].legend(legend_colors, legend_labels,
+axs[2].legend(legend_colors, legend_labels, fontsize=8, loc='upper center',
               handler_map={tuple: ContourLegendHandler()})
 
+pg.label_axes(axs, fstr='({})', fontweight='semibold', fontsize=14)
 # pg.show()
 pg.savefig(str(__file__).replace('.py', '.png'), dpi=600)
