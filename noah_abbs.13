@@ -1,0 +1,667 @@
+; noah_abbs.13
+; (derived from gns_noah4-ABnqfBS)
+
+; set TD1 as cnst51 * NBL * number of t1 increments
+
+; .2 - preliminary working version
+; .3 - longer CTP gradients for 15N module
+; .4 - DIPSI2 mixing before HSQC
+; .10 - phase incrementation of 15N 90 before t1 and 15N HMBC receiver every loop
+;       (instead of every cnst51 loops, as was the case in .9)
+; .12 - purge gradient between 1H and 13C 90s in ADEQUATE
+; .13 - remove purge gradient when ADEQUATE is being run before 15N HMBC
+
+; =========================================================================
+; set 'NBL' TopSpin parameter to 2
+; 
+;     [zgoptns: use -DPRESAT for presaturation during d1]
+; (cnst51 scans) 13C 1,1-ADEQUATE with ZIP element
+; (cnst52 scans) 15N HMBC (QF) with first-order LPJF
+;     [zgoptns: use -DNLP3 for 'upgrade' to third-order LPJF]
+;     [zgoptns: use -DNLP2 for 'upgrade' to second-order LPJF]
+; (cnst53 scans)  13C HMBC with second-order LPJF
+;     [zgoptns: use -DLP3 for 'upgrade' to third-order LPJF]
+; (remaining scans)   13C HSQC
+;     [zgoptns: use -DEDIT for multiplicity editing]
+; =========================================================================
+
+;$CLASS=HighRes
+;$DIM=2D
+;$TYPE=
+;$SUBTYPE=
+;$COMMENT=
+
+;J. R. J. Yong, E. Kupce, T. D. W. Claridge
+;Anal. Chem. 2022, 94 (4), 2271-2278
+;Modular Pulse Program Generation for NMR Supersequences
+
+;E. Kupce, T. D. W. Claridge
+;Angew. Chem. Int. Ed. 2017, 56 (39), 11779-11783
+;NOAH: NMR Supersequences for Small Molecule Analysis and Structure Elucidation
+
+;B. Reif, M. Kock, R. Kerssebaum, H. Kang, W. Fenical, C. Griesinger
+;J. Magn. Reson. 1996, 118 (2), 282-285
+;ADEQUATE, a New Set of Experiments to Determine the Constitution of Small Molecules at Natural Abundance
+
+#include <Avance.incl>
+#include <Grad.incl>
+#include <Delay.incl>
+
+define delay DC_ADEQa
+define delay DC_ADEQb
+define delay DC_ADEQc
+define delay DC_ADEQd
+define delay DC_ADEQe
+define delay DC_ADEQf
+define delay DC_ADEQg
+define delay DC_HMBC_NOFa
+define delay DC_HMBC_NOFb
+define delay DC_HSQCa
+define delay DC_HSQCb
+define delay DC_HSQCc
+define delay DC_HSQCd
+define delay DC_HSQCe
+define delay DC_HSQCf
+define delay DC_LP2a
+define delay DC_LP2b
+define delay DC_LP3a
+define delay DC_LP3b
+define delay DC_LP3c
+define delay DC_ZZFa
+define delay DC_ZZFb
+define delay DN_HMBC_a
+define delay DN_LP1
+define delay DN_LP2a
+define delay DN_LP2b
+define delay DN_LP3a
+define delay DN_LP3b
+define delay DN_LP3c
+"cnst41        = 2*sfo2/sfo1"                                  ; gradient ratio
+"d0            = 3u"                                           ; 13C HSQC t1
+"d2            = 0.5s/cnst2"                                   ; JCOMP
+"d4            = 0.25s/cnst2"                                  ; 13C INEPT
+"d25           = 3u"                                           ; 15N QF HMBC t1/2
+"d27           = 0.25s/cnst3"                                  ; 1J(CC) evolution
+"d28           = d27-4u"
+"in0           = inf1/2"                                       ; 13C HSQC increment
+"in25          = 1000000/(2*cnst40*sfo3)"                      ; 15N QF HMBC increment: cnst40 = SW(15N)
+"in28          = in0"
+"p2            = p1*2"                                         ; 1H hard 180
+"p8            = p3*1.333"                                     ; 13C 120 deg pulse
+"p17           = p16*cnst16"                                   ; Longer gradients for 15N module
+"p22           = p21*2"                                        ; 15N hard 180
+"DC_ADEQa      = d4-p14/2"
+"DC_ADEQb      = d4+p14/2"
+"DC_ADEQc      = d27-p24/2"
+"DC_ADEQd      = p16+d16-p2-d0*2+4u"
+"DC_ADEQe      = d27-p16-d16-4u-p2-d0"
+"DC_ADEQf      = d6-cnst17*p24/2"
+"DC_ADEQg      = p16+d16+6u"
+"DC_HMBC_NOFa  = (0.5s/cnst13)-p16-d16-4u"
+"DC_HMBC_NOFb  = p16+d16+p2/2+d0-p3*2/PI+4u"
+"DC_HSQCa      = d4-p14/2"
+"DC_HSQCb      = d4+p14/2"
+"DC_HSQCc      = p16+d16+p2/2+d0-p3*2/PI+4u"
+"DC_HSQCd      = d2+p3+p2/2"
+"DC_HSQCe      = DC_HSQCc+p3-p2/2"
+"DC_HSQCf      = DC_HSQCb-p16-d16-p3-de+p1*2/PI-8u"
+"DC_LP2a       = 1s/(2*cnst6)-p16-d16"
+"DC_LP2b       = 1s/(2*cnst7)-p16-d16"
+"DC_LP3a       = 1s/(2*(cnst6+0.07*(cnst7-cnst6)))-p16-d16"
+"DC_LP3b       = 1s/(cnst7+cnst6)-p16-d16"
+"DC_LP3c       = 1s/(2*(cnst7-0.07*(cnst7-cnst6)))-p16-d16"
+"DC_ZZFa       = d4-p14/2"
+"DC_ZZFb       = d4+p14/2"
+"DN_HMBC_a = (0.5s/cnst23)-p17-d16-4u"
+"DN_LP1        = 1s/(2*cnst4)-p17-d16"
+"DN_LP2a       = 1s/(2*cnst26)-p17-d16"
+"DN_LP2b       = 1s/(2*cnst27)-p17-d16"
+"DN_LP3a       = 1s/(2*(cnst26+0.07*(cnst27-cnst26)))-p17-d16"
+"DN_LP3b       = 1s/(cnst27+cnst26)-p17-d16"
+"DN_LP3c       = 1s/(2*(cnst27-0.07*(cnst27-cnst26)))-p17-d16"
+define list<gradient> GC_HMBC_NOF={cnst41}
+define list<gradient> GC_HSQC={cnst41}
+"l0      = td1/2"             ; TD1/NBL (i.e. TD1 for ordinary modules)
+"l1      = 0"                 ; Running counter for TD1
+"l2      = 0"                 ; Running counter for NS (1 on first scan)
+"l3      = 0"                 ; Counter to identify which experiment to run
+"acqt0   = 0" 
+"cnst54  = cnst51 - cnst52 - cnst53"    ; scan multiplier for HSQC
+"l17     = (d30/(p6*115.112))/2"        ; half the number of DIPSI-2 loops
+"l18     = l17*2"                       ; number of DIPSI-2 loops
+baseopt_echo
+
+1 ze
+  "cnst54=cnst54"
+
+  ; check that constant-time period (1/2J(CC)) is longer than t1max
+  ; note: don't use d28 because that is being changed every increment!
+if "(2 * d27) < (td1 * in0 / cnst51)"
+{
+  print "error: ADEQUATE constant-time period is too short: please decrease cnst3, reduce td1, or increase 13C SW"
+  goto end
+}
+
+2 30m
+3 5m do:f2
+4 50u UNBLKGRAD
+
+  1m iu2
+
+  ; Cleanup
+  4u pl2:f2
+  (p3 ph0):f2
+  4u pl3:f3
+  (p21 ph0):f3
+  4u pl1:f1
+  p16:gp0
+  d16
+  (p1 ph0):f1
+  4u
+  p16:gp0*1.37
+  d16
+  4u BLKGRAD
+#ifdef PRESAT
+  4u pl9:f1
+  2m st0
+  d1 cw:f1
+  4u do:f1
+  4u pl1:f1
+#else
+  d1 st0
+#endif /* PRESAT */
+  4u UNBLKGRAD
+
+
+  ; MODULE 1
+  ; 13C 1,1-ADEQUATE {{{1
+
+  ; ZIP element
+#ifdef NOZZFADEQ
+  (p1 ph0):f1
+#else
+  (p1 ph0):f1
+  DC_ADEQa
+  (p14:sp3 ph0):f2 
+  (p2 ph0):f1 
+  DC_ADEQb 
+  (p1 ph0):f1
+  DC_ADEQa
+  (p14:sp3 ph0):f2 
+  (p2 ph0):f1 
+  DC_ADEQb pl2:f2 
+  (p1 ph1):f1
+#endif
+
+  DC_ADEQa
+  (center (p2 ph0):f1 (p14:sp3 ph0):f2 )
+  DC_ADEQa pl2:f2
+
+  ; .12 - added this gradient here
+  ; .13 - added conditional
+  (p1 ph1):f1
+if "l3 % cnst51 >= cnst52"
+{
+  p16:gp29
+}
+  (p3 ph5):f2
+
+
+
+  DC_ADEQc
+  (p24:sp7 ph0):f2
+  DC_ADEQc pl2:f2
+  (p3 ph11):f2
+  d0
+  (p2 ph0):f1
+  d0
+  DC_ADEQd
+  (p24:sp7 ph0):f2
+  4u
+  p16:gp22
+  d16 pl2:f2
+  (p8 ph13):f2
+  4u
+  d28
+  (p24:sp7 ph0):f2
+  4u
+  p16:gp23
+  d16
+  DC_ADEQe pl2:f2
+  (p2 ph0):f1
+  d0
+  (center (p1 ph0):f1 (p3 ph7):f2 )
+  DC_ADEQf
+  (center (p2 ph0):f1 (p24:sp7 ph0):f2 )
+  DC_ADEQf pl2:f2
+  (center (p1 ph1):f1 (p3 ph9):f2 )
+  DC_ADEQa
+  (center (p2 ph0):f1 (p14:sp3 ph0):f2 )
+  DC_ADEQa
+  (p1 ph0):f1
+  DC_ADEQg
+  (p2 ph0):f1
+  3u
+  p16:gp24*EA
+  d16 pl12:f2 
+  3u
+  ; }}}1
+  goscnp ph22 cpd2:f2
+  50u do:f2
+
+if "l3 % cnst51 >= cnst52 + cnst53"
+{
+  ; DIPSI mixing if the next module is HSQC {{{1
+if "d30 > 1m"
+{
+  50u
+  p16:gp13
+  d16 pl10:f1
+						;begin DIPSI2
+11 p6*3.556 ph3
+  p6*4.556 ph1
+  p6*3.222 ph3
+  p6*3.167 ph1
+  p6*0.333 ph3
+  p6*2.722 ph1
+  p6*4.167 ph3
+  p6*2.944 ph1
+  p6*4.111 ph3
+
+  p6*3.556 ph1
+  p6*4.556 ph3
+  p6*3.222 ph1
+  p6*3.167 ph3
+  p6*0.333 ph1
+  p6*2.722 ph3
+  p6*4.167 ph1
+  p6*2.944 ph3
+  p6*4.111 ph1
+
+  p6*3.556 ph1
+  p6*4.556 ph3
+  p6*3.222 ph1
+  p6*3.167 ph3
+  p6*0.333 ph1
+  p6*2.722 ph3
+  p6*4.167 ph1
+  p6*2.944 ph3
+  p6*4.111 ph1
+
+  p6*3.556 ph3
+  p6*4.556 ph1
+  p6*3.222 ph3
+  p6*3.167 ph1
+  p6*0.333 ph3
+  p6*2.722 ph1
+  p6*4.167 ph3
+  p6*2.944 ph1
+  p6*4.111 ph3
+  lo to 11 times l18
+						;end DIPSI2
+  p16:gp13*1.333
+  d16
+}
+  ; }}}1
+}
+
+  ; Cleanup
+  4u pl1:f1
+  4u pl2:f2
+  (p3 ph0):f2
+  4u
+  p16:gp0*1.77
+  d16
+  2m st
+
+if "l3 % cnst51 < cnst52"
+{
+  ; 15N-1H HMBC {{{1
+
+  ; zz-filter
+#ifdef NOZZF
+  ; enable -DNOZZF acquisition flag to remove zz-filter
+  ; only do this if you are sure about what you are doing!
+  (p1 ph0):f1
+#else
+  ; zz-filter
+  (p1 ph0):f1
+  DC_ZZFa
+  (p14:sp3 ph0):f2
+  (p2 ph0):f1
+  DC_ZZFb
+  (p1 ph0):f1
+  DC_ZZFa
+  (p14:sp3 ph0):f2
+  (p2 ph0):f1
+  DC_ZZFb pl2:f2
+  (lalign (p1 ph0):f1 (p3 ph7):f2 )
+#endif
+
+  ; low-pass J-filter
+#ifdef NLP3
+  DN_LP3a
+  p17:gp10*2.8
+  d16
+  (p21 ph7):f3
+  DN_LP3b
+  p17:gp10*-1.6
+  d16
+  (p21 ph7):f3
+  DN_LP3c
+  p17:gp10*-0.8
+  d16
+  (p21 ph7):f3
+  4u
+  p17:gp10*-0.4
+  d16
+#else
+#ifdef NLP2
+  DN_LP2a
+  p17:gp10*-3
+  d16
+  (p21 ph7):f3
+  DN_LP2b
+  p17:gp10*2
+  d16
+  (p21 ph7):f3
+  4u
+  p17:gp10
+  d16
+#else
+  DN_LP1
+  p17:gp10*-1
+  d16
+  (p21 ph7):f3
+  4u
+  p17:gp10
+  d16
+#endif
+#endif
+
+  ; nJ(CH) evolution
+  DN_HMBC_a
+  ; coherence transfer to 13C and t1
+  (p21 ph12):f3
+  d25
+  p17:gp25
+  d16
+  (p2 ph11):f1
+  d25
+  p17:gp26
+  d16
+  (p21 ph0):f3
+  4u
+  p17:gp27
+  d16
+  4u
+  ; }}}1
+  go=2 ph26
+}
+else
+{
+if "l3 % cnst51 < cnst52 + cnst53"
+{
+  ; 13C-1H HMBC {{{1
+
+  ; excitation and low-pass J-filter
+  (p1 ph0):f1
+#ifdef LP3
+  DC_LP3a
+  p16:gp10*2.8
+  d16
+  (p3 ph7):f2
+  DC_LP3b
+  p16:gp10*-1.6
+  d16
+  (p3 ph7):f2
+  DC_LP3c
+  p16:gp10*-0.8
+  d16
+  (p3 ph7):f2
+  4u
+  p16:gp10*-0.4
+  d16
+#else
+  DC_LP2a
+  p16:gp10*-3
+  d16
+  (p3 ph7):f2
+  DC_LP2b
+  p16:gp10*2
+  d16
+  (p3 ph7):f2
+  4u
+  p16:gp10
+  d16
+#endif
+
+  ; nJ(CH) evolution
+  DC_HMBC_NOFa
+  ; coherence transfer to 13C and t1
+  (p3 ph7):f2
+  DC_HMBC_NOFb
+  (p14:sp3 ph0):f2
+  4u
+  p16:gp1
+  d16
+  d0
+  (p2 ph11):f1
+  d0
+  4u
+  p16:gp1
+  d16
+  (p14:sp3 ph0):f2
+  DC_HMBC_NOFb pl2:f2
+  (p3 ph5):f2
+  ; (p2 ph0):f1  ; as it's placed last, don't need this
+  4u
+  p16:gp1*EA*GC_HMBC_NOF
+  d16
+  4u
+  ; }}}1
+  go=2 ph30
+}
+else
+{
+  ; 13C-1H HSQC {{{1
+
+  ; INEPT
+  (p1 ph0):f1
+  DC_HSQCa
+  (p14:sp3 ph0):f2
+  (p2 ph0):f1
+  DC_HSQCb pl2:f2
+  (p1 ph1):f1
+  (p3 ph5):f2
+  DC_HSQCc
+
+  ; t1 period
+#ifdef EDIT
+  (p31:sp18 ph0):f2
+#else
+  (p14:sp3 ph0):f2
+#endif /* EDIT */
+  4u
+  p16:gp4
+  d16
+  d0
+  (p2 ph11):f1
+  d0
+  4u
+  p16:gp4
+  d16
+
+  ; multiplicity editing
+#ifdef EDIT
+  DC_HSQCd
+  (p31:sp18 ph0):f2
+  DC_HSQCe
+  (p2 ph1):f1
+  d2 pl2:f2
+#else
+  (p14:sp3 ph0):f2
+  DC_HSQCc pl2:f2
+#endif /* EDIT */
+
+  ; reverse INEPT
+  (p3 ph7):f2
+  (p1 ph0):f1
+  DC_HSQCa
+  (p14:sp3 ph0):f2
+  (p2 ph1):f1
+  4u
+  p16:gp4*EA*GC_HSQC
+  d16 pl2:f2
+  DC_HSQCf
+  (p3 ph0):f2
+  4u pl12:f2
+  ; }}}1
+  go=2 ph30 cpd2:f2
+  50u do:f2
+}
+}
+
+  ; incrementation on every pass
+  1m iu3 
+  1m ip12*2
+  1m ip26*2
+  30m wr #0 if #0 zd
+
+  ; increment every cnst51 passes
+if "l3 % cnst51 == 0"
+{
+  1m iu1
+  1m igrad EA
+  1m ip9*2      ; ADEQUATE sensitivity enhancement pulse
+  1m id25       ; 15N HMBC t1
+}
+
+  ; increment every 2*cnst51 passes
+if "l3 % (2 * cnst51) == 0"
+{
+  1m ip5*2      ; 13C 90 in INEPT
+  1m ip22*2     ; ADEQUATE receiver
+  1m ip30*2     ; 13C receiver
+  1m id0        ; 13C t1
+  1m dd28       ; ADEQUATE constant-time
+}
+
+  lo to 4 times l0
+
+end, 4u
+50u BLKGRAD
+exit
+
+ph0=0
+ph1=1
+ph2=2
+ph3=3
+ph5=0 2
+ph7=0 0 2 2
+ph9=1 1 3 3
+ph11=0 0 0 0 2 2 2 2
+ph12=0 2
+ph13=0 0 0 0 0 0 0 0 2 2 2 2 2 2 2 2
+ph22=0 2 2 0 2 0 0 2 2 0 0 2 0 2 2 0
+ph26=0 2
+ph30=0 2 2 0
+
+;gpnam0: SMSQ10.100
+;gpnam1: SMSQ10.100
+;gpnam4: SMSQ10.100
+;gpnam10: SMSQ10.100
+;gpnam13: SMSQ10.100
+;gpnam22: SMSQ10.100
+;gpnam23: SMSQ10.100
+;gpnam24: SMSQ10.100
+;gpnam25: SMSQ10.100
+;gpnam26: SMSQ10.100
+;gpnam27: SMSQ10.100
+;gpnam29: SMSQ10.100
+;gpz0: 29% (for purging)
+;gpz1: 80% (HMBC CTP)
+;gpz4: 70% (13C CTP)
+;gpz10: 5% (HMBC J-filter)
+;gpz13: 19% (purge gradients surrounding DIPSI)
+;gpz22: 78.5% (13C ADEQUATE CTP)
+;gpz23: 77.6% (13C ADEQUATE CTP)
+;gpz24: -59% (13C ADEQUATE CTP)
+;gpz25: 70% (15N HMBC CTP)
+;gpz26: 30% (15N HMBC CTP)
+;gpz27: 50.1% (15N HMBC CTP)
+;gpz29: 27% (purge)
+
+;WaveMaker shaped pulses (use 'wvm -a' to generate)
+;sp3:wvm:wu180C13: cawurst-20(60 kHz, 0.5 ms; L2H)
+;sp18:wvm:wu180Jcomp: cawurst-40(280 ppm; Jcomp, L2H)
+;cpd2:wvm:wudec: cawurst_d-20(220 ppm, 1.4 ms; L2H)
+
+;d0: 13C t1
+;d2: 1/2J(CH)
+;d4: 1/4J(CH)
+;d25: 15N t1 (magnitude-mode)
+;d27: 1/4J(CC)
+;d28: decremented delay for 1,1-ADEQUATE
+;d16: delay for homospoil/gradient recovery [200 us]
+;d6: 1/8J(CH) for all multiplicities, 1/4J(CH) for CH only
+;d1: relaxation delay
+;cnst2: = 1J(CH)
+;cnst3: = 1J(CC)
+;cnst4: = 1J(NH)
+;cnst6: = minimum 1J(CH)
+;cnst7: = maximum 1J(CH)
+;cnst13: = nJ(CH) long-range
+;cnst16: 15N CTP gradient lengthening factor
+;cnst17: = -0.5 for Crp60comp.4
+;cnst23: = nJ(NH) long-range
+;cnst26: = minimum 1J(NH)
+;cnst27: = maximum 1J(NH)
+;cnst40: 15N SW (ppm)
+;cnst41: gradient ratio (2*C/H)
+;cpd2: 13C decoupling according to sequence defined by cpdprg2
+;l0: TD1 / NBL, i.e. 'true TD1'
+;l1: running counter for true TD1 (0 on first increment)
+;p1: f1 channel -  90 degree high power pulse
+;p2: f1 channel - 180 degree high power pulse
+;p3: f2 channel -  90 degree high power pulse
+;p8: f2 channel - 120 degree high power pulse (1,1-ADEQUATE)
+;p14: f2 channel - 180 degree inversion [500 us for Crp60,0.5,20.1]
+;p16: gradient pulse [1 ms]
+;p17: extended gradient pulse for 15N HSQC
+;p21: f3 channel -  90 degree high power pulse
+;p22: f3 channel - 180 degree high power pulse
+;p24: f2 channel - 180 degree refocusing [2 ms for Crp60comp.4]
+;p31: f2 channel - 180 degree inversion with J-compensation
+;pl1: f1 channel - power level for pulse (default)
+;pl2: f2 channel - power level for pulse (default)
+;pl3: f3 channel - power level for pulse (default)
+;pl9: f1 channel - power level for presaturation
+;pl12: f2 channel - power level for CPD/BB decoupling
+;sp3: 13C adiabatic inversion
+;sp7: 13C composite adiabatic refocusing
+;sp18: 13C J-compensated refocusing
+;spnam3: Crp60,0.5,20.1 or WaveMaker
+;spnam7: Crp60comp.4
+;spnam18: Crp60_xfilt.2 or WaveMaker
+;aq: acquisition time
+;ds: >= 16
+;FnMODE: echo-antiecho
+;NBL: number of blocks (NOAH modules)
+;ns: 1 * n
+;cnst51: ADEQUATE scan multiplier
+;cnst52: 15N HMBC scan multiplier
+;cnst53: 13C HMBC scan multiplier
+;cnst54: 13C HSQC scan multiplier
+;p6: f1 channel -  90 degree low power pulse for TOCSY
+;pl10: f1 channel - power level for TOCSY-spinlock
+;d30: DIPSI-2 mixing time (between ADEQUATE and HSQC)
+;l17: DIPSI-2 (between ADEQUATE and HSQC): half the number of DIPSI-2 cycles
+;l18: DIPSI-2 (between ADEQUATE and HSQC): actual number of DIPSI-2 cycles
+
+
+; auprog: noah_hsqc:noah_nhmbc QF:noah_hmbc:noah_hsqc
+; module identifiers: C_ADEQ N_HMBC_CFQF C_HMBC_NOF C_HSQC
+; pulse programme created by genesis-v2.1.6, https://nmr-genesis.co.uk
+; Mon Mar 21 2022 17:58:18 GMT+0000 (Greenwich Mean Time)
+; vim: foldmethod=marker
