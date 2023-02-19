@@ -1,0 +1,809 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   inkscape:export-ydpi="1000"
+   inkscape:export-xdpi="1000"
+   inkscape:export-filename="/Users/yongrenjie/Desktop/a.png"
+   sodipodi:docname="toc.svg"
+   inkscape:version="1.2.2 (b0a8486, 2022-12-01)"
+   id="svg8"
+   version="1.1"
+   viewBox="0 0 80.000001 40"
+   height="4cm"
+   width="8cm"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs2">
+    <marker
+       style="overflow:visible"
+       id="Arrow1Mend"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Mend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path30241" />
+    </marker>
+    <rect
+       x="180"
+       y="110"
+       width="490"
+       height="60"
+       id="rect44379" />
+    <marker
+       style="overflow:visible"
+       id="Arrow1Send"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Send"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.2,0,0,-0.2,-1.2,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path4199" />
+    </marker>
+    <rect
+       x="125.67708"
+       y="59.53125"
+       width="7.9375"
+       height="2.6458333"
+       id="rect2417" />
+    <rect
+       x="66.145836"
+       y="30.427082"
+       width="11.90625"
+       height="7.9375"
+       id="rect2405" />
+    <rect
+       id="rect2417-5"
+       height="2.6458333"
+       width="7.9375"
+       y="59.53125"
+       x="125.67708" />
+    <rect
+       id="rect3112"
+       height="2.6458333"
+       width="7.9375"
+       y="59.53125"
+       x="125.67708" />
+    <rect
+       x="125.67708"
+       y="59.53125"
+       width="7.9375"
+       height="2.6458333"
+       id="rect2417-5-4" />
+    <rect
+       x="125.67708"
+       y="59.53125"
+       width="7.9375"
+       height="2.6458333"
+       id="rect1299" />
+    <rect
+       id="rect2417-2"
+       height="2.6458333"
+       width="7.9375"
+       y="59.53125"
+       x="125.67708" />
+    <rect
+       id="rect1704"
+       height="2.6458333"
+       width="7.9375"
+       y="59.53125"
+       x="125.67708" />
+    <rect
+       x="125.67708"
+       y="59.53125"
+       width="7.9375"
+       height="2.6458333"
+       id="rect2417-2-5" />
+    <rect
+       x="125.67708"
+       y="59.53125"
+       width="7.9375"
+       height="2.6458333"
+       id="rect1911" />
+    <rect
+       id="rect2417-7"
+       height="2.6458333"
+       width="7.9375"
+       y="59.53125"
+       x="125.67708" />
+    <rect
+       id="rect628"
+       height="2.6458333"
+       width="7.9375"
+       y="59.53125"
+       x="125.67708" />
+    <rect
+       x="125.67708"
+       y="59.53125"
+       width="7.9375"
+       height="2.6458333"
+       id="rect2417-7-0" />
+    <rect
+       x="125.67708"
+       y="59.53125"
+       width="7.9375"
+       height="2.6458333"
+       id="rect1265" />
+    <rect
+       id="rect2417-7-0-8"
+       height="2.6458333"
+       width="7.9375"
+       y="59.53125"
+       x="125.67708" />
+    <rect
+       id="rect1352"
+       height="2.6458333"
+       width="7.9375"
+       y="59.53125"
+       x="125.67708" />
+    <rect
+       x="125.67708"
+       y="59.53125"
+       width="7.9375"
+       height="2.6458333"
+       id="rect2417-7-2" />
+    <rect
+       x="125.67708"
+       y="59.53125"
+       width="7.9375"
+       height="2.6458333"
+       id="rect1645" />
+    <rect
+       id="rect2417-7-0-3"
+       height="2.6458333"
+       width="7.9375"
+       y="59.53125"
+       x="125.67708" />
+    <rect
+       id="rect1648"
+       height="2.6458333"
+       width="7.9375"
+       y="59.53125"
+       x="125.67708" />
+    <rect
+       x="125.67708"
+       y="59.53125"
+       width="7.9375"
+       height="2.6458333"
+       id="rect2417-7-4" />
+    <rect
+       x="125.67708"
+       y="59.53125"
+       width="7.9375"
+       height="2.6458333"
+       id="rect1937" />
+    <rect
+       x="125.67708"
+       y="59.53125"
+       width="7.9375"
+       height="2.6458333"
+       id="rect2417-7-6" />
+    <rect
+       x="125.67708"
+       y="59.53125"
+       width="7.9375"
+       height="2.6458333"
+       id="rect2315" />
+    <rect
+       id="rect2417-7-0-0"
+       height="2.6458333"
+       width="7.9375"
+       y="59.53125"
+       x="125.67708" />
+    <rect
+       id="rect2318"
+       height="2.6458333"
+       width="7.9375"
+       y="59.53125"
+       x="125.67708" />
+    <rect
+       id="rect2417-7-4-4"
+       height="2.6458333"
+       width="7.9375"
+       y="59.53125"
+       x="125.67708" />
+    <rect
+       id="rect2321"
+       height="2.6458333"
+       width="7.9375"
+       y="59.53125"
+       x="125.67708" />
+    <rect
+       x="125.67708"
+       y="59.53125"
+       width="7.9375"
+       height="2.6458333"
+       id="rect2417-5-7" />
+    <rect
+       x="125.67708"
+       y="59.53125"
+       width="7.9375"
+       height="2.6458333"
+       id="rect1918" />
+    <rect
+       x="125.67708"
+       y="59.53125"
+       width="7.9375"
+       height="2.6458333"
+       id="rect2417-5-7-9" />
+    <rect
+       x="125.67708"
+       y="59.53125"
+       width="7.9375"
+       height="2.6458333"
+       id="rect1827" />
+    <rect
+       x="125.67708"
+       y="59.53125"
+       width="7.9375"
+       height="2.6458333"
+       id="rect2417-5-7-9-5" />
+    <rect
+       x="125.67708"
+       y="59.53125"
+       width="7.9375"
+       height="2.6458333"
+       id="rect2715" />
+    <rect
+       x="125.67708"
+       y="59.53125"
+       width="7.9375"
+       height="2.6458333"
+       id="rect2417-5-7-9-5-0" />
+    <rect
+       x="125.67708"
+       y="59.53125"
+       width="7.9375"
+       height="2.6458333"
+       id="rect3097" />
+    <rect
+       x="125.67708"
+       y="59.53125"
+       width="7.9375"
+       height="2.6458333"
+       id="rect2417-5-7-8" />
+    <rect
+       x="125.67708"
+       y="59.53125"
+       width="7.9375"
+       height="2.6458333"
+       id="rect2046" />
+    <rect
+       id="rect2417-5-0"
+       height="2.6458333"
+       width="7.9375"
+       y="59.53125"
+       x="125.67708" />
+    <rect
+       id="rect2691"
+       height="2.6458333"
+       width="7.9375"
+       y="59.53125"
+       x="125.67708" />
+    <rect
+       x="125.67708"
+       y="59.53125"
+       width="7.9375"
+       height="2.6458333"
+       id="rect2417-5-7-9-7" />
+    <marker
+       style="overflow:visible"
+       id="Arrow1Send-9"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Send"
+       inkscape:isstock="true"
+       viewBox="0 0 4.4434635 2.539122"
+       markerWidth="4.4434633"
+       markerHeight="2.5391221"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="matrix(-0.2,0,0,-0.2,-1.2,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path4199-7" />
+    </marker>
+    <rect
+       x="125.67708"
+       y="59.53125"
+       width="7.9375"
+       height="2.6458333"
+       id="rect2417-5-7-2" />
+    <rect
+       id="rect2417-5-49"
+       height="2.6458333"
+       width="7.9375"
+       y="59.53125"
+       x="125.67708" />
+    <marker
+       style="overflow:visible"
+       id="Arrow1Mend-0"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Mend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path30241-2" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow1Sstart"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Sstart"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(0.2,0,0,0.2,1.2,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path12224" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow1Send-1"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Send"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.2,0,0,-0.2,-1.2,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path4199-4" />
+    </marker>
+    <rect
+       x="180"
+       y="110"
+       width="490"
+       height="60"
+       id="rect44379-0" />
+    <rect
+       x="125.67708"
+       y="59.53125"
+       width="7.9375"
+       height="2.6458333"
+       id="rect2417-5-7-2-6" />
+    <marker
+       style="overflow:visible"
+       id="Arrow1Send-9-1"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Send"
+       inkscape:isstock="true"
+       viewBox="0 0 4.4434635 2.539122"
+       markerWidth="4.4434633"
+       markerHeight="2.5391221"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="matrix(-0.2,0,0,-0.2,-1.2,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path4199-7-2" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2.1361794"
+     inkscape:cx="220.95522"
+     inkscape:cy="110.71167"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="true"
+     inkscape:window-width="1836"
+     inkscape:window-height="828"
+     inkscape:window-x="1536"
+     inkscape:window-y="25"
+     inkscape:window-maximized="0"
+     inkscape:snap-object-midpoints="false"
+     inkscape:snap-text-baseline="true"
+     inkscape:pagecheckerboard="0"
+     width="168.11258mm"
+     height="63.99099mm"
+     inkscape:showpageshadow="2"
+     inkscape:deskcolor="#d1d1d1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid1346"
+       originx="-39.587503"
+       originy="-21.066664" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-39.5875,-21.066666)">
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264584px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 86.507352,33.198358 H 107.67402"
+       id="path24830-81-5-9-0-2"
+       inkscape:export-filename="/Users/yongrenjie/dphil/paper/abbs/figures/sequences.png"
+       inkscape:export-xdpi="1000.0667"
+       inkscape:export-ydpi="1000.0667" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264584px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 86.507352,41.135858 H 107.67402"
+       id="path24830-81-5-9-0-2-2"
+       inkscape:export-filename="/Users/yongrenjie/dphil/paper/abbs/figures/sequences.png"
+       inkscape:export-xdpi="1000.0667"
+       inkscape:export-ydpi="1000.0667" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264584px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 86.507352,49.073361 H 107.67402"
+       id="path24830-81-5-9-0-2-5"
+       inkscape:export-filename="/Users/yongrenjie/dphil/paper/abbs/figures/sequences.png"
+       inkscape:export-xdpi="1000.0667"
+       inkscape:export-ydpi="1000.0667" />
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,4.5431315e-6,-10.583332)"
+       id="text44377"
+       style="font-size:10.6667px;line-height:1.25;font-family:'Source Sans Pro';-inkscape-font-specification:'Source Sans Pro, Normal';white-space:pre;shape-inside:url(#rect44379);display:inline" />
+    <text
+       xml:space="preserve"
+       style="font-size:2.82223px;line-height:1.25;font-family:'Source Sans 3';-inkscape-font-specification:'Source Sans 3';stroke-width:0.264583"
+       x="93.927094"
+       y="67.46875"
+       id="text18651"><tspan
+         sodipodi:role="line"
+         id="tspan18649"
+         style="stroke-width:0.264583"
+         x="93.927094"
+         y="67.46875" /></text>
+    <text
+       xml:space="preserve"
+       style="font-size:2.82223px;line-height:1.25;font-family:'Source Sans 3';-inkscape-font-specification:'Source Sans 3';stroke-width:0.264583"
+       x="128.32292"
+       y="31.75"
+       id="text3038"><tspan
+         sodipodi:role="line"
+         id="tspan3036"
+         style="stroke-width:0.264583"
+         x="128.32292"
+         y="31.75" /></text>
+    <path
+       style="fill:none;stroke:#666666;stroke-width:0.264585;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.264585, 0.264585;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 83.861519,41.135858 h 1.322916"
+       id="path24830-81-5-9-0-2-2-0"
+       inkscape:export-filename="/Users/yongrenjie/dphil/paper/abbs/figures/sequences.png"
+       inkscape:export-xdpi="1000.0667"
+       inkscape:export-ydpi="1000.0667" />
+    <rect
+       style="fill:#d7f8f6;fill-opacity:1;stroke:#000000;stroke-width:0.265001;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect14470-8-1-3-49-3-1-8"
+       width="13.229171"
+       height="5.2916665"
+       x="87.830269"
+       y="30.552526"
+       ry="1.3229166"
+       inkscape:export-filename="/Users/yongrenjie/dphil/paper/abbs/figures/sequences.png"
+       inkscape:export-xdpi="1000.0667"
+       inkscape:export-ydpi="1000.0667" />
+    <path
+       inkscape:export-ydpi="1000.0667"
+       inkscape:export-xdpi="1000.0667"
+       style="fill:none;stroke:#000000;stroke-width:0.2;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 101.74787,31.061502 c 0.039,0.0385 0.0778,0.29475 0.11671,0.6885 0.0389,0.39363 0.0778,0.92049 0.11677,1.44196 0.0389,0.5215 0.0778,1.03275 0.11671,1.41236 0.0389,0.3796 0.0778,0.62409 0.11671,0.68737 0.039,0.0633 0.0778,-0.0549 0.11678,-0.30967 0.0389,-0.25472 0.0778,-0.64343 0.11671,-1.06056 0.0389,-0.41714 0.0778,-0.85889 0.11671,-1.21709 0.0389,-0.3582 0.0778,-0.62963 0.11671,-0.7573 0.0389,-0.12773 0.0778,-0.11068 0.11677,0.0337 0.0389,0.14439 0.0778,0.41462 0.11671,0.73435 0.0389,0.31971 0.0778,0.68587 0.11672,1.00647 0.0389,0.32067 0.0778,0.59281 0.1167,0.75574 0.0389,0.16294 0.0778,0.21537 0.11678,0.15479 0.0389,-0.0605 0.0778,-0.23323 0.11672,-0.46645 0.0389,-0.23321 0.0778,-0.52468 0.1167,-0.79925 0.0389,-0.27448 0.0778,-0.52954 0.11671,-0.70574 0.0389,-0.17628 0.0778,-0.27222 0.11678,-0.27222 0.0389,-9e-5 0.0778,0.0957 0.11671,0.2554 0.0389,0.15973 0.0778,0.38187 0.11671,0.60754 0.0389,0.22561 0.0778,0.4526 0.11678,0.62645 0.0389,0.17377 0.0778,0.29294 0.1167,0.33394 0.0389,0.0409 0.0778,0.003 0.11672,-0.0963 0.0389,-0.0998 0.0778,-0.26078 0.11671,-0.43879 0.0389,-0.17802 0.0778,-0.37138 0.11678,-0.53239 0.0389,-0.16096 0.0778,-0.2881 0.1167,-0.35405 0.0389,-0.066 0.0778,-0.0702 0.11672,-0.0173 0.0389,0.0529 0.0778,0.16207 0.11671,0.29641 0.0389,0.13436 0.0778,0.29251 0.11678,0.43446 0.0389,0.14188 0.0778,0.26616 0.1167,0.34478 0.0389,0.0785 0.0778,0.11081 0.11672,0.0931 0.0389,-0.0176 0.0778,-0.0849 0.11677,-0.18105 0.0389,-0.0961 0.0778,-0.22031 0.11671,-0.34016 0.0389,-0.11984 0.0778,-0.23427 0.11671,-0.31626 0.0389,-0.0821 0.0778,-0.13112 0.11671,-0.13831"
+       title="cos(x)*exp(-x/15)"
+       id="path3919-7-8-6-8-1-1-3-2-5-6-0-2-4"
+       inkscape:export-filename="/Users/yongrenjie/dphil/paper/abbs/figures/sequences.png" />
+    <text
+       xml:space="preserve"
+       style="font-size:2.82223px;line-height:1.25;font-family:'Source Sans 3';-inkscape-font-specification:'Source Sans 3';stroke-width:0.264583"
+       x="88.734383"
+       y="34.124054"
+       id="text17961-9-7-1-4-0-9"
+       inkscape:export-filename="/Users/yongrenjie/dphil/paper/abbs/figures/sequences.png"
+       inkscape:export-xdpi="1000.0667"
+       inkscape:export-ydpi="1000.0667"><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="88.734383"
+         y="34.124054"
+         id="tspan16318"><tspan
+   style="font-size:65%;baseline-shift:super"
+   id="tspan3158-5-4-3">15</tspan>N HMBC</tspan></text>
+    <rect
+       style="fill:#ffd3d1;fill-opacity:1;stroke:#000000;stroke-width:0.265001;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect14470-8-1-3-49-3-1-8-5"
+       width="13.229171"
+       height="5.2916665"
+       x="87.830269"
+       y="46.427536"
+       ry="1.3229166"
+       inkscape:export-filename="/Users/yongrenjie/dphil/paper/abbs/figures/sequences.png"
+       inkscape:export-xdpi="1000.0667"
+       inkscape:export-ydpi="1000.0667" />
+    <path
+       inkscape:export-ydpi="1000.0667"
+       inkscape:export-xdpi="1000.0667"
+       style="fill:none;stroke:#000000;stroke-width:0.2;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 101.74787,46.936511 c 0.039,0.0385 0.0778,0.29475 0.11671,0.6885 0.0389,0.39363 0.0778,0.9205 0.11677,1.44197 0.0389,0.5215 0.0778,1.03275 0.11671,1.41236 0.0389,0.3796 0.0778,0.62409 0.11671,0.68737 0.039,0.0633 0.0778,-0.0549 0.11678,-0.30967 0.0389,-0.25472 0.0778,-0.64343 0.11671,-1.06056 0.0389,-0.41714 0.0778,-0.85889 0.11671,-1.21709 0.0389,-0.35821 0.0778,-0.62964 0.11671,-0.75731 0.0389,-0.12773 0.0778,-0.11068 0.11677,0.0337 0.0389,0.14439 0.0778,0.41462 0.11671,0.73436 0.0389,0.31971 0.0778,0.68587 0.11672,1.00647 0.0389,0.32067 0.0778,0.59281 0.1167,0.75574 0.0389,0.16294 0.0778,0.21537 0.11678,0.15479 0.0389,-0.0605 0.0778,-0.23323 0.11672,-0.46645 0.0389,-0.23321 0.0778,-0.52468 0.1167,-0.79925 0.0389,-0.27448 0.0778,-0.52954 0.11671,-0.70574 0.0389,-0.17629 0.0778,-0.27223 0.11678,-0.27223 0.0389,-9e-5 0.0778,0.0957 0.11671,0.2554 0.0389,0.15974 0.0778,0.38188 0.11671,0.60755 0.0389,0.22561 0.0778,0.4526 0.11678,0.62645 0.0389,0.17377 0.0778,0.29294 0.1167,0.33394 0.0389,0.0409 0.0778,0.003 0.11672,-0.0963 0.0389,-0.0998 0.0778,-0.26078 0.11671,-0.43879 0.0389,-0.17802 0.0778,-0.37138 0.11678,-0.53239 0.0389,-0.16096 0.0778,-0.2881 0.1167,-0.35405 0.0389,-0.066 0.0778,-0.0702 0.11672,-0.0173 0.0389,0.0529 0.0778,0.16207 0.11671,0.29641 0.0389,0.13436 0.0778,0.29251 0.11678,0.43446 0.0389,0.14188 0.0778,0.26616 0.1167,0.34478 0.0389,0.0785 0.0778,0.11081 0.11672,0.0931 0.0389,-0.0176 0.0778,-0.0849 0.11677,-0.18105 0.0389,-0.0961 0.0778,-0.22031 0.11671,-0.34016 0.0389,-0.11984 0.0778,-0.23427 0.11671,-0.31626 0.0389,-0.0821 0.0778,-0.13112 0.11671,-0.13831"
+       title="cos(x)*exp(-x/15)"
+       id="path3919-7-8-6-8-1-1-3-2-5-6-0-2-4-7"
+       inkscape:export-filename="/Users/yongrenjie/dphil/paper/abbs/figures/sequences.png" />
+    <text
+       xml:space="preserve"
+       style="font-size:2.82223px;line-height:1.25;font-family:'Source Sans 3';-inkscape-font-specification:'Source Sans 3';stroke-width:0.264583"
+       x="89.00724"
+       y="49.999069"
+       id="text17961-9-7-1-4-0-9-0"
+       inkscape:export-filename="/Users/yongrenjie/dphil/paper/abbs/figures/sequences.png"
+       inkscape:export-xdpi="1000.0667"
+       inkscape:export-ydpi="1000.0667"><tspan
+         sodipodi:role="line"
+         id="tspan17959-6-4-75-8-4-7-0"
+         style="stroke-width:0.264583"
+         x="89.00724"
+         y="49.999069"><tspan
+   style="font-size:65%;baseline-shift:super"
+   id="tspan3158-5-4-3-5">13</tspan>C HSQC</tspan></text>
+    <rect
+       style="fill:#ffdcc4;fill-opacity:1;stroke:#000000;stroke-width:0.265001;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect14470-8-1-3-49-3-9-5-1"
+       width="13.229171"
+       height="5.2916665"
+       x="87.830269"
+       y="38.490028"
+       ry="1.3229166"
+       inkscape:export-filename="/Users/yongrenjie/dphil/paper/abbs/figures/sequences.png"
+       inkscape:export-xdpi="1000.0667"
+       inkscape:export-ydpi="1000.0667" />
+    <path
+       inkscape:export-ydpi="1000.0667"
+       inkscape:export-xdpi="1000.0667"
+       style="fill:none;stroke:#000000;stroke-width:0.2;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 101.74787,38.999002 c 0.039,0.0385 0.0778,0.29475 0.11671,0.6885 0.0389,0.39363 0.0778,0.92049 0.11677,1.44196 0.0389,0.5215 0.0778,1.03275 0.11671,1.41236 0.0389,0.3796 0.0778,0.62409 0.11671,0.68737 0.039,0.0633 0.0778,-0.0549 0.11678,-0.30967 0.0389,-0.25472 0.0778,-0.64343 0.11671,-1.06056 0.0389,-0.41714 0.0778,-0.85889 0.11671,-1.21709 0.0389,-0.3582 0.0778,-0.62963 0.11671,-0.7573 0.0389,-0.12773 0.0778,-0.11068 0.11677,0.0337 0.0389,0.14439 0.0778,0.41462 0.11671,0.73435 0.0389,0.31971 0.0778,0.68587 0.11672,1.00647 0.0389,0.32067 0.0778,0.59281 0.1167,0.75574 0.0389,0.16294 0.0778,0.21537 0.11678,0.15479 0.0389,-0.0605 0.0778,-0.23323 0.11672,-0.46645 0.0389,-0.23321 0.0778,-0.52468 0.1167,-0.79925 0.0389,-0.27448 0.0778,-0.52954 0.11671,-0.70574 0.0389,-0.17628 0.0778,-0.27222 0.11678,-0.27222 0.0389,-9e-5 0.0778,0.0957 0.11671,0.2554 0.0389,0.15973 0.0778,0.38187 0.11671,0.60754 0.0389,0.22561 0.0778,0.4526 0.11678,0.62645 0.0389,0.17377 0.0778,0.29294 0.1167,0.33394 0.0389,0.0409 0.0778,0.003 0.11672,-0.0963 0.0389,-0.0998 0.0778,-0.26078 0.11671,-0.43879 0.0389,-0.17802 0.0778,-0.37138 0.11678,-0.53239 0.0389,-0.16096 0.0778,-0.2881 0.1167,-0.35405 0.0389,-0.066 0.0778,-0.0702 0.11672,-0.0173 0.0389,0.0529 0.0778,0.16207 0.11671,0.29641 0.0389,0.13436 0.0778,0.29251 0.11678,0.43446 0.0389,0.14188 0.0778,0.26616 0.1167,0.34478 0.0389,0.0785 0.0778,0.11081 0.11672,0.0931 0.0389,-0.0176 0.0778,-0.0849 0.11677,-0.18105 0.0389,-0.0961 0.0778,-0.22031 0.11671,-0.34016 0.0389,-0.11984 0.0778,-0.23427 0.11671,-0.31626 0.0389,-0.0821 0.0778,-0.13112 0.11671,-0.13831"
+       title="cos(x)*exp(-x/15)"
+       id="path3919-7-8-6-8-1-1-3-2-5-6-0-7-9-0"
+       inkscape:export-filename="/Users/yongrenjie/dphil/paper/abbs/figures/sequences.png" />
+    <text
+       xml:space="preserve"
+       style="font-size:2.82223px;line-height:1.25;font-family:'Source Sans 3';-inkscape-font-specification:'Source Sans 3';stroke-width:0.264583"
+       x="88.841881"
+       y="42.061569"
+       id="text17961-9-7-1-4-3-7-2"
+       inkscape:export-filename="/Users/yongrenjie/dphil/paper/abbs/figures/sequences.png"
+       inkscape:export-xdpi="1000.0667"
+       inkscape:export-ydpi="1000.0667"><tspan
+         sodipodi:role="line"
+         id="tspan17959-6-4-75-8-7-5-3"
+         style="stroke-width:0.264583"
+         x="88.841881"
+         y="42.061569"><tspan
+   style="font-size:65%;baseline-shift:super"
+   id="tspan3158-5-5-3-7">13</tspan>C HMBC</tspan></text>
+    <path
+       inkscape:export-ydpi="1000.0667"
+       inkscape:export-xdpi="1000.0667"
+       style="fill:none;stroke:#000000;stroke-width:0.2;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 76.612417,38.999005 c 0.039,0.0385 0.0778,0.29475 0.11671,0.6885 0.0389,0.39363 0.0778,0.92049 0.11677,1.44196 0.0389,0.5215 0.0778,1.03275 0.11671,1.41236 0.0389,0.3796 0.0778,0.62409 0.11671,0.68737 0.039,0.0633 0.0778,-0.0549 0.11678,-0.30967 0.0389,-0.25472 0.0778,-0.64343 0.11671,-1.06056 0.0389,-0.41714 0.0778,-0.85889 0.11671,-1.21709 0.0389,-0.3582 0.0778,-0.62963 0.11671,-0.7573 0.0389,-0.12773 0.0778,-0.11068 0.11677,0.0337 0.0389,0.14439 0.0778,0.41462 0.11671,0.73435 0.0389,0.31971 0.0778,0.68587 0.11672,1.00647 0.0389,0.32067 0.0778,0.59281 0.1167,0.75574 0.0389,0.16294 0.0778,0.21537 0.11678,0.15479 0.0389,-0.0605 0.0778,-0.23323 0.11672,-0.46645 0.0389,-0.23321 0.0778,-0.52468 0.1167,-0.79925 0.0389,-0.27448 0.0778,-0.52954 0.11671,-0.70574 0.0389,-0.17628 0.0778,-0.27222 0.11678,-0.27222 0.0389,-9e-5 0.0778,0.0957 0.11671,0.2554 0.0389,0.15973 0.0778,0.38187 0.11671,0.60754 0.0389,0.22561 0.0778,0.4526 0.11678,0.62645 0.0389,0.17377 0.0778,0.29294 0.1167,0.33394 0.0389,0.0409 0.0778,0.003 0.11672,-0.0963 0.0389,-0.0998 0.0778,-0.26078 0.11671,-0.43879 0.0389,-0.17802 0.0778,-0.37138 0.11678,-0.53239 0.0389,-0.16096 0.0778,-0.2881 0.1167,-0.35405 0.0389,-0.066 0.0778,-0.0702 0.11672,-0.0173 0.0389,0.0529 0.0778,0.16207 0.11671,0.29641 0.0389,0.13436 0.0778,0.29251 0.11678,0.43446 0.0389,0.14188 0.0778,0.26616 0.1167,0.34478 0.0389,0.0785 0.0778,0.11081 0.11672,0.0931 0.0389,-0.0176 0.0778,-0.0849 0.11677,-0.18105 0.0389,-0.0961 0.0778,-0.22031 0.11671,-0.34016 0.0389,-0.11984 0.0778,-0.23427 0.11671,-0.31626 0.0389,-0.0821 0.0778,-0.13112 0.11671,-0.13831"
+       title="cos(x)*exp(-x/15)"
+       id="path3919-7-8-6-8-1-1-3-2-5-5-9-1"
+       inkscape:export-filename="/Users/yongrenjie/dphil/paper/abbs/figures/sequences.png" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264584px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 48.142745,41.135875 H 82.538599"
+       id="path24830-81-5-9-0-8"
+       inkscape:export-filename="/Users/yongrenjie/dphil/paper/abbs/figures/sequences.png"
+       inkscape:export-xdpi="1000.0667"
+       inkscape:export-ydpi="1000.0667" />
+    <rect
+       style="fill:#ededed;fill-opacity:1;stroke:#000000;stroke-width:0.265;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect14470-0-3-4-5-9"
+       width="9.2604218"
+       height="5.2916665"
+       x="49.465679"
+       y="38.490028"
+       ry="1.3229166"
+       inkscape:export-filename="/Users/yongrenjie/dphil/paper/abbs/figures/sequences.png"
+       inkscape:export-xdpi="1000.0667"
+       inkscape:export-ydpi="1000.0667" />
+    <text
+       xml:space="preserve"
+       style="font-size:2.82223px;line-height:1.25;font-family:'Source Sans 3';-inkscape-font-specification:'Source Sans 3';stroke-width:0.264583"
+       x="52.845676"
+       y="41.845673"
+       id="text14950-7-6-3-5-3"
+       inkscape:export-filename="/Users/yongrenjie/dphil/paper/abbs/figures/sequences.png"
+       inkscape:export-xdpi="1000.0667"
+       inkscape:export-ydpi="1000.0667"><tspan
+         sodipodi:role="line"
+         id="tspan14948-30-5-9-6-7"
+         style="font-weight:bold;stroke-width:0.264583"
+         x="52.845676"
+         y="41.845673"><tspan
+           style="font-style:italic;font-weight:bold"
+           id="tspan20159-5-9-0-3-4">d</tspan><tspan
+           style="font-weight:bold;font-size:65%;baseline-shift:sub"
+           id="tspan20091-5-5-5-2-8">1</tspan></tspan></text>
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.265001;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect14470-8-1-3-3-5-8-6-0"
+       width="15.875002"
+       height="5.2916665"
+       x="60.049023"
+       y="38.490028"
+       ry="1.3229166"
+       inkscape:export-filename="/Users/yongrenjie/dphil/paper/abbs/figures/sequences.png"
+       inkscape:export-xdpi="1000.0667"
+       inkscape:export-ydpi="1000.0667" />
+    <text
+       xml:space="preserve"
+       style="font-size:2.82223px;line-height:1.25;font-family:'Source Sans 3';-inkscape-font-specification:'Source Sans 3';stroke-width:0.264583"
+       x="61.655041"
+       y="42.061569"
+       id="text17961-9-7-5-4-4-8-4"
+       inkscape:export-filename="/Users/yongrenjie/dphil/paper/abbs/figures/sequences.png"
+       inkscape:export-xdpi="1000.0667"
+       inkscape:export-ydpi="1000.0667"><tspan
+         sodipodi:role="line"
+         id="tspan17959-6-4-4-1-0-9-0"
+         style="stroke-width:0.264583"
+         x="61.655041"
+         y="42.061569">ADEQUATE</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,3.9687447,-9.2604167)"
+       id="text44377-2"
+       style="font-size:10.6667px;line-height:1.25;font-family:'Source Sans Pro';-inkscape-font-specification:'Source Sans Pro, Normal';white-space:pre;shape-inside:url(#rect44379-0);display:inline" />
+    <path
+       style="fill:none;stroke:#666666;stroke-width:0.264583;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.264583, 0.264583;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 83.332352,41.665019 2.116667,6.879172"
+       id="path1977-1-8"
+       inkscape:export-filename="/Users/yongrenjie/dphil/paper/abbs/figures/sequences.png"
+       inkscape:export-xdpi="1000.0667"
+       inkscape:export-ydpi="1000.0667" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 83.332352,40.342108 2.116667,-6.879172"
+       id="path1977-1-8-0"
+       inkscape:export-filename="/Users/yongrenjie/dphil/paper/abbs/figures/sequences.png"
+       inkscape:export-xdpi="1000.0667"
+       inkscape:export-ydpi="1000.0667" />
+    <circle
+       style="fill:#d7f8f6;fill-opacity:1;stroke:#000000;stroke-width:0.2;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"
+       id="path1606-1-3"
+       cx="85.851448"
+       cy="33.198364"
+       r="0.66145831"
+       inkscape:export-filename="/Users/yongrenjie/dphil/paper/abbs/figures/sequences.png"
+       inkscape:export-xdpi="1000.0667"
+       inkscape:export-ydpi="1000.0667" />
+    <circle
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.2;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"
+       id="path1606-1-3-2"
+       cx="85.851448"
+       cy="41.13588"
+       r="0.66145831"
+       inkscape:export-filename="/Users/yongrenjie/dphil/paper/abbs/figures/sequences.png"
+       inkscape:export-xdpi="1000.0667"
+       inkscape:export-ydpi="1000.0667" />
+    <circle
+       style="fill:#cccccc;stroke:#000000;stroke-width:0.2;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"
+       id="path1606-3-2"
+       cx="83.245445"
+       cy="41.13588"
+       r="0.66145831"
+       inkscape:export-filename="/Users/yongrenjie/dphil/paper/abbs/figures/sequences.png"
+       inkscape:export-xdpi="1000.0667"
+       inkscape:export-ydpi="1000.0667" />
+    <circle
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.2;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"
+       id="path1606-1-3-27"
+       cx="85.851448"
+       cy="49.073364"
+       r="0.66145831"
+       inkscape:export-filename="/Users/yongrenjie/dphil/paper/abbs/figures/sequences.png"
+       inkscape:export-xdpi="1000.0667"
+       inkscape:export-ydpi="1000.0667" />
+    <text
+       xml:space="preserve"
+       style="font-style:italic;font-variant:normal;font-weight:600;font-stretch:normal;font-size:2.82222px;line-height:1.25;font-family:'Source Sans 3';-inkscape-font-specification:'Source Sans 3 Semi-Bold Italic';word-spacing:0px;fill:#c44e52;stroke-width:0.264583"
+       x="67.976646"
+       y="24.433638"
+       id="text946"><tspan
+         sodipodi:role="line"
+         id="tspan944"
+         style="font-style:italic;font-variant:normal;font-weight:600;font-stretch:normal;font-size:2.82222px;font-family:'Source Sans 3';-inkscape-font-specification:'Source Sans 3 Semi-Bold Italic';text-align:center;text-anchor:middle;fill:#c44e52;stroke-width:0.264583"
+         x="67.976646"
+         y="24.433638">low sensitivity;</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:italic;font-variant:normal;font-weight:600;font-stretch:normal;font-size:2.82222px;font-family:'Source Sans 3';-inkscape-font-specification:'Source Sans 3 Semi-Bold Italic';text-align:center;text-anchor:middle;fill:#c44e52;stroke-width:0.264583"
+         x="67.976646"
+         y="27.961412"
+         id="tspan998">more transients</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:italic;font-variant:normal;font-weight:600;font-stretch:normal;font-size:2.82222px;line-height:1.25;font-family:'Source Sans 3';-inkscape-font-specification:'Source Sans 3 Semi-Bold Italic';word-spacing:0px;fill:#4c72b0;stroke-width:0.264583"
+       x="81.055534"
+       y="55.619984"
+       id="text946-0"><tspan
+         sodipodi:role="line"
+         style="font-style:italic;font-variant:normal;font-weight:600;font-stretch:normal;font-size:2.82222px;font-family:'Source Sans 3';-inkscape-font-specification:'Source Sans 3 Semi-Bold Italic';text-align:center;text-anchor:middle;fill:#4c72b0;stroke-width:0.264583"
+         x="81.055534"
+         y="55.619984"
+         id="tspan998-4">multiple spectra in a single experiment</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:italic;font-variant:normal;font-weight:600;font-stretch:normal;font-size:2.82222px;line-height:1.25;font-family:'Source Sans 3';-inkscape-font-specification:'Source Sans 3 Semi-Bold Italic';word-spacing:0px;fill:#55a868;stroke-width:0.264583"
+       x="94.409576"
+       y="24.433638"
+       id="text946-8"><tspan
+         sodipodi:role="line"
+         id="tspan944-8"
+         style="font-style:italic;font-variant:normal;font-weight:600;font-stretch:normal;font-size:2.82222px;font-family:'Source Sans 3';-inkscape-font-specification:'Source Sans 3 Semi-Bold Italic';text-align:center;text-anchor:middle;fill:#55a868;stroke-width:0.264583"
+         x="94.409576"
+         y="24.433638">high sensitivity;</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:italic;font-variant:normal;font-weight:600;font-stretch:normal;font-size:2.82222px;font-family:'Source Sans 3';-inkscape-font-specification:'Source Sans 3 Semi-Bold Italic';text-align:center;text-anchor:middle;fill:#55a868;stroke-width:0.264583"
+         x="94.409576"
+         y="27.961412"
+         id="tspan998-3">fewer transients</tspan></text>
+    <path
+       style="fill:none;fill-opacity:0.898039;stroke:#4c72b0;stroke-width:0.25;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;stroke-dashoffset:0;marker-end:url(#Arrow1Send-9);stop-color:#000000"
+       id="path1490"
+       sodipodi:type="arc"
+       sodipodi:cx="37.070911"
+       sodipodi:cy="-109.80208"
+       sodipodi:rx="3.5216355"
+       sodipodi:ry="3.521636"
+       sodipodi:start="3.1415927"
+       sodipodi:end="6.2831853"
+       sodipodi:arc-type="arc"
+       d="m 33.549276,-109.80208 a 3.5216355,3.521636 0 0 1 3.521635,-3.52163 3.5216355,3.521636 0 0 1 3.521636,3.52163"
+       sodipodi:open="true"
+       transform="rotate(90)" />
+    <path
+       style="fill:none;fill-opacity:0.898039;stroke:#4c72b0;stroke-width:0.25;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;stroke-dashoffset:0;marker-end:url(#Arrow1Send-9);stop-color:#000000"
+       id="path3250"
+       sodipodi:type="arc"
+       sodipodi:cx="45.008415"
+       sodipodi:cy="-109.80208"
+       sodipodi:rx="3.5216355"
+       sodipodi:ry="3.521636"
+       sodipodi:start="3.1415927"
+       sodipodi:end="6.2831853"
+       sodipodi:arc-type="arc"
+       d="m 41.48678,-109.80208 a 3.5216355,3.521636 0 0 1 3.521635,-3.52163 3.5216355,3.521636 0 0 1 3.521636,3.52163"
+       sodipodi:open="true"
+       transform="rotate(90)" />
+  </g>
+</svg>
