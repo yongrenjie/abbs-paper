@@ -409,15 +409,15 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2.1361794"
-     inkscape:cx="220.95522"
-     inkscape:cy="110.71167"
+     inkscape:zoom="2.734439"
+     inkscape:cx="217.59491"
+     inkscape:cy="56.501535"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
      showgrid="true"
      inkscape:window-width="1836"
-     inkscape:window-height="828"
+     inkscape:window-height="800"
      inkscape:window-x="1536"
      inkscape:window-y="25"
      inkscape:window-maximized="0"
@@ -450,27 +450,6 @@
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(-39.5875,-21.066666)">
-    <path
-       style="fill:none;stroke:#000000;stroke-width:0.264584px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="M 86.507352,33.198358 H 107.67402"
-       id="path24830-81-5-9-0-2"
-       inkscape:export-filename="/Users/yongrenjie/dphil/paper/abbs/figures/sequences.png"
-       inkscape:export-xdpi="1000.0667"
-       inkscape:export-ydpi="1000.0667" />
-    <path
-       style="fill:none;stroke:#000000;stroke-width:0.264584px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="M 86.507352,41.135858 H 107.67402"
-       id="path24830-81-5-9-0-2-2"
-       inkscape:export-filename="/Users/yongrenjie/dphil/paper/abbs/figures/sequences.png"
-       inkscape:export-xdpi="1000.0667"
-       inkscape:export-ydpi="1000.0667" />
-    <path
-       style="fill:none;stroke:#000000;stroke-width:0.264584px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="M 86.507352,49.073361 H 107.67402"
-       id="path24830-81-5-9-0-2-5"
-       inkscape:export-filename="/Users/yongrenjie/dphil/paper/abbs/figures/sequences.png"
-       inkscape:export-xdpi="1000.0667"
-       inkscape:export-ydpi="1000.0667" />
     <text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,4.5431315e-6,-10.583332)"
@@ -498,9 +477,46 @@
          style="stroke-width:0.264583"
          x="128.32292"
          y="31.75" /></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,3.9687447,-9.2604167)"
+       id="text44377-2"
+       style="font-size:10.6667px;line-height:1.25;font-family:'Source Sans Pro';-inkscape-font-specification:'Source Sans Pro, Normal';white-space:pre;shape-inside:url(#rect44379-0);display:inline" />
+    <text
+       xml:space="preserve"
+       style="font-style:italic;font-variant:normal;font-weight:600;font-stretch:normal;font-size:2.82222px;line-height:1.25;font-family:'Source Sans 3';-inkscape-font-specification:'Source Sans 3 Semi-Bold Italic';word-spacing:0px;fill:#4c72b0;stroke-width:0.264583"
+       x="81.055534"
+       y="58.840355"
+       id="text946-0"><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82222px;font-family:'Source Sans 3';-inkscape-font-specification:'Source Sans 3 Bold';text-align:center;text-anchor:middle;fill:#4c72b0;stroke-width:0.264583"
+         x="81.055534"
+         y="58.840355"
+         id="tspan998-4">multiple spectra in a single experiment</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264584px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 90.487522,30.427068 H 111.6542"
+       id="path24830-81-5-9-0-2"
+       inkscape:export-filename="/Users/yongrenjie/dphil/paper/abbs/figures/sequences.png"
+       inkscape:export-xdpi="1000.0667"
+       inkscape:export-ydpi="1000.0667" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264584px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 90.487522,38.364568 H 111.6542"
+       id="path24830-81-5-9-0-2-2"
+       inkscape:export-filename="/Users/yongrenjie/dphil/paper/abbs/figures/sequences.png"
+       inkscape:export-xdpi="1000.0667"
+       inkscape:export-ydpi="1000.0667" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264584px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 90.487522,46.302071 H 111.6542"
+       id="path24830-81-5-9-0-2-5"
+       inkscape:export-filename="/Users/yongrenjie/dphil/paper/abbs/figures/sequences.png"
+       inkscape:export-xdpi="1000.0667"
+       inkscape:export-ydpi="1000.0667" />
     <path
        style="fill:none;stroke:#666666;stroke-width:0.264585;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.264585, 0.264585;stroke-dashoffset:0;stroke-opacity:1"
-       d="m 83.861519,41.135858 h 1.322916"
+       d="m 84.666665,38.364568 h 4.497941"
        id="path24830-81-5-9-0-2-2-0"
        inkscape:export-filename="/Users/yongrenjie/dphil/paper/abbs/figures/sequences.png"
        inkscape:export-xdpi="1000.0667"
@@ -510,8 +526,8 @@
        id="rect14470-8-1-3-49-3-1-8"
        width="13.229171"
        height="5.2916665"
-       x="87.830269"
-       y="30.552526"
+       x="91.81044"
+       y="27.781237"
        ry="1.3229166"
        inkscape:export-filename="/Users/yongrenjie/dphil/paper/abbs/figures/sequences.png"
        inkscape:export-xdpi="1000.0667"
@@ -520,23 +536,23 @@
        inkscape:export-ydpi="1000.0667"
        inkscape:export-xdpi="1000.0667"
        style="fill:none;stroke:#000000;stroke-width:0.2;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       d="m 101.74787,31.061502 c 0.039,0.0385 0.0778,0.29475 0.11671,0.6885 0.0389,0.39363 0.0778,0.92049 0.11677,1.44196 0.0389,0.5215 0.0778,1.03275 0.11671,1.41236 0.0389,0.3796 0.0778,0.62409 0.11671,0.68737 0.039,0.0633 0.0778,-0.0549 0.11678,-0.30967 0.0389,-0.25472 0.0778,-0.64343 0.11671,-1.06056 0.0389,-0.41714 0.0778,-0.85889 0.11671,-1.21709 0.0389,-0.3582 0.0778,-0.62963 0.11671,-0.7573 0.0389,-0.12773 0.0778,-0.11068 0.11677,0.0337 0.0389,0.14439 0.0778,0.41462 0.11671,0.73435 0.0389,0.31971 0.0778,0.68587 0.11672,1.00647 0.0389,0.32067 0.0778,0.59281 0.1167,0.75574 0.0389,0.16294 0.0778,0.21537 0.11678,0.15479 0.0389,-0.0605 0.0778,-0.23323 0.11672,-0.46645 0.0389,-0.23321 0.0778,-0.52468 0.1167,-0.79925 0.0389,-0.27448 0.0778,-0.52954 0.11671,-0.70574 0.0389,-0.17628 0.0778,-0.27222 0.11678,-0.27222 0.0389,-9e-5 0.0778,0.0957 0.11671,0.2554 0.0389,0.15973 0.0778,0.38187 0.11671,0.60754 0.0389,0.22561 0.0778,0.4526 0.11678,0.62645 0.0389,0.17377 0.0778,0.29294 0.1167,0.33394 0.0389,0.0409 0.0778,0.003 0.11672,-0.0963 0.0389,-0.0998 0.0778,-0.26078 0.11671,-0.43879 0.0389,-0.17802 0.0778,-0.37138 0.11678,-0.53239 0.0389,-0.16096 0.0778,-0.2881 0.1167,-0.35405 0.0389,-0.066 0.0778,-0.0702 0.11672,-0.0173 0.0389,0.0529 0.0778,0.16207 0.11671,0.29641 0.0389,0.13436 0.0778,0.29251 0.11678,0.43446 0.0389,0.14188 0.0778,0.26616 0.1167,0.34478 0.0389,0.0785 0.0778,0.11081 0.11672,0.0931 0.0389,-0.0176 0.0778,-0.0849 0.11677,-0.18105 0.0389,-0.0961 0.0778,-0.22031 0.11671,-0.34016 0.0389,-0.11984 0.0778,-0.23427 0.11671,-0.31626 0.0389,-0.0821 0.0778,-0.13112 0.11671,-0.13831"
+       d="m 105.72805,28.290212 c 0.039,0.0385 0.0778,0.29475 0.11671,0.6885 0.0389,0.39363 0.0778,0.92049 0.11677,1.44196 0.0389,0.5215 0.0778,1.03275 0.11671,1.41236 0.0389,0.3796 0.0778,0.62409 0.11671,0.68737 0.039,0.0633 0.0778,-0.0549 0.11678,-0.30967 0.0389,-0.25472 0.0778,-0.64343 0.11671,-1.06056 0.0389,-0.41714 0.0778,-0.85889 0.11671,-1.21709 0.0389,-0.3582 0.0778,-0.62963 0.11671,-0.7573 0.0389,-0.12773 0.0778,-0.11068 0.11677,0.0337 0.0389,0.14439 0.0778,0.41462 0.11671,0.73435 0.0389,0.31971 0.0778,0.68587 0.11672,1.00647 0.0389,0.32067 0.0778,0.59281 0.1167,0.75574 0.0389,0.16294 0.0778,0.21537 0.11678,0.15479 0.0389,-0.0605 0.0778,-0.23323 0.11672,-0.46645 0.0389,-0.23321 0.0778,-0.52468 0.1167,-0.79925 0.0389,-0.27448 0.0778,-0.52954 0.11671,-0.70574 0.0389,-0.17628 0.0778,-0.27222 0.11678,-0.27222 0.0389,-9e-5 0.0778,0.0957 0.11671,0.2554 0.0389,0.15973 0.0778,0.38187 0.11671,0.60754 0.0389,0.22561 0.0778,0.4526 0.11678,0.62645 0.0389,0.17377 0.0778,0.29294 0.1167,0.33394 0.0389,0.0409 0.0778,0.003 0.11672,-0.0963 0.0389,-0.0998 0.0778,-0.26078 0.11671,-0.43879 0.0389,-0.17802 0.0778,-0.37138 0.11678,-0.53239 0.0389,-0.16096 0.0778,-0.2881 0.1167,-0.35405 0.0389,-0.066 0.0778,-0.0702 0.11672,-0.0173 0.0389,0.0529 0.0778,0.16207 0.11671,0.29641 0.0389,0.13436 0.0778,0.29251 0.11678,0.43446 0.0389,0.14188 0.0778,0.26616 0.1167,0.34478 0.0389,0.0785 0.0778,0.11081 0.11672,0.0931 0.0389,-0.0176 0.0778,-0.0849 0.11677,-0.18105 0.0389,-0.0961 0.0778,-0.22031 0.11671,-0.34016 0.0389,-0.11984 0.0778,-0.23427 0.11671,-0.31626 0.0389,-0.0821 0.0778,-0.13112 0.11671,-0.13831"
        title="cos(x)*exp(-x/15)"
        id="path3919-7-8-6-8-1-1-3-2-5-6-0-2-4"
        inkscape:export-filename="/Users/yongrenjie/dphil/paper/abbs/figures/sequences.png" />
     <text
        xml:space="preserve"
        style="font-size:2.82223px;line-height:1.25;font-family:'Source Sans 3';-inkscape-font-specification:'Source Sans 3';stroke-width:0.264583"
-       x="88.734383"
-       y="34.124054"
+       x="92.714554"
+       y="31.352762"
        id="text17961-9-7-1-4-0-9"
        inkscape:export-filename="/Users/yongrenjie/dphil/paper/abbs/figures/sequences.png"
        inkscape:export-xdpi="1000.0667"
        inkscape:export-ydpi="1000.0667"><tspan
          sodipodi:role="line"
          style="stroke-width:0.264583"
-         x="88.734383"
-         y="34.124054"
+         x="92.714554"
+         y="31.352762"
          id="tspan16318"><tspan
    style="font-size:65%;baseline-shift:super"
    id="tspan3158-5-4-3">15</tspan>N HMBC</tspan></text>
@@ -545,8 +561,8 @@
        id="rect14470-8-1-3-49-3-1-8-5"
        width="13.229171"
        height="5.2916665"
-       x="87.830269"
-       y="46.427536"
+       x="91.81044"
+       y="43.656246"
        ry="1.3229166"
        inkscape:export-filename="/Users/yongrenjie/dphil/paper/abbs/figures/sequences.png"
        inkscape:export-xdpi="1000.0667"
@@ -555,15 +571,15 @@
        inkscape:export-ydpi="1000.0667"
        inkscape:export-xdpi="1000.0667"
        style="fill:none;stroke:#000000;stroke-width:0.2;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       d="m 101.74787,46.936511 c 0.039,0.0385 0.0778,0.29475 0.11671,0.6885 0.0389,0.39363 0.0778,0.9205 0.11677,1.44197 0.0389,0.5215 0.0778,1.03275 0.11671,1.41236 0.0389,0.3796 0.0778,0.62409 0.11671,0.68737 0.039,0.0633 0.0778,-0.0549 0.11678,-0.30967 0.0389,-0.25472 0.0778,-0.64343 0.11671,-1.06056 0.0389,-0.41714 0.0778,-0.85889 0.11671,-1.21709 0.0389,-0.35821 0.0778,-0.62964 0.11671,-0.75731 0.0389,-0.12773 0.0778,-0.11068 0.11677,0.0337 0.0389,0.14439 0.0778,0.41462 0.11671,0.73436 0.0389,0.31971 0.0778,0.68587 0.11672,1.00647 0.0389,0.32067 0.0778,0.59281 0.1167,0.75574 0.0389,0.16294 0.0778,0.21537 0.11678,0.15479 0.0389,-0.0605 0.0778,-0.23323 0.11672,-0.46645 0.0389,-0.23321 0.0778,-0.52468 0.1167,-0.79925 0.0389,-0.27448 0.0778,-0.52954 0.11671,-0.70574 0.0389,-0.17629 0.0778,-0.27223 0.11678,-0.27223 0.0389,-9e-5 0.0778,0.0957 0.11671,0.2554 0.0389,0.15974 0.0778,0.38188 0.11671,0.60755 0.0389,0.22561 0.0778,0.4526 0.11678,0.62645 0.0389,0.17377 0.0778,0.29294 0.1167,0.33394 0.0389,0.0409 0.0778,0.003 0.11672,-0.0963 0.0389,-0.0998 0.0778,-0.26078 0.11671,-0.43879 0.0389,-0.17802 0.0778,-0.37138 0.11678,-0.53239 0.0389,-0.16096 0.0778,-0.2881 0.1167,-0.35405 0.0389,-0.066 0.0778,-0.0702 0.11672,-0.0173 0.0389,0.0529 0.0778,0.16207 0.11671,0.29641 0.0389,0.13436 0.0778,0.29251 0.11678,0.43446 0.0389,0.14188 0.0778,0.26616 0.1167,0.34478 0.0389,0.0785 0.0778,0.11081 0.11672,0.0931 0.0389,-0.0176 0.0778,-0.0849 0.11677,-0.18105 0.0389,-0.0961 0.0778,-0.22031 0.11671,-0.34016 0.0389,-0.11984 0.0778,-0.23427 0.11671,-0.31626 0.0389,-0.0821 0.0778,-0.13112 0.11671,-0.13831"
+       d="m 105.72805,44.165221 c 0.039,0.0385 0.0778,0.29475 0.11671,0.6885 0.0389,0.39363 0.0778,0.9205 0.11677,1.44197 0.0389,0.5215 0.0778,1.03275 0.11671,1.41236 0.0389,0.3796 0.0778,0.62409 0.11671,0.68737 0.039,0.0633 0.0778,-0.0549 0.11678,-0.30967 0.0389,-0.25472 0.0778,-0.64343 0.11671,-1.06056 0.0389,-0.41714 0.0778,-0.85889 0.11671,-1.21709 0.0389,-0.35821 0.0778,-0.62964 0.11671,-0.75731 0.0389,-0.12773 0.0778,-0.11068 0.11677,0.0337 0.0389,0.14439 0.0778,0.41462 0.11671,0.73436 0.0389,0.31971 0.0778,0.68587 0.11672,1.00647 0.0389,0.32067 0.0778,0.59281 0.1167,0.75574 0.0389,0.16294 0.0778,0.21537 0.11678,0.15479 0.0389,-0.0605 0.0778,-0.23323 0.11672,-0.46645 0.0389,-0.23321 0.0778,-0.52468 0.1167,-0.79925 0.0389,-0.27448 0.0778,-0.52954 0.11671,-0.70574 0.0389,-0.17629 0.0778,-0.27223 0.11678,-0.27223 0.0389,-9e-5 0.0778,0.0957 0.11671,0.2554 0.0389,0.15974 0.0778,0.38188 0.11671,0.60755 0.0389,0.22561 0.0778,0.4526 0.11678,0.62645 0.0389,0.17377 0.0778,0.29294 0.1167,0.33394 0.0389,0.0409 0.0778,0.003 0.11672,-0.0963 0.0389,-0.0998 0.0778,-0.26078 0.11671,-0.43879 0.0389,-0.17802 0.0778,-0.37138 0.11678,-0.53239 0.0389,-0.16096 0.0778,-0.2881 0.1167,-0.35405 0.0389,-0.066 0.0778,-0.0702 0.11672,-0.0173 0.0389,0.0529 0.0778,0.16207 0.11671,0.29641 0.0389,0.13436 0.0778,0.29251 0.11678,0.43446 0.0389,0.14188 0.0778,0.26616 0.1167,0.34478 0.0389,0.0785 0.0778,0.11081 0.11672,0.0931 0.0389,-0.0176 0.0778,-0.0849 0.11677,-0.18105 0.0389,-0.0961 0.0778,-0.22031 0.11671,-0.34016 0.0389,-0.11984 0.0778,-0.23427 0.11671,-0.31626 0.0389,-0.0821 0.0778,-0.13112 0.11671,-0.13831"
        title="cos(x)*exp(-x/15)"
        id="path3919-7-8-6-8-1-1-3-2-5-6-0-2-4-7"
        inkscape:export-filename="/Users/yongrenjie/dphil/paper/abbs/figures/sequences.png" />
     <text
        xml:space="preserve"
        style="font-size:2.82223px;line-height:1.25;font-family:'Source Sans 3';-inkscape-font-specification:'Source Sans 3';stroke-width:0.264583"
-       x="89.00724"
-       y="49.999069"
+       x="92.987411"
+       y="47.227779"
        id="text17961-9-7-1-4-0-9-0"
        inkscape:export-filename="/Users/yongrenjie/dphil/paper/abbs/figures/sequences.png"
        inkscape:export-xdpi="1000.0667"
@@ -571,8 +587,8 @@
          sodipodi:role="line"
          id="tspan17959-6-4-75-8-4-7-0"
          style="stroke-width:0.264583"
-         x="89.00724"
-         y="49.999069"><tspan
+         x="92.987411"
+         y="47.227779"><tspan
    style="font-size:65%;baseline-shift:super"
    id="tspan3158-5-4-3-5">13</tspan>C HSQC</tspan></text>
     <rect
@@ -580,8 +596,8 @@
        id="rect14470-8-1-3-49-3-9-5-1"
        width="13.229171"
        height="5.2916665"
-       x="87.830269"
-       y="38.490028"
+       x="91.81044"
+       y="35.718739"
        ry="1.3229166"
        inkscape:export-filename="/Users/yongrenjie/dphil/paper/abbs/figures/sequences.png"
        inkscape:export-xdpi="1000.0667"
@@ -590,15 +606,15 @@
        inkscape:export-ydpi="1000.0667"
        inkscape:export-xdpi="1000.0667"
        style="fill:none;stroke:#000000;stroke-width:0.2;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       d="m 101.74787,38.999002 c 0.039,0.0385 0.0778,0.29475 0.11671,0.6885 0.0389,0.39363 0.0778,0.92049 0.11677,1.44196 0.0389,0.5215 0.0778,1.03275 0.11671,1.41236 0.0389,0.3796 0.0778,0.62409 0.11671,0.68737 0.039,0.0633 0.0778,-0.0549 0.11678,-0.30967 0.0389,-0.25472 0.0778,-0.64343 0.11671,-1.06056 0.0389,-0.41714 0.0778,-0.85889 0.11671,-1.21709 0.0389,-0.3582 0.0778,-0.62963 0.11671,-0.7573 0.0389,-0.12773 0.0778,-0.11068 0.11677,0.0337 0.0389,0.14439 0.0778,0.41462 0.11671,0.73435 0.0389,0.31971 0.0778,0.68587 0.11672,1.00647 0.0389,0.32067 0.0778,0.59281 0.1167,0.75574 0.0389,0.16294 0.0778,0.21537 0.11678,0.15479 0.0389,-0.0605 0.0778,-0.23323 0.11672,-0.46645 0.0389,-0.23321 0.0778,-0.52468 0.1167,-0.79925 0.0389,-0.27448 0.0778,-0.52954 0.11671,-0.70574 0.0389,-0.17628 0.0778,-0.27222 0.11678,-0.27222 0.0389,-9e-5 0.0778,0.0957 0.11671,0.2554 0.0389,0.15973 0.0778,0.38187 0.11671,0.60754 0.0389,0.22561 0.0778,0.4526 0.11678,0.62645 0.0389,0.17377 0.0778,0.29294 0.1167,0.33394 0.0389,0.0409 0.0778,0.003 0.11672,-0.0963 0.0389,-0.0998 0.0778,-0.26078 0.11671,-0.43879 0.0389,-0.17802 0.0778,-0.37138 0.11678,-0.53239 0.0389,-0.16096 0.0778,-0.2881 0.1167,-0.35405 0.0389,-0.066 0.0778,-0.0702 0.11672,-0.0173 0.0389,0.0529 0.0778,0.16207 0.11671,0.29641 0.0389,0.13436 0.0778,0.29251 0.11678,0.43446 0.0389,0.14188 0.0778,0.26616 0.1167,0.34478 0.0389,0.0785 0.0778,0.11081 0.11672,0.0931 0.0389,-0.0176 0.0778,-0.0849 0.11677,-0.18105 0.0389,-0.0961 0.0778,-0.22031 0.11671,-0.34016 0.0389,-0.11984 0.0778,-0.23427 0.11671,-0.31626 0.0389,-0.0821 0.0778,-0.13112 0.11671,-0.13831"
+       d="m 105.72805,36.227712 c 0.039,0.0385 0.0778,0.29475 0.11671,0.6885 0.0389,0.39363 0.0778,0.92049 0.11677,1.44196 0.0389,0.5215 0.0778,1.03275 0.11671,1.41236 0.0389,0.3796 0.0778,0.62409 0.11671,0.68737 0.039,0.0633 0.0778,-0.0549 0.11678,-0.30967 0.0389,-0.25472 0.0778,-0.64343 0.11671,-1.06056 0.0389,-0.41714 0.0778,-0.85889 0.11671,-1.21709 0.0389,-0.3582 0.0778,-0.62963 0.11671,-0.7573 0.0389,-0.12773 0.0778,-0.11068 0.11677,0.0337 0.0389,0.14439 0.0778,0.41462 0.11671,0.73435 0.0389,0.31971 0.0778,0.68587 0.11672,1.00647 0.0389,0.32067 0.0778,0.59281 0.1167,0.75574 0.0389,0.16294 0.0778,0.21537 0.11678,0.15479 0.0389,-0.0605 0.0778,-0.23323 0.11672,-0.46645 0.0389,-0.23321 0.0778,-0.52468 0.1167,-0.79925 0.0389,-0.27448 0.0778,-0.52954 0.11671,-0.70574 0.0389,-0.17628 0.0778,-0.27222 0.11678,-0.27222 0.0389,-9e-5 0.0778,0.0957 0.11671,0.2554 0.0389,0.15973 0.0778,0.38187 0.11671,0.60754 0.0389,0.22561 0.0778,0.4526 0.11678,0.62645 0.0389,0.17377 0.0778,0.29294 0.1167,0.33394 0.0389,0.0409 0.0778,0.003 0.11672,-0.0963 0.0389,-0.0998 0.0778,-0.26078 0.11671,-0.43879 0.0389,-0.17802 0.0778,-0.37138 0.11678,-0.53239 0.0389,-0.16096 0.0778,-0.2881 0.1167,-0.35405 0.0389,-0.066 0.0778,-0.0702 0.11672,-0.0173 0.0389,0.0529 0.0778,0.16207 0.11671,0.29641 0.0389,0.13436 0.0778,0.29251 0.11678,0.43446 0.0389,0.14188 0.0778,0.26616 0.1167,0.34478 0.0389,0.0785 0.0778,0.11081 0.11672,0.0931 0.0389,-0.0176 0.0778,-0.0849 0.11677,-0.18105 0.0389,-0.0961 0.0778,-0.22031 0.11671,-0.34016 0.0389,-0.11984 0.0778,-0.23427 0.11671,-0.31626 0.0389,-0.0821 0.0778,-0.13112 0.11671,-0.13831"
        title="cos(x)*exp(-x/15)"
        id="path3919-7-8-6-8-1-1-3-2-5-6-0-7-9-0"
        inkscape:export-filename="/Users/yongrenjie/dphil/paper/abbs/figures/sequences.png" />
     <text
        xml:space="preserve"
        style="font-size:2.82223px;line-height:1.25;font-family:'Source Sans 3';-inkscape-font-specification:'Source Sans 3';stroke-width:0.264583"
-       x="88.841881"
-       y="42.061569"
+       x="92.822052"
+       y="39.290279"
        id="text17961-9-7-1-4-3-7-2"
        inkscape:export-filename="/Users/yongrenjie/dphil/paper/abbs/figures/sequences.png"
        inkscape:export-xdpi="1000.0667"
@@ -606,21 +622,21 @@
          sodipodi:role="line"
          id="tspan17959-6-4-75-8-7-5-3"
          style="stroke-width:0.264583"
-         x="88.841881"
-         y="42.061569"><tspan
+         x="92.822052"
+         y="39.290279"><tspan
    style="font-size:65%;baseline-shift:super"
    id="tspan3158-5-5-3-7">13</tspan>C HMBC</tspan></text>
     <path
        inkscape:export-ydpi="1000.0667"
        inkscape:export-xdpi="1000.0667"
        style="fill:none;stroke:#000000;stroke-width:0.2;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       d="m 76.612417,38.999005 c 0.039,0.0385 0.0778,0.29475 0.11671,0.6885 0.0389,0.39363 0.0778,0.92049 0.11677,1.44196 0.0389,0.5215 0.0778,1.03275 0.11671,1.41236 0.0389,0.3796 0.0778,0.62409 0.11671,0.68737 0.039,0.0633 0.0778,-0.0549 0.11678,-0.30967 0.0389,-0.25472 0.0778,-0.64343 0.11671,-1.06056 0.0389,-0.41714 0.0778,-0.85889 0.11671,-1.21709 0.0389,-0.3582 0.0778,-0.62963 0.11671,-0.7573 0.0389,-0.12773 0.0778,-0.11068 0.11677,0.0337 0.0389,0.14439 0.0778,0.41462 0.11671,0.73435 0.0389,0.31971 0.0778,0.68587 0.11672,1.00647 0.0389,0.32067 0.0778,0.59281 0.1167,0.75574 0.0389,0.16294 0.0778,0.21537 0.11678,0.15479 0.0389,-0.0605 0.0778,-0.23323 0.11672,-0.46645 0.0389,-0.23321 0.0778,-0.52468 0.1167,-0.79925 0.0389,-0.27448 0.0778,-0.52954 0.11671,-0.70574 0.0389,-0.17628 0.0778,-0.27222 0.11678,-0.27222 0.0389,-9e-5 0.0778,0.0957 0.11671,0.2554 0.0389,0.15973 0.0778,0.38187 0.11671,0.60754 0.0389,0.22561 0.0778,0.4526 0.11678,0.62645 0.0389,0.17377 0.0778,0.29294 0.1167,0.33394 0.0389,0.0409 0.0778,0.003 0.11672,-0.0963 0.0389,-0.0998 0.0778,-0.26078 0.11671,-0.43879 0.0389,-0.17802 0.0778,-0.37138 0.11678,-0.53239 0.0389,-0.16096 0.0778,-0.2881 0.1167,-0.35405 0.0389,-0.066 0.0778,-0.0702 0.11672,-0.0173 0.0389,0.0529 0.0778,0.16207 0.11671,0.29641 0.0389,0.13436 0.0778,0.29251 0.11678,0.43446 0.0389,0.14188 0.0778,0.26616 0.1167,0.34478 0.0389,0.0785 0.0778,0.11081 0.11672,0.0931 0.0389,-0.0176 0.0778,-0.0849 0.11677,-0.18105 0.0389,-0.0961 0.0778,-0.22031 0.11671,-0.34016 0.0389,-0.11984 0.0778,-0.23427 0.11671,-0.31626 0.0389,-0.0821 0.0778,-0.13112 0.11671,-0.13831"
+       d="m 77.417586,36.227715 c 0.039,0.0385 0.0778,0.29475 0.11671,0.6885 0.0389,0.39363 0.0778,0.92049 0.11677,1.44196 0.0389,0.5215 0.0778,1.03275 0.11671,1.41236 0.0389,0.3796 0.0778,0.62409 0.11671,0.68737 0.039,0.0633 0.0778,-0.0549 0.11678,-0.30967 0.0389,-0.25472 0.0778,-0.64343 0.11671,-1.06056 0.0389,-0.41714 0.0778,-0.85889 0.11671,-1.21709 0.0389,-0.3582 0.0778,-0.62963 0.11671,-0.7573 0.0389,-0.12773 0.0778,-0.11068 0.11677,0.0337 0.0389,0.14439 0.0778,0.41462 0.11671,0.73435 0.0389,0.31971 0.0778,0.68587 0.11672,1.00647 0.0389,0.32067 0.0778,0.59281 0.1167,0.75574 0.0389,0.16294 0.0778,0.21537 0.11678,0.15479 0.0389,-0.0605 0.0778,-0.23323 0.11672,-0.46645 0.0389,-0.23321 0.0778,-0.52468 0.1167,-0.79925 0.0389,-0.27448 0.0778,-0.52954 0.11671,-0.70574 0.0389,-0.17628 0.0778,-0.27222 0.11678,-0.27222 0.0389,-9e-5 0.0778,0.0957 0.11671,0.2554 0.0389,0.15973 0.0778,0.38187 0.11671,0.60754 0.0389,0.22561 0.0778,0.4526 0.11678,0.62645 0.0389,0.17377 0.0778,0.29294 0.1167,0.33394 0.0389,0.0409 0.0778,0.003 0.11672,-0.0963 0.0389,-0.0998 0.0778,-0.26078 0.11671,-0.43879 0.0389,-0.17802 0.0778,-0.37138 0.11678,-0.53239 0.0389,-0.16096 0.0778,-0.2881 0.1167,-0.35405 0.0389,-0.066 0.0778,-0.0702 0.11672,-0.0173 0.0389,0.0529 0.0778,0.16207 0.11671,0.29641 0.0389,0.13436 0.0778,0.29251 0.11678,0.43446 0.0389,0.14188 0.0778,0.26616 0.1167,0.34478 0.0389,0.0785 0.0778,0.11081 0.11672,0.0931 0.0389,-0.0176 0.0778,-0.0849 0.11677,-0.18105 0.0389,-0.0961 0.0778,-0.22031 0.11671,-0.34016 0.0389,-0.11984 0.0778,-0.23427 0.11671,-0.31626 0.0389,-0.0821 0.0778,-0.13112 0.11671,-0.13831"
        title="cos(x)*exp(-x/15)"
        id="path3919-7-8-6-8-1-1-3-2-5-5-9-1"
        inkscape:export-filename="/Users/yongrenjie/dphil/paper/abbs/figures/sequences.png" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.264584px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="M 48.142745,41.135875 H 82.538599"
+       d="M 48.947914,38.364585 H 83.343768"
        id="path24830-81-5-9-0-8"
        inkscape:export-filename="/Users/yongrenjie/dphil/paper/abbs/figures/sequences.png"
        inkscape:export-xdpi="1000.0667"
@@ -630,8 +646,8 @@
        id="rect14470-0-3-4-5-9"
        width="9.2604218"
        height="5.2916665"
-       x="49.465679"
-       y="38.490028"
+       x="50.270847"
+       y="35.718739"
        ry="1.3229166"
        inkscape:export-filename="/Users/yongrenjie/dphil/paper/abbs/figures/sequences.png"
        inkscape:export-xdpi="1000.0667"
@@ -639,8 +655,8 @@
     <text
        xml:space="preserve"
        style="font-size:2.82223px;line-height:1.25;font-family:'Source Sans 3';-inkscape-font-specification:'Source Sans 3';stroke-width:0.264583"
-       x="52.845676"
-       y="41.845673"
+       x="53.650845"
+       y="39.074383"
        id="text14950-7-6-3-5-3"
        inkscape:export-filename="/Users/yongrenjie/dphil/paper/abbs/figures/sequences.png"
        inkscape:export-xdpi="1000.0667"
@@ -648,8 +664,8 @@
          sodipodi:role="line"
          id="tspan14948-30-5-9-6-7"
          style="font-weight:bold;stroke-width:0.264583"
-         x="52.845676"
-         y="41.845673"><tspan
+         x="53.650845"
+         y="39.074383"><tspan
            style="font-style:italic;font-weight:bold"
            id="tspan20159-5-9-0-3-4">d</tspan><tspan
            style="font-weight:bold;font-size:65%;baseline-shift:sub"
@@ -659,8 +675,8 @@
        id="rect14470-8-1-3-3-5-8-6-0"
        width="15.875002"
        height="5.2916665"
-       x="60.049023"
-       y="38.490028"
+       x="60.854191"
+       y="35.718739"
        ry="1.3229166"
        inkscape:export-filename="/Users/yongrenjie/dphil/paper/abbs/figures/sequences.png"
        inkscape:export-xdpi="1000.0667"
@@ -668,8 +684,8 @@
     <text
        xml:space="preserve"
        style="font-size:2.82223px;line-height:1.25;font-family:'Source Sans 3';-inkscape-font-specification:'Source Sans 3';stroke-width:0.264583"
-       x="61.655041"
-       y="42.061569"
+       x="62.460209"
+       y="39.290279"
        id="text17961-9-7-5-4-4-8-4"
        inkscape:export-filename="/Users/yongrenjie/dphil/paper/abbs/figures/sequences.png"
        inkscape:export-xdpi="1000.0667"
@@ -677,23 +693,18 @@
          sodipodi:role="line"
          id="tspan17959-6-4-4-1-0-9-0"
          style="stroke-width:0.264583"
-         x="61.655041"
-         y="42.061569">ADEQUATE</tspan></text>
-    <text
-       xml:space="preserve"
-       transform="matrix(0.26458333,0,0,0.26458333,3.9687447,-9.2604167)"
-       id="text44377-2"
-       style="font-size:10.6667px;line-height:1.25;font-family:'Source Sans Pro';-inkscape-font-specification:'Source Sans Pro, Normal';white-space:pre;shape-inside:url(#rect44379-0);display:inline" />
+         x="62.460209"
+         y="39.290279">ADEQUATE</tspan></text>
     <path
        style="fill:none;stroke:#666666;stroke-width:0.264583;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.264583, 0.264583;stroke-dashoffset:0;stroke-opacity:1"
-       d="m 83.332352,41.665019 2.116667,6.879172"
+       d="m 83.872909,38.364585 5.556277,7.408318"
        id="path1977-1-8"
        inkscape:export-filename="/Users/yongrenjie/dphil/paper/abbs/figures/sequences.png"
        inkscape:export-xdpi="1000.0667"
        inkscape:export-ydpi="1000.0667" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:0.264583;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       d="m 83.332352,40.342108 2.116667,-6.879172"
+       style="fill:none;stroke:#000000;stroke-width:0.264582;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 84.137498,38.1 5.291693,-7.408356"
        id="path1977-1-8-0"
        inkscape:export-filename="/Users/yongrenjie/dphil/paper/abbs/figures/sequences.png"
        inkscape:export-xdpi="1000.0667"
@@ -701,8 +712,8 @@
     <circle
        style="fill:#d7f8f6;fill-opacity:1;stroke:#000000;stroke-width:0.2;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"
        id="path1606-1-3"
-       cx="85.851448"
-       cy="33.198364"
+       cx="89.831619"
+       cy="30.427073"
        r="0.66145831"
        inkscape:export-filename="/Users/yongrenjie/dphil/paper/abbs/figures/sequences.png"
        inkscape:export-xdpi="1000.0667"
@@ -710,8 +721,8 @@
     <circle
        style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.2;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"
        id="path1606-1-3-2"
-       cx="85.851448"
-       cy="41.13588"
+       cx="89.831619"
+       cy="38.36459"
        r="0.66145831"
        inkscape:export-filename="/Users/yongrenjie/dphil/paper/abbs/figures/sequences.png"
        inkscape:export-xdpi="1000.0667"
@@ -719,8 +730,8 @@
     <circle
        style="fill:#cccccc;stroke:#000000;stroke-width:0.2;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"
        id="path1606-3-2"
-       cx="83.245445"
-       cy="41.13588"
+       cx="84.050613"
+       cy="38.36459"
        r="0.66145831"
        inkscape:export-filename="/Users/yongrenjie/dphil/paper/abbs/figures/sequences.png"
        inkscape:export-xdpi="1000.0667"
@@ -728,82 +739,59 @@
     <circle
        style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.2;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"
        id="path1606-1-3-27"
-       cx="85.851448"
-       cy="49.073364"
+       cx="89.831619"
+       cy="46.302074"
        r="0.66145831"
        inkscape:export-filename="/Users/yongrenjie/dphil/paper/abbs/figures/sequences.png"
        inkscape:export-xdpi="1000.0667"
        inkscape:export-ydpi="1000.0667" />
     <text
        xml:space="preserve"
-       style="font-style:italic;font-variant:normal;font-weight:600;font-stretch:normal;font-size:2.82222px;line-height:1.25;font-family:'Source Sans 3';-inkscape-font-specification:'Source Sans 3 Semi-Bold Italic';word-spacing:0px;fill:#c44e52;stroke-width:0.264583"
-       x="67.976646"
-       y="24.433638"
+       style="font-style:italic;font-variant:normal;font-weight:600;font-stretch:normal;font-size:2.46944px;line-height:1.25;font-family:'Source Sans 3';-inkscape-font-specification:'Source Sans 3 Semi-Bold Italic';word-spacing:0px;fill:#c44e52;stroke-width:0.264583"
+       x="68.784637"
+       y="29.196142"
        id="text946"><tspan
          sodipodi:role="line"
          id="tspan944"
-         style="font-style:italic;font-variant:normal;font-weight:600;font-stretch:normal;font-size:2.82222px;font-family:'Source Sans 3';-inkscape-font-specification:'Source Sans 3 Semi-Bold Italic';text-align:center;text-anchor:middle;fill:#c44e52;stroke-width:0.264583"
-         x="67.976646"
-         y="24.433638">low sensitivity;</tspan><tspan
+         style="font-style:italic;font-variant:normal;font-weight:600;font-stretch:normal;font-size:2.46944px;font-family:'Source Sans 3';-inkscape-font-specification:'Source Sans 3 Semi-Bold Italic';text-align:center;text-anchor:middle;fill:#c44e52;stroke-width:0.264583"
+         x="68.784637"
+         y="29.196142">low sensitivity;</tspan><tspan
          sodipodi:role="line"
-         style="font-style:italic;font-variant:normal;font-weight:600;font-stretch:normal;font-size:2.82222px;font-family:'Source Sans 3';-inkscape-font-specification:'Source Sans 3 Semi-Bold Italic';text-align:center;text-anchor:middle;fill:#c44e52;stroke-width:0.264583"
-         x="67.976646"
-         y="27.961412"
-         id="tspan998">more transients</tspan></text>
+         style="font-style:italic;font-variant:normal;font-weight:600;font-stretch:normal;font-size:2.46944px;font-family:'Source Sans 3';-inkscape-font-specification:'Source Sans 3 Semi-Bold Italic';text-align:center;text-anchor:middle;fill:#c44e52;stroke-width:0.264583"
+         x="68.784637"
+         y="32.282944"
+         id="tspan998">more scans</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:italic;font-variant:normal;font-weight:600;font-stretch:normal;font-size:2.82222px;line-height:1.25;font-family:'Source Sans 3';-inkscape-font-specification:'Source Sans 3 Semi-Bold Italic';word-spacing:0px;fill:#4c72b0;stroke-width:0.264583"
-       x="81.055534"
-       y="55.619984"
-       id="text946-0"><tspan
-         sodipodi:role="line"
-         style="font-style:italic;font-variant:normal;font-weight:600;font-stretch:normal;font-size:2.82222px;font-family:'Source Sans 3';-inkscape-font-specification:'Source Sans 3 Semi-Bold Italic';text-align:center;text-anchor:middle;fill:#4c72b0;stroke-width:0.264583"
-         x="81.055534"
-         y="55.619984"
-         id="tspan998-4">multiple spectra in a single experiment</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:italic;font-variant:normal;font-weight:600;font-stretch:normal;font-size:2.82222px;line-height:1.25;font-family:'Source Sans 3';-inkscape-font-specification:'Source Sans 3 Semi-Bold Italic';word-spacing:0px;fill:#55a868;stroke-width:0.264583"
-       x="94.409576"
-       y="24.433638"
+       style="font-style:italic;font-variant:normal;font-weight:600;font-stretch:normal;font-size:2.46944px;line-height:1.25;font-family:'Source Sans 3';-inkscape-font-specification:'Source Sans 3 Semi-Bold Italic';word-spacing:0px;fill:#55a868;stroke-width:0.264583"
+       x="98.441078"
+       y="23.375303"
        id="text946-8"><tspan
          sodipodi:role="line"
          id="tspan944-8"
-         style="font-style:italic;font-variant:normal;font-weight:600;font-stretch:normal;font-size:2.82222px;font-family:'Source Sans 3';-inkscape-font-specification:'Source Sans 3 Semi-Bold Italic';text-align:center;text-anchor:middle;fill:#55a868;stroke-width:0.264583"
-         x="94.409576"
-         y="24.433638">high sensitivity;</tspan><tspan
+         style="font-style:italic;font-variant:normal;font-weight:600;font-stretch:normal;font-size:2.46944px;font-family:'Source Sans 3';-inkscape-font-specification:'Source Sans 3 Semi-Bold Italic';text-align:center;text-anchor:middle;fill:#dd8452;stroke-width:0.264583"
+         x="98.441078"
+         y="23.375303">higher sensitivity;</tspan><tspan
          sodipodi:role="line"
-         style="font-style:italic;font-variant:normal;font-weight:600;font-stretch:normal;font-size:2.82222px;font-family:'Source Sans 3';-inkscape-font-specification:'Source Sans 3 Semi-Bold Italic';text-align:center;text-anchor:middle;fill:#55a868;stroke-width:0.264583"
-         x="94.409576"
-         y="27.961412"
-         id="tspan998-3">fewer transients</tspan></text>
-    <path
-       style="fill:none;fill-opacity:0.898039;stroke:#4c72b0;stroke-width:0.25;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;stroke-dashoffset:0;marker-end:url(#Arrow1Send-9);stop-color:#000000"
-       id="path1490"
-       sodipodi:type="arc"
-       sodipodi:cx="37.070911"
-       sodipodi:cy="-109.80208"
-       sodipodi:rx="3.5216355"
-       sodipodi:ry="3.521636"
-       sodipodi:start="3.1415927"
-       sodipodi:end="6.2831853"
-       sodipodi:arc-type="arc"
-       d="m 33.549276,-109.80208 a 3.5216355,3.521636 0 0 1 3.521635,-3.52163 3.5216355,3.521636 0 0 1 3.521636,3.52163"
-       sodipodi:open="true"
-       transform="rotate(90)" />
-    <path
-       style="fill:none;fill-opacity:0.898039;stroke:#4c72b0;stroke-width:0.25;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;stroke-dashoffset:0;marker-end:url(#Arrow1Send-9);stop-color:#000000"
-       id="path3250"
-       sodipodi:type="arc"
-       sodipodi:cx="45.008415"
-       sodipodi:cy="-109.80208"
-       sodipodi:rx="3.5216355"
-       sodipodi:ry="3.521636"
-       sodipodi:start="3.1415927"
-       sodipodi:end="6.2831853"
-       sodipodi:arc-type="arc"
-       d="m 41.48678,-109.80208 a 3.5216355,3.521636 0 0 1 3.521635,-3.52163 3.5216355,3.521636 0 0 1 3.521636,3.52163"
-       sodipodi:open="true"
-       transform="rotate(90)" />
+         style="font-style:italic;font-variant:normal;font-weight:600;font-stretch:normal;font-size:2.46944px;font-family:'Source Sans 3';-inkscape-font-specification:'Source Sans 3 Semi-Bold Italic';text-align:center;text-anchor:middle;fill:#dd8452;stroke-width:0.264583"
+         x="98.441078"
+         y="26.462103"
+         id="tspan998-3">fewer scans</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:italic;font-variant:normal;font-weight:600;font-stretch:normal;font-size:2.46944px;line-height:1.25;font-family:'Source Sans 3';-inkscape-font-specification:'Source Sans 3 Semi-Bold Italic';word-spacing:0px;fill:#55a868;stroke-width:0.264583"
+       x="98.441078"
+       y="51.995396"
+       id="text946-8-9"><tspan
+         sodipodi:role="line"
+         id="tspan944-8-1"
+         style="font-style:italic;font-variant:normal;font-weight:600;font-stretch:normal;font-size:2.46944px;font-family:'Source Sans 3';-inkscape-font-specification:'Source Sans 3 Semi-Bold Italic';text-align:center;text-anchor:middle;fill:#55a868;stroke-width:0.264583"
+         x="98.441078"
+         y="51.995396">highest sensitivity;</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:italic;font-variant:normal;font-weight:600;font-stretch:normal;font-size:2.46944px;font-family:'Source Sans 3';-inkscape-font-specification:'Source Sans 3 Semi-Bold Italic';text-align:center;text-anchor:middle;fill:#55a868;stroke-width:0.264583"
+         x="98.441078"
+         y="55.082195"
+         id="tspan998-3-5">fewest scans</tspan></text>
   </g>
 </svg>

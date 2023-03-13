@@ -106,7 +106,7 @@
 % }}}1
 % Newcommands {{{1 
 \DeclareMathOperator*{\sgn}{sgn}
-\newcommand{\articletitle}{A General Scheme for Generating NMR Supersequences Allows Combining High- and Low-Sensitivity Experiments}
+\newcommand{\articletitle}{A General Scheme for NMR Supersequences Combining High- and Low-Sensitivity Experiments}
 \newcommand{\crl}{Chemistry Research Laboratory, Department of Chemistry, University of Oxford, Mansfield Road, Oxford OX1 3TA, United Kingdom}
 \newcommand{\turing}{The Alan Turing Institute, The British Library, 96 Euston Road, London NW1 2DB, United Kingdom}
 \newcommand{\brukeruk}{Bruker UK Ltd, R\&D, Coventry CV4 9GH, United Kingdom}
@@ -242,8 +242,8 @@ The main limitation of such experiments is their low sensitivity, as they rely o
 
 To date, insensitive experiments such as \nitrogen{} HMBC and ADEQUATE have not been the main focus of NOAH supersequences.\autocite{RaoKakita2020RSCA}
 This is because in a traditional `linear' supersequence, each constituent module is recorded with the same number of transients.
-For dilute samples, the total experiment duration is therefore dictated by the module with the lowest sensitivity, and higher-sensitivity modules (e.g.\ HSQC or COSY) would be recorded with more transients than would be necessary.
-Although the more sensitive modules would still be obtained `for free', the \textit{effective} time savings thus realised would be smaller than for a supersequence constructed from modules with balanced sensitivities.
+For dilute samples, the total experiment duration is therefore dictated by the module with the lowest sensitivity, and higher-sensitivity modules (e.g.\ HSQC or COSY) would be recorded with more transients than strictly necessary.
+Although the more sensitive modules would still be obtained `for free', the \textit{effective} time savings thus realised are smaller than for a supersequence constructed from modules with balanced sensitivities.
 
 For this reason, the low-sensitivity ADEQUATE and \nitrogen{} HMBC modules (respectively abbreviated as `\noah*{A}' and `\noah*{Bn}') form a `natural' pairing in the \noah{A,Bn} supersequence introduced here (\cref{fig:sequences_ab}).
 However, in this work, we also go beyond the traditional `linear' or `horizontal' model of a supersequence in adding more modules through `vertical' interleaving, in a similar fashion to the parallel supersequences recently described.\autocite{Kupce2021JACSA}
