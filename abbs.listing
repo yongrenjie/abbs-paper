@@ -1,33 +1,6 @@
-  "l3 = 0"      ; initialise loop counter
-  "cnst51 = 8"  ; number of transients for ADEQUATE
-  "cnst52 = 6"  ; number of transients for 15N HMBC
-  "cnst53 = 1"  ; number of transients for 13C HMBC
-  ; HSQC doesn't need a separate counter; it's just cnst51-cnst52-cnst53
+import numpy as np
 
-2 d1
-
-  ; run ADEQUATE
-  goscnp ph30   ; record ADEQUATE FID
-
-  if "l3 % cnst51 < cnst52" {
-    ; transients 1 through 6: run 15N HMBC
-    go=2 ph31
-  }
-
-  else {
-  if "l3 % cnst51 < cnst52 + cnst53" {
-    ; transient 7: run 13C HMBC
-    go=2 ph31
-  }
-
-  else {
-    ; transient 8: run 13C HSQC
-    go=2 ph31   ; 'go' loops back to the label '2' a total of NS times
-  }
-  }
-
-  1m iu3   ; increment loop counter
-  if "l3 % cnst51 == 0" {
-      ; increment t1 here
-  }
-  lo to 2 times x   ; see main text for description of x
+def symmetrise_preserve_sign(m):
+    smallest_amp = np.minimum(np.abs(m), np.abs(m).T)
+    sign = np.sign(m)
+    return sign * smallest_amp

@@ -109,5 +109,5 @@ for ax in axs:
     pg.ymove(ax)
 
 pg.label_axes(axs, fstr='({})', fontweight='semibold', fontsize=8)
-apt.show()
-# apt.save(__file__)
+# apt.show()
+apt.save(__file__)
