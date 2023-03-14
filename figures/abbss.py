@@ -1,13 +1,14 @@
 import penguins as pg
-from aptenodytes import nmrd, fira, subplots_2d_32
+import aptenodytes as apt
+import matplotlib.pyplot as plt
 
-fira()
+apt.thesis()
+plt.rcParams['font.size'] = 8
 
-p = nmrd() / '220722-7c-abbs'
+p = apt.nmrd() / '220722-7c-abbs'
 dss = pg.read(p, range(14001, 14006))
 
-k = 0.8
-fig, axs = subplots_2d_32(width=12*k, height=8*k)
+fig, axs = apt.subplots_2d_221(width=4.5, height=6.8)
 
 h1_bounds1 = (0.5, 6.1)
 h1_bounds2 = (0.5, 8.5)
@@ -38,7 +39,7 @@ titles = [
 
 pg.mkplots(axs, titles=titles)
 pg.ymove(axs)
-pg.label_axes(axs, fstr='({})', fontweight='semibold', fontsize=14)
 
-# pg.show()
-pg.savefig(str(__file__).replace('.py', '.png'), dpi=600)
+apt.label_axes_def(axs, fontsize=8)
+# apt.show()
+apt.save(__file__)

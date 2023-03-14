@@ -1,21 +1,23 @@
 import penguins as pg
-from aptenodytes import nmrd, fira
+import aptenodytes as apt
+import matplotlib.pyplot as plt
 
-fira()
+apt.thesis()
+plt.rcParams['font.size'] = 8
 
-p = nmrd() / '221209-7c-abbs'
+p = apt.nmrd() / '221209-7c-abbs'
 dss = pg.read(p, range(2001, 2004))
 
-k = 0.8
-fig, axs = pg.subplots2d(1, 3, figsize=(12*k, 4*k))
+fig, axs = apt.subplots_2d_21(width=4.5, height=4.5)
 
-h1_bounds = (0.5, 6.3)
-c13_bounds = (10, None)
+h1_bounds1 = (0.5, 3.2)
+h1_bounds2 = (0.5, 6.3)
+c13_bounds = (15, 60)
 n15_bounds = (110, 130)
 
-dss[0].stage(ax=axs[0], levels=3.5e4, f1_bounds=c13_bounds, f2_bounds=h1_bounds)
-dss[1].stage(ax=axs[1], levels=3.5e4, f1_bounds=n15_bounds, f2_bounds=h1_bounds)
-dss[2].stage(ax=axs[2], levels=3.5e4, f1_bounds=n15_bounds, f2_bounds=h1_bounds)
+dss[0].stage(ax=axs[0], levels=3.5e4, f1_bounds=c13_bounds, f2_bounds=h1_bounds1)
+dss[1].stage(ax=axs[1], levels=3.5e4, f1_bounds=n15_bounds, f2_bounds=h1_bounds2)
+dss[2].stage(ax=axs[2], levels=3.5e4, f1_bounds=n15_bounds, f2_bounds=h1_bounds2)
 
 
 titles = [
@@ -29,7 +31,6 @@ titles = [
 
 pg.mkplots(axs, titles=titles)
 pg.ymove(axs)
-pg.label_axes(axs, fstr='({})', fontweight='semibold', fontsize=14)
-
-# pg.show()
-pg.savefig(str(__file__).replace('.py', '.png'), dpi=600)
+apt.label_axes_def(axs, fontsize=8)
+# apt.show()
+apt.save(__file__)

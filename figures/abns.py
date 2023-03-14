@@ -1,13 +1,14 @@
 import penguins as pg
 import aptenodytes as apt
+import matplotlib.pyplot as plt
 
-apt.fira()
+apt.thesis()
+plt.rcParams['font.size'] = 8
 
 p = apt.nmrd() / '220604-7x-abbs'
 dss = pg.read(p, range(111001, 111005))
 
-k = 0.8
-fig, axs = pg.subplots2d(2, 2, figsize=(8*k, 8*k))
+fig, axs = pg.subplots2d(2, 2, figsize=(4.5, 4.5))
 
 h1_bounds1 = (1, 8.2)
 h1_bounds2 = (1, 4.2)
@@ -36,6 +37,6 @@ titles = [
 pg.mkplots(axs, titles=titles)
 pg.ymove(axs)
 
-apt.label_axes_def(axs)
+apt.label_axes_def(axs, fontsize=8)
 # apt.show()
 apt.save(__file__)

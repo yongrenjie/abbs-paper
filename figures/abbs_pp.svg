@@ -742,7 +742,11 @@
        orient="auto"
        inkscape:stockid="marker49663708"
        inkscape:isstock="true"
-       id="marker49663708-8">
+       id="marker49663708-8"
+       viewBox="0 0 3.4652294 2.5981128"
+       markerWidth="3.4652293"
+       markerHeight="2.5981128"
+       preserveAspectRatio="xMidYMid">
       <path
          transform="matrix(-0.3,0,0,-0.3,0.69,0)"
          d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
@@ -757,17 +761,17 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.6391785"
-     inkscape:cx="431.3136"
-     inkscape:cy="166.2418"
+     inkscape:zoom="4.4898013"
+     inkscape:cx="375.74046"
+     inkscape:cy="225.73382"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
      showgrid="true"
      inkscape:window-width="1536"
-     inkscape:window-height="726"
-     inkscape:window-x="0"
-     inkscape:window-y="25"
+     inkscape:window-height="698"
+     inkscape:window-x="1686"
+     inkscape:window-y="234"
      inkscape:window-maximized="0"
      inkscape:snap-object-midpoints="false"
      inkscape:snap-text-baseline="true"
@@ -1590,5 +1594,9 @@
        style="fill:none;stroke:#000000;stroke-width:0.23;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-dasharray:0.69,0.23;stroke-dashoffset:0"
        d="M 58.340832,72.892917 H 121.84083"
        id="path938" />
+    <path
+       style="fill:#e8000b;stroke:#e8000b;stroke-width:0.32;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker49663708-8)"
+       d="m 95.3825,64.161667 v 2.645834"
+       id="path2404" />
   </g>
 </svg>

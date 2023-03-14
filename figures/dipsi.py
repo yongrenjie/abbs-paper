@@ -1,19 +1,21 @@
-import numpy as np
 import penguins as pg
-from aptenodytes import nmrd, fira, Brucine
+import aptenodytes as apt
+import matplotlib.pyplot as plt
+import numpy as np
 
-fira()
-p = nmrd() / '220604-7x-abbs'
+apt.thesis()
+plt.rcParams['font.size'] = 8
 
+p = apt.nmrd() / '220604-7x-abbs'
 hsqc_with_dipsi = pg.read(p, 13004)
 hsqc_without_dipsi = pg.read(p, 22004)
 
-dipsi_ints = Brucine.hsqc.integrate(hsqc_with_dipsi, edited=True)
-no_dipsi_ints = Brucine.hsqc.integrate(hsqc_without_dipsi, edited=True)
+dipsi_ints = apt.Brucine.hsqc.integrate(hsqc_with_dipsi, edited=True)
+no_dipsi_ints = apt.Brucine.hsqc.integrate(hsqc_without_dipsi, edited=True)
 print(np.mean(dipsi_ints/no_dipsi_ints))
 
 
-fig, axs = pg.subplots2d(1, 3, figsize=(9, 3.2))
+fig, axs = pg.subplots2d(1, 3, figsize=(6.4, 2.4))
 
 baselev = 1e6
 hbounds = (1.1, 8)
@@ -57,6 +59,6 @@ legend_labels = ['DIPSI', 'no DIPSI']
 axs[2].legend(legend_colors, legend_labels, fontsize=8, loc='upper center',
               handler_map={tuple: ContourLegendHandler()})
 
-pg.label_axes(axs, fstr='({})', fontweight='semibold', fontsize=14)
-# pg.show()
-pg.savefig(str(__file__).replace('.py', '.png'), dpi=600)
+apt.label_axes_def(axs, fontsize=8)
+# apt.show()
+apt.save(__file__)
