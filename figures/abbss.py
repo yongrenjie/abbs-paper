@@ -8,7 +8,7 @@ plt.rcParams['font.size'] = 8
 p = apt.nmrd() / '220722-7c-abbs'
 dss = pg.read(p, range(14001, 14006))
 
-fig, axs = apt.subplots_2d_221(width=4.5, height=6.8)
+fig, axs = apt.subplots_2d_32(width=6.5, height=4.5)
 
 h1_bounds1 = (0.5, 6.1)
 h1_bounds2 = (0.5, 8.5)
