@@ -235,7 +235,7 @@ Here, we propose a scheme which overcomes this limitation, combining experiments
 Nuclear magnetic resonance (NMR) spectroscopy plays a key role in the structural elucidation of natural products; in particular, two-dimensional (2D) NMR experiments provide vast amounts of information on through-bond and through-space molecular connectivity.\autociteset{textbooks}
 However, these experiments are often time-consuming as they require the incrementation of indirect-dimension evolution periods in order to construct the requisite 2D data matrices.
 One particularly flexible method for accelerating 2D data acquisition is the NOAH (NMR by Ordered Acquisition using \proton{} detection) technique\autocite{Kupce2017ACIE,Kupce2021NRMP}, in which multiple 2D experiments (`modules') are combined into a single experiment using only a single recovery delay.
-These nested `supersequences', which rely on the tailored excitation of magnetisation from different isotopologues, provide an array of 2D spectra (up to 10 so far) in greatly reduced experiment times.
+These nested `supersequences', which rely on the tailored excitation of magnetisation from different isotopologues, provide an array of 2D spectra (up to 10 so far\autocite{Kupce2021JACSA}) in greatly reduced experiment times.
 
 Virtually all common 2D experiments, such as HSQC, HMQC, COSY, TOCSY, and NOESY, have been exploited in NOAH supersequences, allowing for the (manual or computer-assisted) structural elucidation of a wide range of molecules.\autocite{Kupce2018CC,Kupce2019JMR,Kupce2021JACSA,Yong2022AC}
 However, such experiments tend to fall short in proton-sparse molecules\autociteset{proton_sparse} as they do not yield sufficient correlations.
@@ -402,7 +402,7 @@ In conclusion, we have demonstrated here how low-sensitivity experiments, such a
 Through a generalisation of our previous concept of parallel supersequences, further high-sensitivity  modules may be added to the supersequence both `horizontally' and `vertically', corresponding respectively to sequential and interleaved/parallel acquisition.
 The spectra thus obtained provide the chemist with far more powerful tools for the characterisation of complex molecules, especially in cases where existing (sequential) NOAH supersequences do not provide sufficient information for unambiguous assignment.
 a notable example of this is proton-sparse nitrogen heterocycles, which are commonly found in pharmaceuticals.
-The pulse sequences and processing scripts used in this work are provided in the Bruker User Library, accessible at \url{https://www.bruker.com/en/services/bruker-user-library.html}.
+The pulse programmes and processing scripts used in this work can be obtained via the Bruker User Library or GitHub; links are provided in Section S2 of the \textit{Supplementary Information}.
 
 
 \section*{Acknowledgements}
@@ -574,8 +574,12 @@ Finally, it should be noted that the \texttt{if}/\texttt{else} conditionals are 
 TopSpin does not calculate ahead of time when each interleaved module is run.
 This means that the TopSpin \texttt{expt} command (which shows the expected experimental duration) can yield (very slightly) inaccurate results.
 
-\clearpage
+\section{Pulse programme and processing script availability}
 
+The pulse programmes used in this work, along with all requisite processing scripts, can be downloaded from the Bruker User Library at \url{https://www.bruker.com/protected/en/services/bruker-user-library.html}, or equivalently, from GitHub at \url{https://github.com/yongrenjie/abbs-paper/releases/tag/data}.
+The zip archive contains further instructions on setting up the pulse programmes.
+
+\clearpage
 \section{\texorpdfstring{\abnns{}}{NOAH-4 A(Bn/N/S)} experiment}
 
 Since the \proton{}--\proton{} NOESY uses the same \magnnot{\ch{C}} magnetisation as \carbon{} HMBC so can be directly substituted in its place, leading to a \abnns{} supersequence (\cref{fig:abns}).
@@ -591,9 +595,38 @@ Depending on the molecular size and spectrometer frequency, the NOESY module may
     \label{fig:samples_brucine}
 \end{figure}
 
-\begin{figure}[ht]
-    \centering
-    \includegraphics[]{abns.png}%
+\clearpage 
+\begin{figure}[htb]
+    \begin{subfigure}[b]{\textwidth}
+        \centering
+        \includegraphics[]{abns_1.png}%
+    \end{subfigure}
+\end{figure}
+
+\vspace{1cm}
+
+\begin{figure}[htb]
+    \ContinuedFloat
+    \begin{subfigure}[b]{\textwidth}
+        \centering
+        \includegraphics[]{abns_2.png}%
+    \end{subfigure}
+\end{figure}
+
+\begin{figure}[htb]
+    \ContinuedFloat
+    \begin{subfigure}[b]{\textwidth}
+        \centering
+        \includegraphics[]{abns_3.png}%
+    \end{subfigure}
+\end{figure}
+
+\begin{figure}[htb]
+    \ContinuedFloat
+    \begin{subfigure}[b]{\textwidth}
+        \centering
+        \includegraphics[]{abns_4.png}%
+    \end{subfigure}
     {\phantomsubcaption\label{fig:abns_adeq}}
     {\phantomsubcaption\label{fig:abns_n_hmbc}}
     {\phantomsubcaption\label{fig:abns_c_hmbc}}
@@ -657,9 +690,40 @@ These observations are consistent with previous studies on NOAH supersequences c
     \label{fig:samples_cyclosporin}
 \end{figure}
 
-\begin{figure}[!htbp]
-    \centering
-    \includegraphics[]{abbss.png}%
+\begin{figure}[htb]
+    \begin{subfigure}[b]{\textwidth}
+        \centering
+        \includegraphics[]{abbss_1.png}%
+    \end{subfigure}
+\end{figure}
+\begin{figure}[htb]
+    \ContinuedFloat
+    \begin{subfigure}[b]{\textwidth}
+        \centering
+        \includegraphics[]{abbss_2.png}%
+    \end{subfigure}
+\end{figure}
+\begin{figure}[htb]
+    \ContinuedFloat
+    \begin{subfigure}[b]{\textwidth}
+        \centering
+        \includegraphics[]{abbss_3.png}%
+    \end{subfigure}
+\end{figure}
+\begin{figure}[htb]
+    \ContinuedFloat
+    \begin{subfigure}[b]{\textwidth}
+        \centering
+        \includegraphics[]{abbss_4.png}%
+    \end{subfigure}
+\end{figure}
+
+\begin{figure}[htb]
+    \ContinuedFloat
+    \begin{subfigure}[b]{\textwidth}
+        \centering
+        \includegraphics[]{abbss_5.png}%
+    \end{subfigure}
     {\phantomsubcaption\label{fig:abbss_adeq}}
     {\phantomsubcaption\label{fig:abbss_n_hmbc}}
     {\phantomsubcaption\label{fig:abbss_c_hmbc}}

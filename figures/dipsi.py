@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 apt.thesis()
-plt.rcParams['font.size'] = 8
+plt.rcParams['font.size'] = 12
 
 p = apt.nmrd() / '220604-7x-abbs'
 hsqc_with_dipsi = pg.read(p, 13004)
@@ -15,7 +15,7 @@ no_dipsi_ints = apt.Brucine.hsqc.integrate(hsqc_without_dipsi, edited=True)
 print(np.mean(dipsi_ints/no_dipsi_ints))
 
 
-fig, axs = pg.subplots2d(1, 3, figsize=(6.4, 2.4))
+fig, axs = apt.subplots_2d_21(width=6.5, height=6.5)
 
 baselev = 1e6
 hbounds = (1.1, 8)
@@ -56,9 +56,12 @@ pg.mkplot(axs[2], title="$F_2$ projections")
 legend_colors = [(pg.color_palette('pastel')[0], pg.color_palette('pastel')[3]),
                  (pg.color_palette('deep')[0], pg.color_palette('deep')[3])]
 legend_labels = ['DIPSI', 'no DIPSI']
-axs[2].legend(legend_colors, legend_labels, fontsize=8, loc='upper center',
-              handler_map={tuple: ContourLegendHandler()})
+axs[2].legend(legend_colors, legend_labels, fontsize=10, loc='upper center',
+              handler_map={tuple: ContourLegendHandler()}, ncol=2)
 
-apt.label_axes_def(axs, fontsize=8)
+apt.label_axes_def(axs, fontsize=12)
+
+pos = axs[2].get_position()
+axs[2].set_position((pos.x0 - 0.2, pos.y0, pos.width + 0.4, pos.y1 - pos.y0))
 # apt.show()
 apt.save(__file__)

@@ -5,9 +5,9 @@ import numpy as np
 from scipy.linalg import sqrtm
 
 apt.thesis()
-plt.rcParams['font.size'] = 8
+plt.rcParams['font.size'] = 12
 
-fig, axs = pg.subplots2d(1, 3, figsize=(6.5, 2.3))
+fig, axs = apt.subplots_2d_21(width=6.5, height=6.5)
 
 # Contours -- basically code taken from penguins but it's not clever enough to
 # do covariance spectra (maybe a future update...?)
@@ -55,17 +55,17 @@ axs[1].contour(cyclo_adeq.ppm_scale(axis=0),
 axs[1].set(xlim=(43, 61), ylim=(166, 178),
            xlabel=c13_label, ylabel=c13_label)
 # label peaks
-axs[1].text(s='1',  x=59.2, y=169.0, fontsize=8)
-axs[1].text(s='2',  x=48.9, y=174.8, fontsize=8)
-axs[1].text(s='3',  x=50.7, y=171.0, fontsize=8)
-axs[1].text(s='4',  x=55.7, y=168.6, fontsize=8)
-axs[1].text(s='5',  x=55.2, y=175.1, fontsize=8)
-axs[1].text(s='6',  x=55.2, y=172.6, fontsize=8)
-axs[1].text(s='7',  x=47.4, y=171.5, fontsize=8)
-axs[1].text(s='8',  x=45.1, y=173.1, fontsize=8)
-axs[1].text(s='9',  x=47.0, y=170.5, fontsize=8)
-axs[1].text(s='10', x=57.9, y=169.2, fontsize=8)
-axs[1].text(s='11', x=58.4, y=175.0, fontsize=8)
+axs[1].text(s='1',  x=59.2, y=169.0, fontsize=10)
+axs[1].text(s='2',  x=48.9, y=174.8, fontsize=10)
+axs[1].text(s='3',  x=50.7, y=171.0, fontsize=10)
+axs[1].text(s='4',  x=55.7, y=168.6, fontsize=10)
+axs[1].text(s='5',  x=55.2, y=175.1, fontsize=10)
+axs[1].text(s='6',  x=55.2, y=172.6, fontsize=10)
+axs[1].text(s='7',  x=47.4, y=171.5, fontsize=10)
+axs[1].text(s='8',  x=45.1, y=173.1, fontsize=10)
+axs[1].text(s='9',  x=47.0, y=170.5, fontsize=10)
+axs[1].text(s='10', x=57.9, y=169.2, fontsize=10)
+axs[1].text(s='11', x=58.4, y=175.0, fontsize=10)
 
 
 # (c): Cyclosporin HSQC-ADEQUATE CA-CB section, GIC, lambda=0.5, symmetrised
@@ -90,16 +90,16 @@ axs[2].contour(cyclo_adeq.ppm_scale(axis=0),
 axs[2].set(xlim=(6, 78), ylim=(6, 78),
            xlabel=c13_label, ylabel=c13_label)
 # label peaks
-axs[2].text(s='1',  x=72,   y=60,   fontsize=8)
-axs[2].text(s='2',  x=53,   y=27,   fontsize=8)
-axs[2].text(s='4',  x=59,   y=35.5, fontsize=8)
-axs[2].text(s='5',  x=53,   y=33,   fontsize=8)
-axs[2].text(s='6',  x=54,   y=40,   fontsize=8)
-axs[2].text(s='7',  x=52,   y=17,   fontsize=8)
-axs[2].text(s='8',  x=45,   y=16,   fontsize=8)
-axs[2].text(s='9',  x=46.5, y=40,   fontsize=8)
-axs[2].text(s='10', x=56,   y=45,   fontsize=8)
-axs[2].text(s='11', x=60,   y=27.5, fontsize=8)
+axs[2].text(s='1',  x=72,   y=60,   fontsize=10)
+axs[2].text(s='2',  x=53,   y=27,   fontsize=10)
+axs[2].text(s='4',  x=59,   y=35.5, fontsize=10)
+axs[2].text(s='5',  x=53,   y=33,   fontsize=10)
+axs[2].text(s='6',  x=54,   y=40,   fontsize=10)
+axs[2].text(s='7',  x=52,   y=17,   fontsize=10)
+axs[2].text(s='8',  x=45,   y=16,   fontsize=10)
+axs[2].text(s='9',  x=46.5, y=40,   fontsize=10)
+axs[2].text(s='10', x=56,   y=45,   fontsize=10)
+axs[2].text(s='11', x=60,   y=27.5, fontsize=10)
 
 # Finishing touches
 for ax in axs:
@@ -108,6 +108,6 @@ for ax in axs:
     pg.style_axes(ax, '2d')
     pg.ymove(ax)
 
-pg.label_axes(axs, fstr='({})', fontweight='semibold', fontsize=8)
+pg.label_axes(axs, fstr='({})', fontweight='semibold', fontsize=12)
 # apt.show()
 apt.save(__file__)
