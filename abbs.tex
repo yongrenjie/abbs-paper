@@ -92,7 +92,7 @@
 \hypersetup{
     naturalnames,
     colorlinks,
-    linkcolor={red!50!black},
+    linkcolor={black},
     citecolor={blue!60!black},
     urlcolor={blue!80!black}
 }
@@ -106,7 +106,7 @@
 % }}}1
 % Newcommands {{{1 
 \DeclareMathOperator*{\sgn}{sgn}
-\newcommand{\articletitle}{A General Scheme for NMR Supersequences Combining High- and Low-Sensitivity Experiments}
+\newcommand{\articletitle}{A General Scheme for Generating NMR Supersequences Combining High- and Low-Sensitivity Experiments}
 \newcommand{\crl}{Chemistry Research Laboratory, Department of Chemistry, University of Oxford, Mansfield Road, Oxford OX1 3TA, United Kingdom}
 \newcommand{\turing}{The Alan Turing Institute, The British Library, 96 Euston Road, London NW1 2DB, United Kingdom}
 \newcommand{\brukeruk}{Bruker UK Ltd, R\&D, Coventry CV4 9GH, United Kingdom}
@@ -211,12 +211,6 @@
     \vspace{0.5cm} \hrule
 
 \end{center}
-
-\small{
-    \url{https://www.rsc.org/journals-books-databases/about-journals/chemcomm#writing-guidelines}
-
-    \url{https://www.rsc.org/journals-books-databases/author-and-reviewer-hub/authors-information/prepare-and-format/}
-}
 
 \begin{figure*}[ht]
     \centering\includegraphics{toc.png}%
@@ -398,11 +392,11 @@ However, in cases where it \textit{is} needed, the supersequences described here
 
 \section{Conclusion(ish)}
 
-In conclusion, we have demonstrated here how low-sensitivity experiments, such as 1,1-ADEQUATE and \nitrogen{} HMBC, may be optimally combined in NMR supersequences, leading to substantial reductions in experiment time.
+In conclusion, we have demonstrated here how low-sensitivity experiments, such as 1,1-ADE\-QUATE and \nitrogen{} HMBC, may be optimally combined in NMR supersequences, leading to substantial reductions in experiment time.
 Through a generalisation of our previous concept of parallel supersequences, further high-sensitivity  modules may be added to the supersequence both `horizontally' and `vertically', corresponding respectively to sequential and interleaved/parallel acquisition.
 The spectra thus obtained provide the chemist with far more powerful tools for the characterisation of complex molecules, especially in cases where existing (sequential) NOAH supersequences do not provide sufficient information for unambiguous assignment.
 a notable example of this is proton-sparse nitrogen heterocycles, which are commonly found in pharmaceuticals.
-The pulse programmes and processing scripts used in this work can be obtained via the Bruker User Library or GitHub; links are provided in Section S2 of the \textit{Supplementary Information}.
+The pulse programmes and processing scripts used in this work can be obtained via the Bruker User Library or GitHub; links are provided in \cref{sec:pp_availability} of the \textit{Supplementary Information}.
 
 
 \section*{Acknowledgements}
@@ -480,7 +474,7 @@ For every 8 transients of the ADEQUATE, 6, 1, and 1 transient(s) are recorded fo
 An excerpt of the pulse programme is shown here and explained on the next page:
 
 {\singlespacing
-\begin{tcbminted}{bruker}
+\begin{tcbminted}{text}
   "l3 = 0"      ; initialise loop counter
   "cnst51 = 8"  ; number of transients for ADEQUATE
   "cnst52 = 6"  ; number of transients for 15N HMBC
@@ -575,6 +569,7 @@ TopSpin does not calculate ahead of time when each interleaved module is run.
 This means that the TopSpin \texttt{expt} command (which shows the expected experimental duration) can yield (very slightly) inaccurate results.
 
 \section{Pulse programme and processing script availability}
+\label{sec:pp_availability}
 
 The pulse programmes used in this work, along with all requisite processing scripts, can be downloaded from the Bruker User Library at \url{https://www.bruker.com/protected/en/services/bruker-user-library.html}, or equivalently, from GitHub at \url{https://github.com/yongrenjie/abbs-paper/releases/tag/data}.
 The zip archive contains further instructions on setting up the pulse programmes.
@@ -804,7 +799,7 @@ The following code excerpt calculates the unsymmetric indirect covariance betwee
 Here, \texttt{penguins.read()} returns a \texttt{Dataset} object: the \texttt{rr} attribute of this is a two-dimensional \texttt{numpy} array corresponding to the doubly real part of the spectrum.
 
 {\singlespacing
-\begin{tcbminted}{python}
+\begin{tcbminted}{text}
 # Unsymmetric indirect covariance
 import penguins as pg
 
@@ -818,8 +813,8 @@ cov = spec1.rr @ spec2.rr.T
 Generalised indirect covariance is slightly more complicated, but follows directly from the procedure given in Snyder and Br\"uschweiler's work\autocite{Snyder2009JPCA}.
 
 {\singlespacing
-\begin{tcbminted}{python}
-# Unsymmetric indirect covariance
+\begin{tcbminted}{text}
+# Generalised indirect covariance
 import penguins as pg
 import numpy as np
 from scipy.linalg import fractional_matrix_power   # or just sqrtm
@@ -843,7 +838,7 @@ This assumes that the main diagonal of the \textit{spectrum} corresponds to the 
 The matrix \texttt{cov} calculated above satisfies this.
 
 {\singlespacing
-\begin{tcbminted}{python}
+\begin{tcbminted}{text}
 import numpy as np
 
 def symmetrise_preserve_sign(m):
