@@ -1,6 +1,6 @@
 # abbs-paper
 
-Repository for the NOAH paper, *'A General Scheme for NMR Supersequences Combining High- and Low-Sensitivity Experiments'* ([*Chem. Commun.* **2023,** DOI: 10.1039/D3CC01472J](https://doi.org/10.1039/D3CC01472J).
+Repository for the NOAH paper, *'A General Scheme for NMR Supersequences Combining High- and Low-Sensitivity Experiments'* ([*Chem. Commun.* **2023,** DOI: 10.1039/D3CC01472J](https://doi.org/10.1039/D3CC01472J)).
 
 The paper itself (both main text and SI) is in the `abbs.pdf` file.
 
